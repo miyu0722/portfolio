@@ -1,0 +1,66 @@
+// =====================================================
+// career
+// =====================================================
+.career{
+  position: absolute;
+  left: 115%;
+  top: -10vh;
+  width: 800px;
+  color: #ddd;
+}
+.career-hedding{
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.career-description{
+  dt{
+    float: left;
+    padding-right: 10px;
+  }
+}
+
+// =====================================================
+// media screen max-height900px
+// =====================================================
+@media screen and (max-height: 900px) {
+  .career{
+    top: -4vh;
+  }
+}
+
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  .career{
+    left: 123%;
+    top: 0vh;
+    width: 700px;
+  }
+}
+
+// =====================================================
+// media screen max-height600px,max-height: 1000px
+// =====================================================
+@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+  .career{
+    left: 120%;
+    top: 0vh;
+    width: 700px;
+  }
+  .career-hedding {
+    font-size: 2.0rem;
+  }
+}
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  .about{
+    position: static;
+  }
+  .career{
+    position: static;
+  }
+}

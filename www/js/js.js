@@ -1,0 +1,1 @@
+$(function(){$(".donut-chart").cssCharts({type:"donut"}),$(".logo").click(function(){$(".gnav").toggleClass("gnav-display")}),$(".go-home").click(function(){$(".gnav").addClass("gnav-display")}),$(".go-skils").click(function(){$(".gnav").addClass("gnav-display")})});

@@ -1,0 +1,1779 @@
+// =====================================================
+// header oval
+// =====================================================
+$header-oval1-size:758px;
+.header-oval1{
+  left: 8%;
+  top: -30%;
+  width: $header-oval1-size;
+  height: $header-oval1-size;
+  background: linear-gradient(-180deg, #3EBAD0 40%, #389B84 100%);
+  z-index: 90;
+}
+.header-line-oval1{
+  left: 8%;
+  top: -30%;
+  width: $header-oval1-size;
+  height: $header-oval1-size;
+  z-index: 100;
+}
+$header-oval2-size:158px;
+.header-oval2{
+  left: -40px;
+  top: 30%;
+  width: $header-oval2-size;
+  height: $header-oval2-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+}
+.header-line-oval2{
+  left: -40px;
+  top: 30%;
+  width: $header-oval2-size;
+  height: $header-oval2-size;
+  z-index: 100;
+}
+$header-oval3-size:340px;
+.header-oval3{
+  left: -20px;
+  bottom: 5%;
+  width: $header-oval3-size;
+  height: $header-oval3-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+}
+.header-line-oval3{
+  left: -20px;
+  bottom: 5%;
+  width: $header-oval3-size;
+  height: $header-oval3-size;
+  z-index: 100;
+}
+$header-oval4-size:60px;
+.header-oval4{
+  left: -175px;
+  top: 15%;
+  width: $header-oval4-size;
+  height: $header-oval4-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+}
+.header-line-oval4{
+  left: -175px;
+  top: 15%;
+  width: $header-oval4-size;
+  height: $header-oval4-size;
+  z-index: 10;
+}
+$header-oval5-size:445px;
+.header-oval5{
+  right: 0;
+  bottom: -15%;
+  width: $header-oval5-size;
+  height: $header-oval5-size;
+  background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
+}
+.header-line-oval5{
+  right: 0;
+  bottom: -15%;
+  width: $header-oval5-size;
+  height: $header-oval5-size;
+  z-index: 100;
+}
+
+// =====================================================
+// skills oval
+// =====================================================
+$skills-oval1-size:80px;
+.skills-oval1{
+  left: -115px;
+  top: 0;
+  width: $skills-oval1-size;
+  height: $skills-oval1-size;
+  background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
+}
+.skills-line-oval1{
+  left: -115px;
+  top: 0;
+  width: $skills-oval1-size;
+  height: $skills-oval1-size;
+}
+
+// =====================================================
+// career oval
+// =====================================================
+$career-oval1-size:1200px;
+.career-oval1{
+  left: -280px;
+  top: -240%;
+  width: $career-oval1-size;
+  height: $career-oval1-size;
+  background: linear-gradient(-180deg, #A3D3D6 40%, #3A56CA 100%);
+  z-index: -100;
+}
+.career-line-oval1{
+  left: -280px;
+  top: -240%;
+  width: $career-oval1-size;
+  height: $career-oval1-size;
+  z-index: -10;
+}
+$career-oval2-size:310px;
+.career-oval2{
+  left: -70px;
+  bottom: -230%;
+  width: $career-oval2-size;
+  height: $career-oval2-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 100;
+}
+.career-line-oval2{
+  left: -70px;
+  bottom: -230%;
+  width: $career-oval2-size;
+  height: $career-oval2-size;
+  z-index: 500;
+}
+$career-oval3-size:50px;
+.career-oval3{
+  left: 370px;
+  bottom: -160%;
+  width: $career-oval3-size;
+  height: $career-oval3-size;
+  background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
+  z-index: 100;
+}
+.career-line-oval3{
+  left: 370px;
+  bottom: -160%;
+  width: $career-oval3-size;
+  height: $career-oval3-size;
+  z-index: 100;
+}
+$career-oval4-size:90px;
+.career-oval4{
+  left: 500px;
+  bottom: -150%;
+  width: $career-oval4-size;
+  height: $career-oval4-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+  z-index: 100;
+}
+.career-line-oval4{
+  left: 500px;
+  bottom: -150%;
+  width: $career-oval4-size;
+  height: $career-oval4-size;
+  z-index: 100;
+}
+$career-oval5-size:165px;
+.career-oval5{
+  left: 670px;
+  top: 90%;
+  width: $career-oval5-size;
+  height: $career-oval5-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+}
+.career-line-oval5{
+  left: 670px;
+  top: 90%;
+  width: $career-oval5-size;
+  height: $career-oval5-size;
+}
+
+// =====================================================
+// works oval
+// =====================================================
+$works-oval1-size:75px;
+.works-oval1{
+  left: 1200px;
+  top: 30px;
+  width: $works-oval1-size;
+  height: $works-oval1-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 500;
+}
+.works-line-oval1{
+  left: 1200px;
+  top: 30px;
+  width: $works-oval1-size;
+  height: $works-oval1-size;
+  z-index: 501;
+}
+$works-oval2-size:230px;
+.works-oval2{
+  left: 1630px;
+  top: -10%;
+  width: $works-oval2-size;
+  height: $works-oval2-size;
+  background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
+  z-index: 500;
+}
+.works-line-oval2{
+  left: 1630px;
+  top: -10%;
+  width: $works-oval2-size;
+  height: $works-oval2-size;
+  z-index: 501;
+}
+$works-oval3-size:45px;
+.works-oval3{
+  left: 1900px;
+  bottom: 25%;
+  width: $works-oval3-size;
+  height: $works-oval3-size;
+  background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
+  z-index: 100;
+}
+.works-line-oval3{
+  left: 1900px;
+  bottom: 25%;
+  width: $works-oval3-size;
+  height: $works-oval3-size;
+  z-index: 101;
+}
+$works-oval4-size:150px;
+.works-oval4{
+  left: 2000px;
+  bottom: 5%;
+  width: $works-oval4-size;
+  height: $works-oval4-size;
+  background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
+  z-index: 100;
+}
+.works-line-oval4{
+  left: 2000px;
+  bottom: 5%;
+  width: $works-oval4-size;
+  height: $works-oval4-size;
+  z-index: 100;
+}
+$works-oval5-size:90px;
+.works-oval5{
+  left: 3350px;
+  bottom: 10%;
+  width: $works-oval5-size;
+  height: $works-oval5-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 100;
+}
+.works-line-oval5{
+  left: 3350px;
+  bottom: 10%;
+  width: $works-oval5-size;
+  height: $works-oval5-size;
+  z-index: 100;
+}
+$works-oval6-size:150px;
+.works-oval6{
+  left: 3850px;
+  bottom: 32%;
+  width: $works-oval6-size;
+  height: $works-oval6-size;
+  background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
+  z-index: 500;
+}
+.works-line-oval6{
+  left: 3850px;
+  bottom: 32%;
+  width: $works-oval6-size;
+  height: $works-oval6-size;
+  z-index: 550;
+}
+$works-oval7-size:75px;
+.works-oval7{
+  left: 4200px;
+  top: 10%;
+  width: $works-oval7-size;
+  height: $works-oval7-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 100;
+}
+.works-line-oval7{
+  left: 4200px;
+  top: 10%;
+  width: $works-oval7-size;
+  height: $works-oval7-size;
+  z-index: 100;
+}
+$works-oval8-size:170px;
+.works-oval8{
+  left: 4330px;
+  top: -5%;
+  width: $works-oval8-size;
+  height: $works-oval8-size;
+  background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
+  z-index: 100;
+}
+.works-line-oval8{
+  left: 4330px;
+  top: -5%;
+  width: $works-oval8-size;
+  height: $works-oval8-size;
+  z-index: 100;
+}
+$works-oval9-size:50px;
+.works-oval9{
+  left: 4700px;
+  bottom: 15%;
+  width: $works-oval9-size;
+  height: $works-oval9-size;
+  background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
+  z-index: 100;
+}
+.works-line-oval9{
+  left: 4700px;
+  bottom: 15%;
+  width: $works-oval9-size;
+  height: $works-oval9-size;
+  z-index: 100;
+}
+$works-oval10-size:280px;
+.works-oval10{
+  left: 4900px;
+  bottom: 20%;
+  width: $works-oval10-size;
+  height: $works-oval10-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+  z-index: 100;
+}
+.works-line-oval10{
+  left: 4900px;
+  bottom: 20%;
+  width: $works-oval10-size;
+  height: $works-oval10-size;
+  z-index: 100;
+}
+$works-oval11-size:1620px;
+.works-oval11{
+  left: 5100px;
+  top: -30%;
+  width: $works-oval11-size;
+  height: $works-oval11-size;
+  background: linear-gradient(-180deg, #A4CBCD 15%, #1FAEA5 69%);
+}
+.works-line-oval11{
+  left: 5100px;
+  top: -30%;
+  width: $works-oval11-size;
+  height: $works-oval11-size;
+}
+$works-oval12-size:50px;
+.works-oval12{
+  left: 5520px;
+  bottom: 20%;
+  width: $works-oval12-size;
+  height: $works-oval12-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 300;
+}
+.works-line-oval12{
+  left: 5520px;
+  bottom: 20%;
+  width: $works-oval12-size;
+  height: $works-oval12-size;
+  z-index: 300;
+}
+$works-oval13-size:90px;
+.works-oval13{
+  left: 5420px;
+  top: 20%;
+  width: $works-oval13-size;
+  height: $works-oval13-size;
+  background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
+  z-index: 500;
+}
+.works-line-oval13{
+  left: 5420px;
+  top: 20%;
+  width: $works-oval13-size;
+  height: $works-oval13-size;
+  z-index: 500;
+}
+$works-oval14-size:250px;
+.works-oval14{
+  left: 5450px;
+  bottom: -10%;
+  width: $works-oval14-size;
+  height: $works-oval14-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 100;
+}
+.works-line-oval14{
+  left: 5450px;
+  bottom: -10%;
+  width: $works-oval14-size;
+  height: $works-oval14-size;
+  z-index: 100;
+}
+$works-oval15-size:340px;
+.works-oval15{
+  left: 5750px;
+  top: 25%;
+  width: $works-oval15-size;
+  height: $works-oval15-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 300;
+}
+.works-line-oval15{
+  left: 5750px;
+  top: 25%;
+  width: $works-oval15-size;
+  height: $works-oval15-size;
+  z-index: 350;
+}
+$works-oval16-size:154px;
+.works-oval16{
+  left: 5750px;
+  bottom: 17%;
+  width: $works-oval16-size;
+  height: $works-oval16-size;
+  background: linear-gradient(-180deg, #A3D3D6 0%, #7BA5D9 95%);
+  z-index: 200;
+}
+.works-line-oval16{
+  left: 5750px;
+  bottom: 17%;
+  width: $works-oval16-size;
+  height: $works-oval16-size;
+  z-index: 200;
+}
+$works-oval17-size:220px;
+.works-oval17{
+  left: 6400px;
+  top: 35%;
+  width: $works-oval17-size;
+  height: $works-oval17-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+  z-index: 700;
+}
+.works-line-oval17{
+  left: 6400px;
+  top: 35%;
+  width: $works-oval17-size;
+  height: $works-oval17-size;
+  z-index: 750;
+}
+$works-oval18-size:70px;
+.works-oval18{
+  left: 6550px;
+  top: 25%;
+  width: $works-oval18-size;
+  height: $works-oval18-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 700;
+}
+.works-line-oval18{
+  left: 6550px;
+  top: 25%;
+  width: $works-oval18-size;
+  height: $works-oval18-size;
+  z-index: 750;
+}
+$works-oval19-size:240px;
+.works-oval19{
+  left: 6600px;
+  top: 20%;
+  width: $works-oval19-size;
+  height: $works-oval19-size;
+  background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
+  z-index: 300;
+}
+.works-line-oval19{
+  left: 6600px;
+  top: 20%;
+  width: $works-oval19-size;
+  height: $works-oval19-size;
+  z-index: 350;
+}
+$works-oval20-size:690px;
+.works-oval20{
+  opacity: 1.0;
+  left: 6300px;
+  bottom: -13%;
+  width: $works-oval20-size;
+  height: $works-oval20-size;
+  display: block;
+  background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 82%);
+  z-index: 400;
+  &::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: rgb(0, 0, 0);
+    transition: all .5s ease 0s;
+  }
+  &:hover{
+    &::after{
+      opacity: 0.5;
+    }
+  }
+}
+.works-line-oval20{
+  opacity: 1.0;
+  left: 6300px;
+  bottom: -13%;
+  width: $works-oval20-size;
+  height: $works-oval20-size;
+  z-index: 400;
+}
+
+// =====================================================
+// contact oval
+// =====================================================
+$contact-oval1-size:420px;
+.contact-oval1{
+  left: 8950px;
+  top: -18%;
+  width: $contact-oval1-size;
+  height: $contact-oval1-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 400;
+}
+.contact-line-oval1{
+  left: 8950px;
+  top: -18%;
+  width: $contact-oval1-size;
+  height: $contact-oval1-size;
+  z-index: 400;
+}
+$contact-oval2-size:200px;
+.contact-oval2{
+  left: 8755px;
+  top: 42%;
+  width: $contact-oval2-size;
+  height: $contact-oval2-size;
+  background: linear-gradient(-180deg, #D8CD9C 0%, #7E703C 100%);
+  z-index: 390;
+}
+.contact-line-oval2{
+  left: 8755px;
+  top: 42%;
+  width: $contact-oval2-size;
+  height: $contact-oval2-size;
+  z-index: 350;
+}
+$contact-oval3-size:115px;
+.contact-oval3{
+  left: 9100px;
+  bottom: 15%;
+  width: $contact-oval3-size;
+  height: $contact-oval3-size;
+  background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
+  z-index: 0;
+}
+.contact-line-oval3{
+  left: 9100px;
+  bottom: 15%;
+  width: $contact-oval3-size;
+  height: $contact-oval3-size;
+  z-index: 0;
+}
+$contact-oval4-size:165px;
+.contact-oval4{
+  left: 9400px;
+  bottom: -2%;
+  width: $contact-oval4-size;
+  height: $contact-oval4-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 0;
+}
+.contact-line-oval4{
+  left: 9400px;
+  bottom: -2%;
+  width: $contact-oval4-size;
+  height: $contact-oval4-size;
+  z-index: 0;
+}
+$contact-oval5-size:165px;
+.contact-oval5{
+  left: 9525px;
+  top: 15%;
+  width: $contact-oval5-size;
+  height: $contact-oval5-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+  z-index: 0;
+}
+.contact-line-oval5{
+  left: 9525px;
+  top: 15%;
+  width: $contact-oval5-size;
+  height: $contact-oval5-size;
+  z-index: 0;
+}
+
+
+// =====================================================
+// gnav oval
+// =====================================================
+$gnav-oval1-size:380px;
+.gnav-oval1{
+  left: 90px;
+  top: -18%;
+  width: $gnav-oval1-size;
+  height: $gnav-oval1-size;
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  z-index: 400;
+}
+.gnav-line-oval1{
+  left: 90px;
+  top: -18%;
+  width: $gnav-oval1-size;
+  height: $gnav-oval1-size;
+  z-index: 400;
+}
+$gnav-oval2-size:120px;
+.gnav-oval2{
+  right: 80px;
+  bottom: 30%;
+  width: $gnav-oval2-size;
+  height: $gnav-oval2-size;
+  background: linear-gradient(-180deg, #D8CD9C 0%, #7E703C 100%);
+  z-index: 300;
+}
+.gnav-line-oval2{
+  right: 80px;
+  bottom: 30%;
+  width: $gnav-oval2-size;
+  height: $gnav-oval2-size;
+  z-index: 350;
+}
+$gnav-oval3-size:70px;
+.gnav-oval3{
+  left: 100px;
+  bottom: 15%;
+  width: $gnav-oval3-size;
+  height: $gnav-oval3-size;
+  background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
+  z-index: 0;
+}
+.gnav-line-oval3{
+  left: 100px;
+  bottom: 15%;
+  width: $gnav-oval3-size;
+  height: $gnav-oval3-size;
+  z-index: 0;
+}
+$gnav-oval4-size:200px;
+.gnav-oval4{
+  right: 300px;
+  bottom: -2%;
+  width: $gnav-oval4-size;
+  height: $gnav-oval4-size;
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  z-index: 0;
+}
+.gnav-line-oval4{
+  right: 300px;
+  bottom: -2%;
+  width: $gnav-oval4-size;
+  height: $gnav-oval4-size;
+  z-index: 0;
+}
+$gnav-oval5-size:250px;
+.gnav-oval5{
+  right: -15px;
+  top: 13%;
+  width: $gnav-oval5-size;
+  height: $gnav-oval5-size;
+  background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
+  z-index: 0;
+}
+.gnav-line-oval5{
+  right: -15px;
+  top: 13%;
+  width: $gnav-oval5-size;
+  height: $gnav-oval5-size;
+  z-index: 0;
+}
+
+// =====================================================
+// media screen max-height960px
+// =====================================================
+@media screen and (max-height: 960px) {
+  //header-oval1-------------------------------------------
+  $header-oval1-size:580px;
+  .header-oval1{
+  width: $header-oval1-size;
+  height: $header-oval1-size;
+  }
+  .header-line-oval1{
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  //header-oval3-------------------------------------------
+  $header-oval3-size:280px;
+  .header-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  .header-line-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  //works-oval1-------------------------------------------
+  $works-oval1-size:75px;
+  .works-oval1{
+    top: 10px;
+  }
+  .works-line-oval1{
+    top: 10px;
+  }
+  //works-oval6-------------------------------------------
+  .works-oval6{
+    left: 3870px;
+    bottom: 39%;
+  }
+  .works-line-oval6{
+    left: 3870px;
+    bottom: 39%;
+  }
+  //works-oval15-------------------------------------------
+  $works-oval15-size:280px;
+  .works-oval15{
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  .works-line-oval15{
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  //works-oval17-------------------------------------------
+  $works-oval17-size:180px;
+  .works-oval17{
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  .works-line-oval17{
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  //contact-oval2-------------------------------------------
+  $contact-oval2-size:140px;
+  .contact-oval2{
+    left: 8870px;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+    z-index: 300;
+  }
+  .contact-line-oval2{
+    left: 8870px;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+  }
+}
+// =====================================================
+// media screen max-height900px
+// =====================================================
+@media screen and (max-height: 900px) {
+  //header-oval2-------------------------------------------
+  $header-oval2-size:100px;
+  .header-oval2{
+    left: -20px;
+    width: $header-oval2-size;
+    height: $header-oval2-size;
+  }
+  .header-line-oval2{
+    left: -20px;
+    width: $header-oval2-size;
+    height: $header-oval2-size;
+  }
+  //header-oval5-------------------------------------------
+  $header-oval5-size:380px;
+  .header-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  .header-line-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  //career-oval2-------------------------------------------
+  .career-oval2{
+    bottom: -175%;
+  }
+  .career-line-oval2{
+    bottom: -175%;
+  }
+  //career-oval3-------------------------------------------
+  .career-oval3{
+    bottom: -135%;
+  }
+  .career-line-oval3{
+    bottom: -135%;
+  }
+  //works-oval1-------------------------------------------
+  .works-oval1{
+    left: 1200px;
+    top: -45px;
+  }
+  .works-line-oval1{
+    left: 1200px;
+    top: -45px;
+  }
+  //works-oval10-------------------------------------------
+  .works-oval10{
+    left: 5050px;
+    bottom: 30%;
+  }
+  .works-line-oval10{
+    left: 5050px;
+    bottom: 30%;
+  }
+  //works-oval13-------------------------------------------
+  .works-oval13{
+    left: 5350px;
+    top: 20%;
+  }
+  .works-line-oval13{
+    left: 5350px;
+    top: 20%;
+  }
+  //works-oval17-------------------------------------------
+  $works-oval17-size:150px;
+  .works-oval17{
+    left: 6350px;
+    top: 21%;
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  .works-line-oval17{
+    left: 6350px;
+    top: 21%;
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  //works-oval19-------------------------------------------
+  $works-oval19-size:240px;
+  .works-oval19{
+    left: 6600px;
+    top: 8%;
+    width: $works-oval19-size;
+    height: $works-oval19-size;
+  }
+  .works-line-oval19{
+    left: 6600px;
+    top: 8%;
+    width: $works-oval19-size;
+    height: $works-oval19-size;
+  }
+  //contact-oval1-------------------------------------------
+  $contact-oval1-size:340px;
+  .contact-oval1{
+    left: 8950px;
+    top: -18%;
+    width: $contact-oval1-size;
+    height: $contact-oval1-size;
+  }
+  .contact-line-oval1{
+    left: 8950px;
+    top: -18%;
+    width: $contact-oval1-size;
+    height: $contact-oval1-size;
+  }
+}
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  //header-oval1-------------------------------------------
+  $header-oval1-size:560px;
+  .header-oval1{
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  .header-line-oval1{
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  //header-oval3-------------------------------------------
+  $header-oval3-size:200px;
+  .header-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  .header-line-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  //career-oval2-------------------------------------------
+  .career-oval2{
+    bottom: -150%;
+  }
+  .career-line-oval2{
+    bottom: -150%;
+  }
+  //career-oval3-------------------------------------------
+  .career-oval3{
+    bottom: -110%;
+  }
+  .career-line-oval3{
+    bottom: -110%;
+  }
+  //career-oval4-------------------------------------------
+  .career-oval4{
+    bottom: -130%;
+  }
+  .career-line-oval4{
+    bottom: -130%;
+  }
+  //career-oval5-------------------------------------------
+  $career-oval5-size:160px;
+  .career-oval5{
+    left: 690px;
+    top: 75%;
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+  }
+  .career-line-oval5{
+    left: 690px;
+    top: 75%;
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+  }
+  //works-oval1-------------------------------------------
+  .works-oval1{
+    left: 1080px;
+    top: -15px;
+  }
+  .works-line-oval1{
+    left: 1080px;
+    top: -15px;
+  }
+  //works-oval2-------------------------------------------
+  .works-oval2{
+    left: 1680px;
+    top: -10%;
+  }
+  .works-line-oval2{
+    left: 1680px;
+    top: -10%;
+  }
+  //works-oval6-------------------------------------------
+  $works-oval6-size:130px;
+  .works-oval6{
+    left: 4000px;
+    bottom: 40%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  .works-line-oval6{
+    left: 4000px;
+    bottom: 40%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  //works-oval9-------------------------------------------
+  $works-oval9-size:50px;
+  .works-oval9{
+    left: 4450px;
+    bottom: 15%;
+  }
+  .works-line-oval9{
+    left: 4450px;
+    bottom: 15%;
+  }
+  //works-oval10-------------------------------------------
+  $works-oval10-size:200px;
+  .works-oval10{
+    left: 5100px;
+    bottom: 60%;
+    width: $works-oval10-size;
+    height: $works-oval10-size;
+  }
+  .works-line-oval10{
+    left: 5100px;
+    bottom: 60%;
+    width: $works-oval10-size;
+    height: $works-oval10-size;
+  }
+  //works-oval15-------------------------------------------
+  $works-oval15-size:300px;
+  .works-oval15{
+    left: 5750px;
+    top: 28%;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  .works-line-oval15{
+    left: 5750px;
+    top: 28%;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  //works-oval16-------------------------------------------
+  $works-oval16-size:120px;
+  .works-oval16{
+    left: 5750px;
+    bottom: 17%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+  }
+  .works-line-oval16{
+    left: 5750px;
+    bottom: 17%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+    z-index: 200;
+  }
+  //works-oval17-------------------------------------------
+  $works-oval17-size:120px;
+  .works-oval17{
+    left: 6350px;
+    top: 24%;
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  .works-line-oval17{
+    left: 6350px;
+    top: 24%;
+    width: $works-oval17-size;
+    height: $works-oval17-size;
+  }
+  //works-oval19-------------------------------------------
+  $works-oval19-size:240px;
+  .works-oval19{
+    left: 6600px;
+    top: 5%;
+    width: $works-oval19-size;
+    height: $works-oval19-size;
+  }
+  .works-line-oval19{
+    left: 6600px;
+    top: 5%;
+    width: $works-oval19-size;
+    height: $works-oval19-size;
+  }
+  //contact-oval1-------------------------------------------
+  $contact-oval1-size:300px;
+  .contact-oval1{
+    width: $contact-oval1-size;
+    height: $contact-oval1-size;
+  }
+  .contact-line-oval1{
+    width: $contact-oval1-size;
+    height: $contact-oval1-size;
+  }
+  //contact-oval3-------------------------------------------
+  .contact-oval3{
+    left: 9100px;
+    bottom: -1%;
+    width: $contact-oval3-size;
+    height: $contact-oval3-size;
+  }
+  .contact-line-oval3{
+    left: 9100px;
+    bottom: -1%;
+    width: $contact-oval3-size;
+    height: $contact-oval3-size;
+  }
+  //contact-oval5-------------------------------------------
+  .contact-line-oval5 {
+    left: 9460px;
+  }
+  .contact-oval5 {
+    left: 9460px;
+  }
+}
+
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  //header-oval1-------------------------------------------
+  $header-oval1-size:580px;
+  .header-oval1{
+    left: 5%;
+    top: -61%;
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  .header-line-oval1{
+    left: 5%;
+    top: -61%;
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  //header-oval4-------------------------------------------
+  $header-oval4-size:40px;
+  .header-oval4{
+    width: $header-oval4-size;
+    height: $header-oval4-size;
+  }
+  .header-line-oval4{
+    width: $header-oval4-size;
+    height: $header-oval4-size;
+  }
+  //header-oval5-------------------------------------------
+  $header-oval5-size:320px;
+  .header-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  .header-line-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  //career-oval1-------------------------------------------
+  $career-oval1-size:1000px;
+  .career-oval1{
+    left: -250px;
+    top: -200%;
+    width: $career-oval1-size;
+    height: $career-oval1-size;
+  }
+  .career-line-oval1{
+    left: -250px;
+    top: -200%;
+    width: $career-oval1-size;
+    height: $career-oval1-size;
+  }
+  //career-oval2-------------------------------------------
+  .career-oval2{
+    bottom: -130%;
+  }
+  .career-line-oval2{
+    bottom: -130%;
+  }
+  //career-oval3-------------------------------------------
+  .career-oval3{
+    bottom: -90%;
+  }
+  .career-line-oval3{
+    bottom: -90%;
+  }
+  //career-oval4-------------------------------------------
+  .career-oval4{
+    bottom: -80%;
+  }
+  .career-line-oval4{
+    bottom: -80%;
+  }
+  //career-oval5-------------------------------------------
+  $career-oval5-size:130px;
+  .career-oval5 {
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+    left: 650px;
+    top: 40%;
+  }
+  .career-line-oval5 {
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+    left: 650px;
+    top: 40%;
+  }
+  //works-oval1-------------------------------------------
+  .works-oval1{
+    left: 940px;
+    top: -45px;
+  }
+  .works-line-oval1{
+    left: 940px;
+    top: -45px;
+  }
+  //works-oval2-------------------------------------------
+  .works-oval2{
+    left: 1370px;
+    top: -12%;
+  }
+  .works-line-oval2{
+    left: 1370px;
+    top: -12%;
+  }
+  //works-oval3-------------------------------------------
+  .works-oval3{
+    left: 1630px;
+    bottom: 25%;
+  }
+  .works-line-oval3{
+    left: 1630px;
+    bottom: 25%;
+  }
+  //works-oval4-------------------------------------------
+  .works-oval4 {
+    left: 1700px;
+    bottom: 5%;
+  }
+  .works-line-oval4{
+    left: 1700px;
+    bottom: 5%;
+  }
+  //works-oval5-------------------------------------------
+  .works-oval5{
+    left: 3030px;
+  }
+  .works-line-oval5{
+    left: 3030px;
+  }
+  //works-oval6-------------------------------------------
+  $works-oval6-size:130px;
+  .works-oval6{
+    left: 3300px;
+    bottom: 68%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  .works-line-oval6{
+    left: 3300px;
+    bottom: 68%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  //works-oval7-------------------------------------------
+  .works-oval7{
+    left: 3585px;
+    top: 3%;
+  }
+  .works-line-oval7{
+    left: 3585px;
+    top: 3%;
+  }
+  //works-oval8-------------------------------------------
+  .works-oval8{
+    left: 3770px;
+    top: -10%;
+  }
+  .works-line-oval8{
+    left: 3770px;
+    top: -10%;
+  }
+  //works-oval9-------------------------------------------
+  $works-oval9-size:50px;
+  .works-oval9{
+    left: 3900px;
+    bottom: 15%;
+    width: $works-oval9-size;
+    height: $works-oval9-size;
+  }
+  .works-line-oval9{
+    left: 3900px;
+    bottom: 15%;
+    width: $works-oval9-size;
+    height: $works-oval9-size;
+  }
+  //works-oval10-------------------------------------------
+  .works-oval10{
+    left: 4850px;
+    bottom: 75%;
+  }
+  .works-line-oval10{
+    left: 4850px;
+    bottom: 75%;
+  }
+  //works-oval11-------------------------------------------
+  .works-oval11{
+    left: 4950px;
+    top: -100%;
+    width: 1900px;
+    height: 1600px;
+  }
+  .works-line-oval11{
+    left: 4950px;
+    top: -100%;
+    width: 1900px;
+    height: 1600px;
+  }
+  //works-oval12-------------------------------------------
+  $works-oval12-size:50px;
+  .works-oval12{
+    left: 5360px;
+    bottom: 23%;
+    width: $works-oval12-size;
+    height: $works-oval12-size;
+  }
+  .works-line-oval12{
+    left: 5360px;
+    bottom: 23%;
+    width: $works-oval12-size;
+    height: $works-oval12-size;
+  }
+  //works-oval13-------------------------------------------
+  .works-oval13{
+    left: 5070px;
+    top: 18%;
+  }
+  .works-line-oval13{
+    left: 5070px;
+    top: 18%;
+  }
+  //works-oval14-------------------------------------------
+  $works-oval14-size:200px;
+  .works-oval14{
+    left: 5450px;
+    bottom: -5%;
+    width: $works-oval14-size;
+    height: $works-oval14-size;
+  }
+  .works-line-oval14{
+    left: 5450px;
+    bottom: -5%;
+    width: $works-oval14-size;
+    height: $works-oval14-size;
+  }
+  //works-oval15-------------------------------------------
+  .works-oval15{
+    left: 5650px;
+    top: 10%;
+  }
+  .works-line-oval15{
+    left: 5650px;
+    top: 10%;
+  }
+  //works-oval16-------------------------------------------
+  $works-oval16-size:80px;
+  .works-oval16{
+    left: 5675px;
+    bottom: 17%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+  }
+  .works-line-oval16{
+    left: 5675px;
+    bottom: 17%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+  }
+  //works-oval17-------------------------------------------
+  .works-oval17{
+    top: -8%;
+  }
+  .works-line-oval17{
+    top: -8%;
+  }
+  //works-oval18-------------------------------------------
+  .works-oval18{
+    left: 6400px;
+  }
+  .works-line-oval18{
+    left: 6400px;
+  }
+  //works-oval19-------------------------------------------
+  .works-oval19{
+    left: 6440px;
+    top: 3%;
+  }
+  .works-line-oval19{
+    left: 6440px;
+    top: 3%;
+  }
+  //works-oval20-------------------------------------------
+  $works-oval20-size:550px;
+  .works-oval20{
+    left: 6510px;
+    bottom: -1%;
+    width: $works-oval20-size;
+    height: $works-oval20-size;
+  }
+  .works-line-oval20{
+    left: 6510px;
+    bottom: -1%;
+    width: $works-oval20-size;
+    height: $works-oval20-size;
+  }
+  //contact-oval1-------------------------------------------
+  .contact-oval1{
+    left: 8850px;
+  }
+  .contact-line-oval1{
+    left: 8850px;
+  }
+  //contact-oval5-------------------------------------------
+  .contact-line-oval5 {
+    left: 9490px;
+  }
+  .contact-oval5 {
+    left: 9490px;
+  }
+}
+
+// =====================================================
+// media screen max-height600px
+// =====================================================
+@media screen and (max-height: 600px) {
+  //header-oval1-------------------------------------------
+  $header-oval1-size:650px;
+  .header-oval1{
+    left: -10%;
+    top: -92%;
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  .header-line-oval1{
+    left: -10%;
+    top: -92%;
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  //header-oval2-------------------------------------------
+  $header-oval2-size:80px;
+  .header-oval2{
+    width: $header-oval2-size;
+    height: $header-oval2-size;
+  }
+  .header-line-oval2{
+    width: $header-oval2-size;
+    height: $header-oval2-size;
+  }
+  //header-oval3-------------------------------------------
+  $header-oval3-size:180px;
+  .header-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  .header-line-oval3{
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  //header-oval5-------------------------------------------
+  $header-oval5-size:260px;
+  .header-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  .header-line-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
+  //career-oval1-------------------------------------------
+  $career-oval1-size:900px;
+  .career-oval1{
+    left: -180px;
+    top: -200%;
+    width: $career-oval1-size;
+    height: $career-oval1-size;
+  }
+  .career-line-oval1{
+    left: -180px;
+    top: -200%;
+    width: $career-oval1-size;
+    height: $career-oval1-size;
+  }
+  //career-oval2-------------------------------------------
+  $career-oval2-size:270px;
+  .career-oval2{
+    bottom: -130%;
+    width: $career-oval2-size;
+    height: $career-oval2-size;
+  }
+  .career-line-oval2{
+    bottom: -130%;
+    width: $career-oval2-size;
+    height: $career-oval2-size;
+  }
+  //career-oval3-------------------------------------------
+  $career-oval3-size:35px;
+  .career-oval3{
+    bottom: -80%;
+    width: $career-oval3-size;
+    height: $career-oval3-size;
+  }
+  .career-line-oval3{
+    bottom: -80%;
+    width: $career-oval3-size;
+    height: $career-oval3-size;
+  }
+  //career-oval4-------------------------------------------
+  $career-oval4-size:80px;
+  .career-oval4{
+    bottom: -80%;
+    width: $career-oval4-size;
+    height: $career-oval4-size;
+  }
+  .career-line-oval4{
+    bottom: -80%;
+    width: $career-oval4-size;
+    height: $career-oval4-size;
+  }
+  //career-oval5-------------------------------------------
+  $career-oval5-size:130px;
+  .career-oval5 {
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+    left: 650px;
+    top: 40%;
+  }
+  .career-line-oval5 {
+    width: $career-oval5-size;
+    height: $career-oval5-size;
+    left: 650px;
+    top: 40%;
+  }
+  //works-oval1-------------------------------------------
+  .works-oval1{
+    left: 820px;
+    top: -28px;
+  }
+  .works-line-oval1{
+    left: 820px;
+    top: -28px;
+  }
+  //works-oval2-------------------------------------------
+  $works-oval2-size:180px;
+  .works-oval2{
+    left: 1200px;
+    top: -6%;
+    width: $works-oval2-size;
+    height: $works-oval2-size;
+  }
+  .works-line-oval2{
+    left: 1200px;
+    top: -6%;
+    width: $works-oval2-size;
+    height: $works-oval2-size;
+  }
+  //works-oval3-------------------------------------------
+  .works-oval3{
+    left: 1400px;
+    bottom: 25%;
+  }
+  .works-line-oval3{
+    left: 1400px;
+    bottom: 25%;
+  }
+  //works-oval4-------------------------------------------
+  .works-oval4 {
+    left: 1500px;
+    bottom: 5%;
+  }
+  .works-line-oval4{
+    left: 1500px;
+    bottom: 5%;
+  }
+  //works-oval5-------------------------------------------
+  .works-oval5{
+    left: 2700px;
+  }
+  .works-line-oval5{
+    left: 2700px;
+  }
+  //works-oval6-------------------------------------------
+  $works-oval6-size:130px;
+  .works-oval6{
+    left: 2870px;
+    bottom: 68%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  .works-line-oval6{
+    left: 2870px;
+    bottom: 68%;
+    width: $works-oval6-size;
+    height: $works-oval6-size;
+  }
+  //works-oval7-------------------------------------------
+  .works-oval7{
+    left: 3200px;
+    top: -2%;
+  }
+  .works-line-oval7{
+    left: 3200px;
+    top: -2%;
+  }
+  //works-oval8-------------------------------------------
+  .works-oval8{
+    left: 3370px;
+    top: -10%;
+  }
+  .works-line-oval8{
+    left: 3370px;
+    top: -10%;
+  }
+  //works-oval9-------------------------------------------
+  $works-oval9-size:50px;
+  .works-oval9{
+    left: 3520px;
+    bottom: 15%;
+    width: $works-oval9-size;
+    height: $works-oval9-size;
+  }
+  .works-line-oval9{
+    left: 3520px;
+    bottom: 15%;
+    width: $works-oval9-size;
+    height: $works-oval9-size;
+  }
+  //works-oval10-------------------------------------------
+  $works-oval10-size:150px;
+  .works-oval10{
+    left: 4250px;
+    bottom: -3%;
+    width: $works-oval10-size;
+    height: $works-oval10-size;
+  }
+  .works-line-oval10{
+    left: 4250px;
+    bottom: -3%;
+    width: $works-oval10-size;
+    height: $works-oval10-size;
+  }
+  //works-oval11-------------------------------------------
+  .works-oval11{
+    left: 4300px;
+    top: -100%;
+    width: 2150px;
+    height: 1600px;
+  }
+  .works-line-oval11{
+    left: 4300px;
+    top: -100%;
+    width: 2150px;
+    height: 1600px;
+  }
+  //works-oval12-------------------------------------------
+  .works-oval12{
+    left: 4860px;
+    bottom: 8%;
+  }
+  .works-line-oval12{
+    left: 4860px;
+    bottom: 8%;
+  }
+  //works-oval13-------------------------------------------
+  .works-oval13{
+    left: 4700px;
+    top: 5%;
+  }
+  .works-line-oval13{
+    left: 4700px;
+    top: 5%;
+  }
+  //works-oval14-------------------------------------------
+  $works-oval14-size:170px;
+  .works-oval14{
+    left: 5000px;
+    bottom: 0%;
+    width: $works-oval14-size;
+    height: $works-oval14-size;
+  }
+  .works-line-oval14{
+    left: 5000px;
+    bottom: 0%;
+    width: $works-oval14-size;
+    height: $works-oval14-size;
+  }
+  //works-oval15-------------------------------------------
+  $works-oval15-size:200px;
+  .works-oval15{
+    left: 5270px;
+    top: 10%;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  .works-line-oval15{
+    left: 5270px;
+    top: 10%;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+  //works-oval16-------------------------------------------
+  $works-oval16-size:50px;
+  .works-oval16{
+    left: 5300px;
+    bottom: 15%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+  }
+  .works-line-oval16{
+    left: 5300px;
+    bottom: 15%;
+    width: $works-oval16-size;
+    height: $works-oval16-size;
+  }
+  //works-oval17-------------------------------------------
+  .works-oval17{
+    left: 6065px;
+  }
+  .works-line-oval17{
+    left: 6065px;
+  }
+  //works-oval18-------------------------------------------
+  .works-oval18{
+    left: 6140px;
+  }
+  .works-line-oval18{
+    left: 6140px;
+  }
+  //works-oval19-------------------------------------------
+  .works-oval19{
+    left: 6205px;
+    top: -10%;
+  }
+  .works-line-oval19{
+    left: 6205px;
+    top: -10%;
+  }
+  //works-oval20-------------------------------------------
+  $works-oval20-size:450px;
+  .works-oval20{
+    left: 6120px;
+    bottom: -6%;
+    width: $works-oval20-size;
+    height: $works-oval20-size;
+  }
+  .works-line-oval20{
+    left: 6120px;
+    bottom: -6%;
+    width: $works-oval20-size;
+    height: $works-oval20-size;
+  }
+  //contact-oval1-------------------------------------------
+  $contact-oval1-size:250px;
+  .contact-oval1{
+    left: 8330px;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+  }
+  .contact-line-oval1{
+    left: 8330px;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+  }
+  //contact-oval2-------------------------------------------
+  $contact-oval2-size:100px;
+  .contact-oval2{
+    left: 8300px;
+    bottom: -1%;
+    top: 22%;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+  }
+  .contact-line-oval2{
+    left: 8300px;
+    bottom: -1%;
+    top: 22%;
+    width: $contact-oval2-size;
+    height: $contact-oval2-size;
+  }
+  //contact-oval3-------------------------------------------
+  .contact-oval3{
+    left: 8465px;
+    bottom: -1%;
+  }
+  .contact-line-oval3{
+    left: 8465px;
+    bottom: -1%;
+  }
+  //contact-oval4-------------------------------------------
+  .contact-oval4{
+    left: 8690px;
+  }
+  .contact-line-oval4{
+    left: 8690px;
+  }
+  //contact-oval5-------------------------------------------
+  $contact-oval5-size:115px;
+  .contact-line-oval5 {
+    left: 8750px;
+    width: $contact-oval5-size;
+    height: $contact-oval5-size;
+  }
+  .contact-oval5 {
+    left: 8750px;
+    width: $contact-oval5-size;
+    height: $contact-oval5-size;
+  }
+}

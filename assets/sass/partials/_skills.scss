@@ -1,0 +1,147 @@
+// =====================================================
+// skills
+// =====================================================
+.about{
+ position: absolute;
+ left: 230px;
+ margin-top: 10vh;
+ width: 900px;
+}
+//graphs
+.application-graph{
+ float: left;
+ margin: 5px 20px 20px 5px;
+}
+.skills-graph{
+ float: left;
+ margin: 5px 20px 20px 5px;
+}
+.application-graph .donut-chart.fill .pie,
+.application-graph .pie-chart .pie{
+ -webkit-box-shadow: 0 0 0 4px #4D1AC5;
+ -moz-box-shadow: 0 0 0 4px #4D1AC5;
+ box-shadow: 0 0 0 4px #4D1AC5;
+}
+.application-graph .donut-chart .pie{
+ background: #4D1AC5;
+}
+.skills-graph .donut-chart.fill .pie,
+.skills-graph .pie-chart .pie{
+ -webkit-box-shadow: 0 0 0 4px #13767A;
+ -moz-box-shadow: 0 0 0 4px #13767A;
+ box-shadow: 0 0 0 4px #13767A;
+}
+.skills-graph .donut-chart .pie{
+ background: #13767A;
+}
+.myskills{
+ p{
+   width: 800px;
+   margin-bottom: 50px;
+ }
+}
+
+// =====================================================
+// media screen max-height900px
+// =====================================================
+@media screen and (max-height: 900px) {
+  .about{
+   margin-top: 4vh;
+  }
+}
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  .chart.donut{
+    width: 100px;
+    height: 100px;
+  }
+  .donut-chart h2 span{
+    font-size: 12px;
+  }
+  .about{
+    width: 865px;
+  }
+  .myskills p{
+    width: 750px;
+  }
+}
+
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  .myskills p {
+    margin-bottom: 30px;
+  }
+  .application-graph .donut-chart.fill .pie, .application-graph .pie-chart .pie {
+    box-shadow: 0 0 0 3px #4D1AC5;
+    -webkit-box-shadow: 0 0 0 3px #4D1AC5;
+  }
+  .skills-graph .donut-chart.fill .pie, .skills-graph .pie-chart .pie {
+    box-shadow: 0 0 0 3px #13767A;
+    -webkit-box-shadow: 0 0 0 3px #13767A;
+  }
+  .chart.donut{
+    width: 90px;
+    height: 90px;
+  }
+  .donut-chart h2 span{
+    font-size: 11px;
+  }
+  .about{
+    width: 750px;
+  }
+  .myskills p{
+    width: 690px;
+  }
+}
+
+// =====================================================
+// media screen max-height600px,max-height: 1000px
+// =====================================================
+@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+  .about{
+   margin-top: 0vh;
+  }
+  .myskills p {
+    margin-bottom: 30px;
+  }
+  .application-graph .donut-chart.fill .pie, .application-graph .pie-chart .pie {
+    box-shadow: 0 0 0 2px #4D1AC5;
+    -webkit-box-shadow: 0 0 0 2px #4D1AC5;
+  }
+  .skills-graph .donut-chart.fill .pie, .skills-graph .pie-chart .pie {
+    box-shadow: 0 0 0 2px #13767A;
+    -webkit-box-shadow: 0 0 0 2px #13767A;
+  }
+  .skills-graph {
+    margin: -6px 13px 20px 5px;
+  }
+  .application-graph {
+    margin: 5px 13px 20px 5px;
+  }
+  .chart.donut{
+    width: 80px;
+    height: 80px;
+  }
+  .donut-chart h2 span{
+    font-size: 10px;
+  }
+  .about{
+    width: 650px;
+  }
+  .myskills p{
+    width: 630px;
+  }
+}
+
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  .about{
+    position: static;
+  }
+}

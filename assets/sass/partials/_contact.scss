@@ -1,0 +1,76 @@
+// =====================================================
+// contact
+// =====================================================
+.contact{
+  color: $primary;
+  margin-bottom: 20px;
+  position: relative;
+  left: 8850px;
+  width: 85%;
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 30px;
+}
+.contact-container{
+  border: 1px solid $primary;
+  border-radius: 20px;
+  height: 93vh;
+  padding:30vh 0;
+  width: 780px;
+}
+.contact-section-headding{
+  margin-bottom: 20px;
+}
+.email{
+  font-family: PetitFormalScript-Regular, serif;
+}
+.contact-list{
+  margin-bottom: 10px;
+}
+
+// =====================================================
+// media screen max-height960px
+// =====================================================
+@media screen and (max-height: 900px) {
+  .contact-section-headding {
+    margin-top: 0;
+  }
+}
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  .contact-container{
+    width: 710px;
+  }
+}
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  .contact{
+    left: 9000px;
+  }
+  .contact-section-headding {
+    margin-top: -10px;
+  }
+  .contact-container {
+    width: 590px;
+    height: 91vh;
+  }
+}
+// =====================================================
+// media screen max-height600px
+// =====================================================
+@media screen and (max-height: 600px) {
+  .contact{
+    left: 8330px;
+  }
+  .contact-section-headding {
+    margin-top: -10px;
+  }
+  .contact-container {
+    width: 480px;
+    height: 91vh;
+  }
+}

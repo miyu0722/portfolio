@@ -1,0 +1,1236 @@
+// =====================================================
+// works
+// =====================================================
+//works section container
+.works{
+  position: absolute;
+  left: 1990px;
+  padding: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px 100px 0 0;
+  width: 6000px;
+  height: 100vh;
+}
+//works section main description
+.works-content-description{
+  position: absolute;
+  left: 60px;
+  bottom: 8%;
+  border-left: 1px solid $primary;
+  padding-left: 50px;
+  width: 710px;
+}
+//works section main headding
+.works-section-headding{
+  font-size: 9.4rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: block;
+}
+.works-headding{
+  font-size: 5.4rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.other-projects{
+  .works-headding{
+    font-size: 3.0rem;
+  }
+}
+//------------------------------------------------------
+// main-projects
+//------------------------------------------------------
+//common------------------------------------------------
+//main works description
+.common-main-works-description{
+  position: absolute;
+  transition: all 0.4s ease 0s;
+}
+//main works hover
+//hoverを掛けたい親要素にhoverをつけて、その中に動作させたいクラスを入れる
+.common-main-works{
+  &:hover{
+    .main-works-common-img::after{
+      opacity: 0;
+    }
+    .common-main-works-description{
+      color: $white;
+    }
+  }
+}
+
+//main works img
+.main-works-common-img{
+  position: absolute;
+  border-radius: 50%;
+  &::after{
+    position: absolute;
+    content: "";
+    display: block;//afterはデフォルトがインラインになってしまうのでblockにしておく
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    opacity: 1;
+  }
+}
+//main works1-------------------------------------------
+$main-works1-oval-size:530px;
+$main-works1-left:450px;
+$main-works1-top:-12%;
+//work's description
+.main-works-description1{
+  left: 820px;
+  top: 120px;
+  width: 700px;
+}
+//work's image
+.main-works1-img{
+  left: $main-works1-left;
+  top: $main-works1-top;
+  background: url(../img/works_marketas.png) center bottom / cover no-repeat;
+  width: $main-works1-oval-size;
+  height: $main-works1-oval-size;
+  &::after{
+    background: linear-gradient(-208deg, $hover-gradient1 20%, $hover-gradient2 70%);
+  }
+}
+.mainworks1-line-oval{
+  left: $main-works1-left;
+  top: $main-works1-top;
+  width: $main-works1-oval-size;
+  height: $main-works1-oval-size;
+  z-index: 500;
+}
+//main works2-------------------------------------------
+$main-works2-oval-size:850px;
+$main-works2-left:1000px;
+$main-works2-bottom:-25%;
+.main-works-description2{
+  left: 900px;
+  bottom: 8%;
+  width: 700px;
+  z-index: 100;
+}
+.main-works2-img{
+  background: url(../img/works_ballet.png) center bottom / cover no-repeat;
+  left: $main-works2-left;
+  bottom: $main-works2-bottom;
+  width: $main-works2-oval-size;
+  height: $main-works2-oval-size;
+  &::after{
+    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+  }
+}
+.mainworks2-line-oval{
+  left: $main-works2-left;
+  bottom: $main-works2-bottom;
+  width: $main-works2-oval-size;
+  height: $main-works2-oval-size;
+  z-index: 99;
+}
+
+//main works3-------------------------------------------
+$main-works3-oval-size:1155px;
+$main-works3-left:2000px;
+$main-works3-top:-10%;
+.main-works-description3{
+  left: 2600px;
+  bottom: 30%;
+  width: 700px;
+  z-index: 1200;
+  .works-headding{
+    font-size: 8rem;
+  }
+}
+.main-works3-img{
+  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  left: $main-works3-left;
+  top: $main-works3-top;
+  width: $main-works3-oval-size;
+  height: $main-works3-oval-size;
+  &::after{
+    background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+  }
+}
+.mainworks3-line-oval{
+  left: $main-works3-left;
+  top: $main-works3-top;
+  width: $main-works3-oval-size;
+  height: $main-works3-oval-size;
+  z-index: 1000;
+}
+//main works4-------------------------------------------
+$main-works4-oval-size:630px;
+.main-works-description4{
+  left: 3200px;
+  top: 4%;
+  width: 700px;
+}
+.main-works4-img{
+  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  left: 3400px;
+  top: -10%;
+  width: $main-works4-oval-size;
+  height: $main-works4-oval-size;
+  &::after{
+    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+  }
+}
+.mainworks4-line-oval{
+  left: 3400px;
+  top: -10%;
+  width: $main-works4-oval-size;
+  height: $main-works4-oval-size;
+  z-index: 50;
+}
+//main works5-------------------------------------------
+$main-works5-oval-size:500px;
+.main-works-description5{
+  left: 3850px;
+  bottom: 8%;
+  width: 700px;
+  z-index: 150;
+}
+.main-works5-img{
+  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  left: 3600px;
+  bottom: -10%;
+  width: $main-works5-oval-size;
+  height: $main-works5-oval-size;
+  z-index: 100;
+  &::after{
+    background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+  }
+}
+.mainworks5-line-oval{
+  left: 3600px;
+  bottom: -10%;
+  width: $main-works5-oval-size;
+  height: $main-works5-oval-size;
+  z-index: 150;
+}
+//main works6-------------------------------------------
+$main-works6-oval-size:850px;
+.main-works-description6{
+  left: 4240px;
+  top: 20%;
+  width: 700px;
+  z-index: 50;
+}
+.main-works6-img{
+  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  left: 4400px;
+  top: -15%;
+  z-index: 50;
+  width: $main-works6-oval-size;
+  height: $main-works6-oval-size;
+  &::after{
+    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+  }
+}
+.mainworks6-line-oval{
+  left: 4400px;
+  top: -15%;
+  width: $main-works6-oval-size;
+  height: $main-works6-oval-size;
+  z-index: 80;
+}
+//------------------------------------------------------
+// other projects
+//------------------------------------------------------
+.other-projects-headding{
+  position: absolute;
+  left: 5180px;
+  top: 35%;
+  width: 1000px;
+  opacity: 0.6;
+  font-family: PetitFormalScript-Regular, serif;
+  font-weight: 300;
+  font-size: 10.0rem;
+  color: $white;
+  letter-spacing: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+.other-works-description{
+  opacity: 0;
+  text-align: center;
+}
+.common-other-works-img:hover + .other-works-description {
+  opacity: 1;
+  transition: all .5s ease 0s;
+}
+.other-works-animation{
+  opacity: 0;
+  transition: all .5s ease 0s;
+  pointer-events: none;
+}
+
+.common-other-works-img{
+  &::after{
+    content: "";
+    transition: all .5s ease 0s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &:hover{
+    &::after{
+      transition: all .5s ease 0s;
+      opacity: 0.5;
+      background: rgb(0, 0, 0);
+    }
+  }
+}
+.other-works-radius{
+  border-radius: 50%;
+}
+
+//other works1-------------------------------------------
+$other-works1-oval-size:450px;
+.other-works-description1{
+  color: $white;
+  position: absolute;
+  left: 5175px;
+  bottom: 6%;
+  width: 300px;
+  z-index: 1000;
+}
+.other-works1-img{
+  opacity: 0.8;
+  position: absolute;
+  left: 5100px;
+  bottom: -8%;
+  z-index: 200;
+  & > img{
+    width: $other-works1-oval-size;
+    height: $other-works1-oval-size;
+    display: block;
+  }
+}
+.other-works1-line-oval{
+  width: $other-works1-oval-size;
+  height: $other-works1-oval-size;
+  left: 5100px;
+  bottom: -8%;
+  z-index: 300;
+}
+//other works2-------------------------------------------
+$other-works2-oval-size:800px;
+.other-works-description2{
+  color: $white;
+  position: absolute;
+  left: 5565px;
+  top: 1%;
+  width: 435px;
+  z-index: 210;
+}
+.other-works2-img{
+  opacity: 0.8;
+  position: absolute;
+  left: 5380px;
+  top: -45%;
+  z-index: 200;
+  & > img{
+    width: $other-works2-oval-size;
+    height: $other-works2-oval-size;
+    display: block;
+  }
+}
+.other-works2-line-oval{
+  width: $other-works2-oval-size;
+  height: $other-works2-oval-size;
+  left: 5380px;
+  top: -45%;
+  z-index: 250;
+}
+//other works3-------------------------------------------
+$other-works3-oval-size:400px;
+.other-works-description3{
+  color: $white;
+  position: absolute;
+  left: 5900px;
+  bottom: 13%;
+  width: 300px;
+  z-index: 500;
+}
+.other-works3-img{
+  position: absolute;
+  opacity: 0.8;
+  left: 5850px;
+  bottom: 5%;
+  z-index: 200;
+  & > img{
+    width: $other-works3-oval-size;
+    height: $other-works3-oval-size;
+    display: block;
+  }
+}
+.other-works3-line-oval{
+  width: $other-works3-oval-size;
+  height: $other-works3-oval-size;
+  left: 5850px;
+  bottom: 5%;
+  z-index: 250;
+}
+//other works4-------------------------------------------
+$other-works4-oval-size:470px;
+.other-works-description4{
+  color: $white;
+  position: absolute;
+  left: 6080px;
+  bottom: 42%;
+  width: 300px;
+  z-index: 500;
+}
+.other-works4-img{
+  opacity: 0.8;
+  position: absolute;
+  left: 6000px;
+  bottom: 30%;
+  z-index: 500;
+  & > img{
+    width: $other-works4-oval-size;
+    height: $other-works4-oval-size;
+    display: block;
+  }
+}
+.other-works4-line-oval{
+  width: $other-works4-oval-size;
+  height: $other-works4-oval-size;
+  left: 6000px;
+  bottom: 30%;
+  z-index: 600;
+}
+//other works5-------------------------------------------
+$other-works5-oval-size:350px;
+.other-works-description5{
+  color: $white;
+  position: absolute;
+  left: 6365px;
+  top: -4%;
+  width: 220px;
+  z-index: 1000;
+}
+.other-works5-img{
+  opacity: 0.8;
+  position: absolute;
+  left: 6300px;
+  top: -15%;
+  z-index: 600;
+  & > img{
+    width: $other-works5-oval-size;
+    height: $other-works5-oval-size;
+    display: block;
+  }
+}
+.other-works5-line-oval{
+  width: $other-works5-oval-size;
+  height: $other-works5-oval-size;
+  left: 6300px;
+  top: -15%;
+  z-index: 650;
+}
+.words{
+  .works-headding{
+    position: absolute;
+    left: 1600px;
+    top: 12%;
+    width: 950px;
+    opacity: 0.3;
+    font-family: PetitFormalScript-Regular, serif;
+    font-weight: 300;
+    font-size: 13.0rem;
+    color: $white;
+    letter-spacing: 0;
+    z-index: 1000;
+    pointer-events: none;
+  }
+}
+.closed-projects{
+  pointer-events: none;
+  position: absolute;
+  left: 6400px;
+  bottom: 10%;
+  width: 500px;
+  color: $white;
+  text-align: center;
+  z-index: 1000;
+  .works-headding-closed{
+    opacity: 1;
+    font-family: PetitFormalScript-Regular, serif;
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: (94/60);
+  }
+}
+.closed-projects-button{
+  font-size: 1.6rem;
+  color: $white;
+  padding: 16px 40px;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid $white;
+}
+
+// =====================================================
+// media screen max-height960px
+// =====================================================
+@media screen and (max-height: 960px) {
+  .main-works-description1{
+    top: 8%;
+  }
+  //main works2-------------------------------------------
+  $main-works2-oval-size:800px;
+  .main-works2-img{
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+    }
+  .mainworks2-line-oval{
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  //main works3-------------------------------------------
+  .main-works-description3{
+    width: 620px;
+  }
+  //main works5-------------------------------------------
+  $main-works5-oval-size:450px;
+  .main-works-description5{
+    width: 600px;
+  }
+  .main-works5-img{
+    width: $main-works5-oval-size;
+    height: $main-works5-oval-size;
+  }
+  .mainworks5-line-oval{
+    width: $main-works5-oval-size;
+    height: $main-works5-oval-size;
+  }
+
+  //other projects headding-------------------------------------------
+  .other-projects-headding{
+    top: 30%;
+    font-size: 10.0rem;
+  }
+  //other works1-------------------------------------------
+  .other-works1-img{
+    bottom: -10%;
+  }
+  .other-works1-line-oval{
+    bottom: -10%;
+  }
+  .other-works-description1{
+    bottom: 7%;
+  }
+}
+
+// =====================================================
+// media screen max-height960px
+// =====================================================
+@media screen and (max-height: 900px) {
+  //main works1-------------------------------------------
+  $main-works1-oval-size:530px;
+  //work's description
+  .main-works-description1{
+    left: 550px;
+    top: 0px;
+    width: 700px;
+  }
+  //work's image
+  .main-works1-img{
+    left: 350px;
+    top: -15%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  .mainworks1-line-oval{
+    left: 350px;
+    top: -15%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  //main works4-------------------------------------------
+  $main-works4-oval-size:630px;
+  .main-works-description4{
+    left: 3400px;
+  }
+  .main-works4-img{
+    left: 3170px;
+    top: -15%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  .mainworks4-line-oval{
+    left: 3170px;
+    top: -15%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  //main works4-------------------------------------------
+  .other-works-description4{
+    bottom: 46%;
+  }
+  //other projects headding-------------------------------------------
+  .other-projects-headding{
+    top: 32%;
+    font-size: 10.0rem;
+  }
+  .closed-projects{
+    bottom: 15%;
+  }
+}
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  //works section main headding
+  .works-content-description{
+    width: 600px;
+  }
+  .works-section-headding{
+    font-size: 7.5rem;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .works-headding{
+    font-size: 5.2rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0.4em 0;
+  }
+  .words .works-headding{
+    font-size: 11.0rem;
+  }
+  //main works1-------------------------------------------
+  $main-works1-oval-size:500px;
+  //work's description
+  .main-works-description1{
+    left: 500px;
+    top: -14px;
+    width: 500px;
+  }
+  //work's image
+  .main-works1-img{
+    left: 200px;
+    top: -15%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  .mainworks1-line-oval{
+    left: 200px;
+    top: -15%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  //main works2-------------------------------------------
+  $main-works2-oval-size:800px;
+  .main-works-description2{
+    left: 900px;
+    bottom: 8%;
+    width: 700px;
+  }
+  .main-works2-img{
+    left: 1000px;
+    bottom: -25%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  .mainworks2-line-oval{
+    left: 1000px;
+    bottom: -25%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  //main works3-------------------------------------------
+  $main-works3-oval-size:1000px;
+  .main-works-description3{
+    left: 2500px;
+    bottom: 30%;
+    width: 550px;
+  }
+  .main-works3-img{
+    left: 1950px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  .mainworks3-line-oval{
+    left: 1950px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  //main works4-------------------------------------------
+  $main-works4-oval-size:630px;
+  .main-works-description4{
+    left: 3300px;
+    top: 4%;
+    width: 700px;
+  }
+  .main-works4-img{
+    left: 3070px;
+    top: -10%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  .mainworks4-line-oval{
+    left: 3070px;
+    top: -10%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  //main works5-------------------------------------------
+  $main-works5-oval-size:500px;
+  .main-works-description5{
+    left: 3800px;
+  }
+  .main-works5-img{
+    left: 3650px;
+  }
+  .mainworks5-line-oval{
+    left: 3650px;
+  }
+  //other works1------------------------------------------
+  .other-works-description1{
+    bottom: 10%;
+  }
+  //other works3-------------------------------------------
+  $other-works3-oval-size:400px;
+  .other-works-description3{
+    left: 5900px;
+    bottom: 8%;
+  }
+  .other-works3-img{
+    bottom: -10%;
+  }
+  .other-works3-line-oval{
+    bottom: -10%;
+  }
+  //other works4-------------------------------------------
+  $other-works4-oval-size:470px;
+  .other-works-description4{
+    left: 6030px;
+    bottom: 47%;
+  }
+  .other-works4-img{
+    left: 5950px;
+
+  }
+  .other-works4-line-oval{
+    width: $other-works4-oval-size;
+    height: $other-works4-oval-size;
+    left: 5950px;
+    bottom: 30%;
+  }
+  //closed-projects-------------------------------------------
+  .works-headding-closed{
+    margin-top: 0;
+  }
+  .closed-projects{
+    bottom: 15%;
+  }
+}
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  //works section main headding
+  .works-content-description{
+    width: 600px;
+  }
+  .works-section-headding{
+    font-size: 7.0rem;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .works-headding{
+    font-size: 5.4rem;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  //main works1-------------------------------------------
+  $main-works1-oval-size:450px;
+  //work's description
+  .main-works-description1{
+    left: 270px;
+    top: -40px;
+    width: 500px;
+  }
+  //work's image
+  .main-works1-img{
+    left: 120px;
+    top: -20%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  .mainworks1-line-oval{
+    left: 120px;
+    top: -20%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  //main works2-------------------------------------------
+  $main-works2-oval-size:800px;
+  .main-works-description2{
+    left: 720px;
+    bottom: 8%;
+    width: 700px;
+  }
+  .main-works2-img{
+    left: 800px;
+    bottom: -25%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  .mainworks2-line-oval{
+    left: 800px;
+    bottom: -25%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  //main works3-------------------------------------------
+  $main-works3-oval-size:800px;
+  .main-works-description3{
+    left: 2100px;
+    width: 550px;
+    bottom: 15%;
+  }
+  .main-works3-img{
+    left: 1750px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  .mainworks3-line-oval{
+    left: 1750px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  //main works4-------------------------------------------
+  $main-works4-oval-size:580px;
+  .main-works-description4{
+    left: 2800px;
+    top: 2%;
+    width: 480px;
+  }
+  .main-works4-img{
+    left: 2600px;
+    top: -20%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  .mainworks4-line-oval{
+    left: 2600px;
+    top: -20%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  //main works5-------------------------------------------
+  $main-works5-oval-size:500px;
+  .main-works-description5{
+    left: 3400px;
+    width: 450px;
+  }
+  .main-works5-img{
+    left: 3200px;
+  }
+  .mainworks5-line-oval{
+    left: 3200px;
+  }
+  //main works6-------------------------------------------
+  $main-works6-oval-size:850px;
+  .main-works-description6{
+    left: 4250px;
+    top: 8%;
+    width: 600px;
+  }
+  .main-works6-img{
+    left: 3900px;
+    top: -15%;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  .mainworks6-line-oval{
+    left: 3900px;
+    top: -15%;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  //other projects headding-------------------------------------------
+  .other-projects-headding{
+    top: 25%;
+    left: 4900px;
+    font-size: 9.0rem;
+  }
+  //other works1-------------------------------------------
+  .other-works-description1{
+    left: 4920px;
+    bottom: 12%;
+    width: 300px;
+  }
+  .other-works1-img{
+    left: 4840px;
+    bottom: -10%;
+  }
+  .other-works1-line-oval{
+    left: 4840px;
+    bottom: -10%;
+  }
+  //other works2-------------------------------------------
+  $other-works2-oval-size:700px;
+  .other-works-description2{
+    left: 5230px;
+    top: 5%;
+    width: 435px;
+  }
+  .other-works2-img{
+    left: 5100px;
+    top: -45%;
+    & > img{
+      width: $other-works2-oval-size;
+      height: $other-works2-oval-size;
+    }
+  }
+  .other-works2-line-oval{
+    width: $other-works2-oval-size;
+    height: $other-works2-oval-size;
+    left: 5100px;
+    top: -45%;
+  }
+  //other works3-------------------------------------------
+  $other-works3-oval-size:400px;
+  .other-works-description3{
+    left: 5775px;
+    bottom: 8%;
+  }
+  .other-works3-img{
+    left: 5720px;
+    bottom: -10%;
+  }
+  .other-works3-line-oval{
+    left: 5720px;
+    bottom: -10%;
+  }
+  //other works4-------------------------------------------
+  $other-works4-oval-size:470px;
+  .other-works-description4{
+    left: 5938px;
+    bottom: 55%;
+  }
+  .other-works4-img{
+    left: 5850px;
+    bottom: 35%;
+  }
+  .other-works4-line-oval{
+    width: $other-works4-oval-size;
+    height: $other-works4-oval-size;
+    left: 5850px;
+    bottom: 35%;
+  }
+  //other works5-------------------------------------------
+  $other-works5-oval-size:350px;
+  .other-works-description5{
+    left: 6267px;
+    top: 41%;
+    width: 220px;
+  }
+  .other-works5-img{
+    left: 6200px;
+    top: 28%;
+    & > img{
+      width: $other-works5-oval-size;
+      height: $other-works5-oval-size;
+    }
+  }
+  .other-works5-line-oval{
+    width: $other-works5-oval-size;
+    height: $other-works5-oval-size;
+    left: 6200px;
+    top: 28%;
+  }
+  //closed projects-------------------------------------------
+  .closed-projects{
+    bottom: 16%;
+    left: 6612px;
+    width: 350px;
+    .works-headding-closed{
+      line-height: 1.2;
+    }
+  }
+  .words .works-headding{
+    left: 1410px;
+    font-size: 10.0rem;
+    width: 750px;
+  }
+}
+
+// =====================================================
+// media screen max-height600px,max-height: 1000px
+// =====================================================
+@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+  .works{
+    left: 1840px;
+    border-radius: 50px 50px 0 0;
+  }
+  .works-section-headding {
+    font-size: 6.0rem;
+    margin-bottom: 15px;
+  }
+  .works-headding{
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+  }
+  //main works1-------------------------------------------
+  $main-works1-oval-size:400px;
+  //work's description
+  .main-works-description1{
+    left: 250px;
+    top: -20px;
+    width: 450px;
+  }
+  //work's image
+  .main-works1-img{
+    left: 120px;
+    top: -25%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  .mainworks1-line-oval{
+    left: 120px;
+    top: -25%;
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  //main works2-------------------------------------------
+  $main-works2-oval-size:570px;
+  .main-works-description2{
+    left: 720px;
+    bottom: 8%;
+    width: 550px;
+  }
+  .main-works2-img{
+    left: 760px;
+    bottom: -18%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  .mainworks2-line-oval{
+    left: 760px;
+    bottom: -18%;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  //main works3-------------------------------------------
+  $main-works3-oval-size:700px;
+  .main-works-description3{
+    left: 1790px;
+    width: 486px;
+    bottom: 15%;
+    .works-headding {
+      font-size: 5.5rem;
+    }
+  }
+  .main-works3-img{
+    left: 1500px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  .mainworks3-line-oval{
+    left: 1500px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  //main works4-------------------------------------------
+  $main-works4-oval-size:500px;
+  .main-works-description4{
+    left: 2380px;
+    top: 2%;
+    width: 440px;
+  }
+  .main-works4-img{
+    left: 2230px;
+    top: -20%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  .mainworks4-line-oval{
+    left: 2230px;
+    top: -20%;
+    width: $main-works4-oval-size;
+    height: $main-works4-oval-size;
+  }
+  //main works5-------------------------------------------
+  $main-works5-oval-size:420px;
+  .main-works-description5{
+    left: 2960px;
+    width: 400px;
+  }
+  .main-works5-img{
+    left: 2830px;
+  }
+  .mainworks5-line-oval{
+    left: 2830px;
+  }
+  //main works6-------------------------------------------
+  $main-works6-oval-size:750px;
+  .main-works-description6{
+    left: 3740px;
+    top: 8%;
+    width: 470px;
+  }
+  .main-works6-img{
+    left: 3400px;
+    top: -15%;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  .mainworks6-line-oval{
+    left: 3400px;
+    top: -15%;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  .words{
+    .works-headding{
+      left: 1170px;
+      font-size: 8rem;
+      width: 591px;
+      top: 20%;
+    }
+  }
+  //other projects headding-------------------------------------------
+  .other-projects-headding{
+    top: 32%;
+    left: 4250px;
+    line-height: 1.1;
+    font-size: 7.5rem;
+    width: 300px;
+  }
+  //other works1-------------------------------------------
+  $other-works1-oval-size:400px;
+  .other-works-description1{
+    left: 4550px;
+    bottom: 12%;
+    width: 300px;
+  }
+  .other-works1-img{
+    left: 4500px;
+    bottom: -10%;
+    & > img{
+      width: $other-works1-oval-size;
+      height: $other-works1-oval-size;
+    }
+  }
+  .other-works1-line-oval{
+    width: $other-works1-oval-size;
+    height: $other-works1-oval-size;
+    left: 4500px;
+    bottom: -10%;
+  }
+  //other works2-------------------------------------------
+  $other-works2-oval-size:600px;
+  .other-works-description2{
+    left: 4830px;
+    top: 5%;
+    width: 435px;
+  }
+  .other-works2-img{
+    left: 4750px;
+    top: -45%;
+    & > img{
+      width: $other-works2-oval-size;
+      height: $other-works2-oval-size;
+    }
+  }
+  .other-works2-line-oval{
+    width: $other-works2-oval-size;
+    height: $other-works2-oval-size;
+    left: 4750px;
+    top: -45%;
+  }
+  //other works3-------------------------------------------
+  $other-works3-oval-size:350px;
+  .other-works-description3{
+    left: 5370px;
+    bottom: 13%;
+  }
+  .other-works3-img{
+    left: 5320px;
+    bottom: -10%;
+  }
+  .other-works3-line-oval{
+    left: 5320px;
+    bottom: -10%;
+  }
+  //other works4-------------------------------------------
+  $other-works4-oval-size:470px;
+  .other-works-description4{
+    left: 5638px;
+    bottom: 58%;
+  }
+  .other-works4-img{
+    left: 5550px;
+    bottom: 35%;
+  }
+  .other-works4-line-oval{
+    width: $other-works4-oval-size;
+    height: $other-works4-oval-size;
+    left: 5550px;
+    bottom: 35%;
+  }
+  //other works5-------------------------------------------
+  $other-works5-oval-size:300px;
+  .other-works-description5{
+    left: 5880px;
+    top: 49%;
+    width: 220px;
+  }
+  .other-works5-img{
+    left: 5840px;
+    top: 40%;
+    & > img{
+      width: $other-works5-oval-size;
+      height: $other-works5-oval-size;
+    }
+  }
+  .other-works5-line-oval{
+    width: $other-works5-oval-size;
+    height: $other-works5-oval-size;
+    left: 5840px;
+    top: 40%;
+  }
+  //closed projects-------------------------------------------
+  .closed-projects{
+    bottom: 9%;
+    left: 6170px;
+    width: 350px;
+    .works-headding-closed{
+      font-size: 48px;
+    }
+  }
+  .closed-projects-button{
+    font-size: 1.4rem;
+  }
+}
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  .works{
+    position: static;
+  }
+  .works-content-description{
+    position: static;
+  }
+}

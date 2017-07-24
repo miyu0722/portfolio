@@ -1,0 +1,213 @@
+// =====================================================
+// header
+// =====================================================
+.logo{
+  position: fixed;
+  z-index: 2000;
+  left: 40px;
+  top: 50px;
+  }
+header h1{
+  font-size: 10.0rem;
+  font-weight: 300;
+  line-height: (115/110);
+  margin-bottom: 0;
+  span{
+    display: block;
+    font-size: 6.0rem;
+    border-top: 1px solid $primary;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+}
+h2{
+  font-size: 3.0rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+//top page
+.intro{
+  width: 700px;
+  position: absolute;
+  right:10%;
+  bottom: 10%;
+  z-index: 100;
+}
+.header-bg{
+  right:15%;
+  top: -50%;
+  width: 1760px;
+  height: 1760px;
+  background: rgba(243,245,255,0.10);
+  overflow: hidden;
+}
+//mouse scroll down
+@-webkit-keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+@-moz-keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+@keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+ .scroll-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    text-align: center;
+    z-index: 500;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: $primary;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 35px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid $primary;
+  border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    margin: -3px 0 0 -2px;
+    background: $primary;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  .logo {
+    left: 15px;
+    top: 20px;
+  }
+  header h1{
+    font-size: 8.0rem;
+    span{
+      font-size: 4.0rem;
+    }
+  }
+  h2{
+    font-size: 2.0rem;
+  }
+  .intro {
+    width: 550px;
+    right: 5%;
+  }
+  .logo {
+    left: 15px;
+    top: 20px;
+  }
+}
+// =====================================================
+// media screen max-height600px,max-height: 1000px
+// =====================================================
+@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+  .logo {
+    left: 15px;
+    top: 20px;
+    width: 70px;
+    img{
+      width: 100%;
+    }
+  }
+  .intro{
+    bottom: 12%;
+    width: 500px;
+  }
+  header h1{
+    font-size: 7.0rem;
+    line-height: (115/110);
+    span{
+      font-size: 3.0rem;
+      line-height: 1.5;
+      margin-top: 20px;
+    }
+  }
+  h2{
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+  }
+}
+
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  header{
+    height: 100vh;
+    width: 100%;
+    position: static;
+  }
+}

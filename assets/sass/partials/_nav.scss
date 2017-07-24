@@ -1,0 +1,46 @@
+// =====================================================
+// nav
+// =====================================================
+.gnav{
+  align-items: center;
+  background: $bg;
+  color: $primary;
+  font-family: PetitFormalScript-Regular, serif;
+  font-size: 4.0rem;
+  font-weight: 300;
+  height: 100vh;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 1600;
+  ul{
+    width: 100%;
+    li{
+      display: inline-block;
+      margin-bottom: 30px;
+      width: 100%;
+      z-index: 5000;
+    }
+  }
+  a{
+    color: $primary;
+    text-decoration: none;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+.frame{
+  align-items: center;
+  border: 1px solid $primary;
+  border-radius: 20px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.gnav-display{
+  display: none;
+}

@@ -1,0 +1,111 @@
+// =====================================================
+// html & body
+// =====================================================
+html{
+  height: 100%;
+}
+body{
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  line-height: (24/12);
+  background: $bg;
+  color: $primary;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+}
+h1, h2, h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+.container{
+  margin: 0 0 0 0;
+  padding: 30px;
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+}
+
+button{
+  font-family: PetitFormalScript-Regular, serif;
+  font-weight: 300;
+  border-radius: 10px;
+
+}
+
+// =====================================================
+// main & common
+// =====================================================
+.main-container{
+  position: relative;
+  height: 100vh;
+  left: 85%;
+}
+//common oval
+.common-oval{
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.8;
+}
+.common-line-oval{
+  border: 1px solid $primary;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+}
+.common-section-headding{
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 6.4rem;
+}
+//selected
+::selection{
+  background: rgba(255,90,125,.90);
+  color: #eee;
+}
+::-moz-selection{
+  background: rgba(255,90,125,.90);
+  color: #eee;
+}
+// =====================================================
+// media screen max-height800px
+// =====================================================
+@media screen and (max-height: 800px) {
+  .common-section-headding{
+    font-size: 5.0rem;
+  }
+}
+// =====================================================
+// media screen max-height600px,max-height: 1000px
+// =====================================================
+@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+  body{
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 20px;
+  }
+  .common-section-headding{
+    font-size: 4.0rem;
+  }
+}
+
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  .container{
+    position: static;
+    overflow-y: initial;
+    flex-direction: column;
+    height: initial;
+    width: 100%;
+  }
+  .main-container{
+    position: static;
+    height: 100vh;
+    width: 100%;
+  }
+}
