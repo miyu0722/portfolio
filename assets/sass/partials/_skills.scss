@@ -5,7 +5,7 @@
  position: absolute;
  left: 230px;
  margin-top: 10vh;
- width: 900px;
+ width: 865px;
 }
 //graphs
 .application-graph{
@@ -36,8 +36,15 @@
 }
 .myskills{
  p{
-   width: 800px;
+   width: 750px;
    margin-bottom: 50px;
+ }
+ .chart.donut{
+   width: 100px;
+   height: 100px;
+ }
+ .donut-chart h2 span{
+   font-size: 12px;
  }
 }
 
@@ -99,9 +106,9 @@
 }
 
 // =====================================================
-// media screen max-height600px,max-height: 1000px
+// media screen max-height600px
 // =====================================================
-@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+@media screen and (max-height: 600px){
   .about{
    margin-top: 0vh;
   }

@@ -41,9 +41,9 @@
 }
 
 // =====================================================
-// media screen max-height600px,max-height: 1000px
+// media screen max-height600px
 // =====================================================
-@media screen and (max-height: 600px), (max-height: 1000px) and (max-width:800px) {
+@media screen and (max-height: 600px){
   .career{
     left: 120%;
     top: 0vh;
