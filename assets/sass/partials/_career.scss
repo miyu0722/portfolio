@@ -11,7 +11,7 @@
 .career-hedding{
   font-size: 2.4rem;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
 }
 .career-description{
   dt{
@@ -58,9 +58,87 @@
 // =====================================================
 @media screen and (max-width: 800px) {
   .about{
-    position: static;
+    position: relative;
+    padding: 34px;
+    left: 0;
   }
   .career{
     position: static;
+    width: 75%;
+    margin-top: 150px;
+    margin-left: 25%;
+    margin-bottom: 280px;
+  }
+}
+// =====================================================
+// media screen max-width670px
+// =====================================================
+@media screen and (max-width: 670px) {
+  .career {
+    margin-left: 20%;
+    margin-top: 190px;
+  }
+}
+
+// =====================================================
+// media screen max-width620px
+// =====================================================
+@media screen and (max-width: 620px) {
+  .career{
+    position: static;
+    width: 91%;
+    margin-top: 190px;
+    margin-left: 5%;
+    margin-bottom: 280px;
+  }
+}
+
+// =====================================================
+// media screen max-width590px
+// =====================================================
+@media screen and (max-width: 590px) {
+  .career {
+    margin-top: 180px;
+  }
+}
+
+// =====================================================
+// media screen max-width503px
+// =====================================================
+@media screen and (max-width: 503px) {
+  .career {
+    margin-top: 150px;
+    margin-bottom: 180px;
+  }
+}
+
+// =====================================================
+// media screen max-width400px
+// =====================================================
+@media screen and (max-width: 400px) {
+  .career {
+    margin-top: 150px;
+  }
+  .about{
+    padding: 20px;
+  }
+}
+// =====================================================
+// media screen max-width380px
+// =====================================================
+@media screen and (max-width: 380px) {
+  .career {
+    margin-top: 250px;
+  }
+  .about{
+    padding: 20px;
+  }
+}
+// =====================================================
+// media screen max-width370px
+// =====================================================
+@media screen and (max-width: 370px) {
+  .about {
+    padding: 20px;
   }
 }

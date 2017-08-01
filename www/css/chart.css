@@ -181,9 +181,9 @@
   -moz-transform: rotate(0deg);
   transform: rotate(0deg);
 
-  -webkit-animation: rotateDonut 0.3s ease-in-out;
-  -moz-animation: rotateDonut 0.3s ease-in-out;
-  animation: rotateDonut 0.3s ease-in-out;
+  -webkit-animation: rotateDonut 1s ease-in-out;
+  -moz-animation: rotateDonut 1s ease-in-out;
+  animation: rotateDonut 1s ease-in-out;
 
   -webkit-transition: all 160ms ease-in-out;
   -moz-transition: all 160ms ease-in-out;

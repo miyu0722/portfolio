@@ -7,7 +7,7 @@
   left: 1990px;
   padding: 80px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 100px 100px 0 0;
+  border-radius: 50px 50px 0 0;
   width: 6000px;
   height: 100vh;
 }
@@ -248,7 +248,7 @@ $main-works6-oval-size:850px;
   top: 35%;
   width: 1000px;
   opacity: 0.6;
-  font-family: PetitFormalScript-Regular, serif;
+  font-family: 'Petit Formal Script', serif;
   font-weight: 300;
   font-size: 10.0rem;
   color: $white;
@@ -446,7 +446,7 @@ $other-works5-oval-size:350px;
     top: 12%;
     width: 950px;
     opacity: 0.3;
-    font-family: PetitFormalScript-Regular, serif;
+    font-family: 'Petit Formal Script', serif;
     font-weight: 300;
     font-size: 13.0rem;
     color: $white;
@@ -464,9 +464,13 @@ $other-works5-oval-size:350px;
   color: $white;
   text-align: center;
   z-index: 1000;
+  opacity: 0;
+  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
   .works-headding-closed{
     opacity: 1;
-    font-family: PetitFormalScript-Regular, serif;
+    font-family: 'Petit Formal Script', serif;
     font-size: 55px;
     font-weight: 300;
     letter-spacing: 0;
@@ -976,128 +980,157 @@ $other-works5-oval-size:350px;
 }
 
 // =====================================================
-// media screen max-height600px
+// media screen max-width800px
 // =====================================================
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 800px) {
   .works{
-    left: 1840px;
-    border-radius: 50px 50px 0 0;
-  }
-  .works-section-headding {
-    font-size: 6.0rem;
-    margin-bottom: 15px;
+    padding: 50px 40px;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 3520px;
+    border-radius: 0 30px 30px 0;
+    margin-right: 34px;
+    width: auto;
   }
   .works-headding{
-    font-size: 4.5rem;
-    margin-bottom: 15px;
+    font-size: 5.0rem;
+  }
+  .works-content-description{
+    border-left: none;
+    padding-left: 0;
+    position: static;
+    width: 95%;
+  }
+  .works-section-headding{
+    font-size: 6.5rem;
+    margin-bottom: 25px;
   }
   //main works1-------------------------------------------
-  $main-works1-oval-size:400px;
+  $main-works1-oval-size:500px;
   //work's description
   .main-works-description1{
-    left: 250px;
-    top: -20px;
-    width: 450px;
+    left: 30%;
+    top: 330px;
+    width: 65%;
   }
   //work's image
   .main-works1-img{
-    left: 120px;
-    top: -25%;
+    left: -3%;
+    top: 260px;
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
   .mainworks1-line-oval{
-    left: 120px;
-    top: -25%;
+    left: -3%;
+    top: 260px;
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
   //main works2-------------------------------------------
-  $main-works2-oval-size:570px;
+  $main-works2-oval-size:700px;
   .main-works-description2{
-    left: 720px;
-    bottom: 8%;
-    width: 550px;
+    left: 5%;
+    top: 890px;
+    width: 70%;
   }
   .main-works2-img{
-    left: 760px;
-    bottom: -18%;
+    left: auto;
+    right: -10%;
+    top: 750px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
   }
   .mainworks2-line-oval{
-    left: 760px;
-    bottom: -18%;
+    left: auto;
+    right: -10%;
+    top: 750px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
   }
   //main works3-------------------------------------------
-  $main-works3-oval-size:700px;
+  $main-works3-oval-size:550px;
   .main-works-description3{
-    left: 1790px;
-    width: 486px;
-    bottom: 15%;
+    left: auto;
+    width: 65%;
+    top: 1600px;
+    right: 3%;
     .works-headding {
-      font-size: 5.5rem;
+      font-size: 5.0rem;
     }
   }
   .main-works3-img{
-    left: 1500px;
+    left: -5%;
+    top: 1460px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
   .mainworks3-line-oval{
-    left: 1500px;
+    left: -5%;
+    top: 1460px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
+  .words .works-headding{
+    display: none;
+  }
   //main works4-------------------------------------------
-  $main-works4-oval-size:500px;
+  $main-works4-oval-size:450px;
   .main-works-description4{
-    left: 2380px;
-    top: 2%;
-    width: 440px;
+    left: 5%;
+    top: 2120px;
+    width: 60%;
   }
   .main-works4-img{
-    left: 2230px;
-    top: -20%;
+    left: auto;
+    top: 2020px;
+    right: 3%;
     width: $main-works4-oval-size;
     height: $main-works4-oval-size;
   }
   .mainworks4-line-oval{
-    left: 2230px;
-    top: -20%;
+    left: auto;
+    top: 2020px;
+    right: 3%;
     width: $main-works4-oval-size;
     height: $main-works4-oval-size;
   }
   //main works5-------------------------------------------
-  $main-works5-oval-size:420px;
+  $main-works5-oval-size:400px;
   .main-works-description5{
-    left: 2960px;
-    width: 400px;
+    left: auto;
+    top: 2480px;
+    width: 60%;
+    right: 5%;
   }
   .main-works5-img{
-    left: 2830px;
+    left: 3%;
+    top: 2430px;
+    width: $main-works5-oval-size;
+    height: $main-works5-oval-size;
   }
   .mainworks5-line-oval{
-    left: 2830px;
+    left: 3%;
+    top: 2430px;
+    width: $main-works5-oval-size;
+    height: $main-works5-oval-size;
   }
   //main works6-------------------------------------------
-  $main-works6-oval-size:750px;
+  $main-works6-oval-size:600px;
   .main-works-description6{
-    left: 3740px;
-    top: 8%;
-    width: 470px;
+    left: 5%;
+    top: 2995px;
+    width: 60%;
   }
   .main-works6-img{
-    left: 3400px;
-    top: -15%;
+    left: 23%;
+    top: 2840px;
     width: $main-works6-oval-size;
     height: $main-works6-oval-size;
   }
   .mainworks6-line-oval{
-    left: 3400px;
-    top: -15%;
+    left: 23%;
+    top: 2840px;
     width: $main-works6-oval-size;
     height: $main-works6-oval-size;
   }
@@ -1109,130 +1142,330 @@ $other-works5-oval-size:350px;
       top: 20%;
     }
   }
-  //other projects headding-------------------------------------------
-  .other-projects-headding{
-    top: 32%;
-    left: 4250px;
-    line-height: 1.1;
-    font-size: 7.5rem;
-    width: 300px;
+  .other-projects{
+    display: none;
   }
-  //other works1-------------------------------------------
-  $other-works1-oval-size:400px;
-  .other-works-description1{
-    left: 4550px;
-    bottom: 12%;
-    width: 300px;
+}
+
+// =====================================================
+// media screen max-width720px
+// =====================================================
+@media screen and (max-width: 720px) {
+  .main-works5-img {
+    top: 2460px;
   }
-  .other-works1-img{
-    left: 4500px;
-    bottom: -10%;
-    & > img{
-      width: $other-works1-oval-size;
-      height: $other-works1-oval-size;
-    }
+}
+
+// =====================================================
+// media screen max-width700px
+// =====================================================
+@media screen and (max-width: 700px) {
+  //main works2-------------------------------------------
+  $main-works2-oval-size:650px;
+  .main-works-description2{
+    left: 5%;
+    top: 1070px;
   }
-  .other-works1-line-oval{
-    width: $other-works1-oval-size;
-    height: $other-works1-oval-size;
-    left: 4500px;
-    bottom: -10%;
+  .main-works2-img{
+    left: auto;
+    right: -10%;
+    top: 780px;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
   }
-  //other works2-------------------------------------------
-  $other-works2-oval-size:600px;
-  .other-works-description2{
-    left: 4830px;
-    top: 5%;
-    width: 435px;
+  .mainworks2-line-oval{
+    left: auto;
+    right: -10%;
+    top: 780px;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
   }
-  .other-works2-img{
-    left: 4750px;
-    top: -45%;
-    & > img{
-      width: $other-works2-oval-size;
-      height: $other-works2-oval-size;
-    }
-  }
-  .other-works2-line-oval{
-    width: $other-works2-oval-size;
-    height: $other-works2-oval-size;
-    left: 4750px;
-    top: -45%;
-  }
-  //other works3-------------------------------------------
-  $other-works3-oval-size:350px;
-  .other-works-description3{
-    left: 5370px;
-    bottom: 13%;
-  }
-  .other-works3-img{
-    left: 5320px;
-    bottom: -10%;
-  }
-  .other-works3-line-oval{
-    left: 5320px;
-    bottom: -10%;
-  }
-  //other works4-------------------------------------------
-  $other-works4-oval-size:470px;
-  .other-works-description4{
-    left: 5638px;
-    bottom: 58%;
-  }
-  .other-works4-img{
-    left: 5550px;
-    bottom: 35%;
-  }
-  .other-works4-line-oval{
-    width: $other-works4-oval-size;
-    height: $other-works4-oval-size;
-    left: 5550px;
-    bottom: 35%;
-  }
-  //other works5-------------------------------------------
-  $other-works5-oval-size:300px;
-  .other-works-description5{
-    left: 5880px;
-    top: 49%;
-    width: 220px;
-  }
-  .other-works5-img{
-    left: 5840px;
-    top: 40%;
-    & > img{
-      width: $other-works5-oval-size;
-      height: $other-works5-oval-size;
-    }
-  }
-  .other-works5-line-oval{
-    width: $other-works5-oval-size;
-    height: $other-works5-oval-size;
-    left: 5840px;
-    top: 40%;
-  }
-  //closed projects-------------------------------------------
-  .closed-projects{
-    bottom: 9%;
-    left: 6170px;
-    width: 350px;
-    .works-headding-closed{
-      font-size: 48px;
-    }
-  }
-  .closed-projects-button{
-    font-size: 1.4rem;
+  .main-works-description4 {
+    top: 2100px;
   }
 }
 // =====================================================
-// media screen max-width800px
+// media screen max-width650px
 // =====================================================
-@media screen and (max-width: 800px) {
-  .works{
-    position: static;
-    left: 0;
-    width: 91vw;
+@media screen and (max-width: 650px) {
+  //main works5-------------------------------------------
+  $main-works5-oval-size:370px;
+  .main-works5-img {
+    top: 2485px;
+    width: $main-works5-oval-size;
+    height: $main-works5-oval-size;
   }
-  .works-content-description{
-    position: static;
+}
+
+// =====================================================
+// media screen max-width600px
+// =====================================================
+@media screen and (max-width: 600px) {
+  .main-works3-img{
+    top: 1453px;
+  }
+  .main-works5-img {
+    top: 2490px;
+  }
+  .main-works6-img{
+    top: 2900px;
+  }
+}
+
+// =====================================================
+// media screen max-width550px
+// =====================================================
+@media screen and (max-width: 550px) {
+  .works-section-headding {
+    font-size: 5.0rem;
+  }
+  .main-works3-img {
+    left: 3%;
+  }
+  .main-works-description4 {
+    top: 2079px;
+  }
+  .main-works-description5{
+    width: 68%;
+    top: 2503px;
+  }
+  .main-works5-img {
+    top: 2520px;
+}
+  .main-works-description6{
+    width: 80%;
+  }
+}
+// =====================================================
+// media screen max-width503px
+// =====================================================
+@media screen and (max-width: 503px) {
+  //main works1-------------------------------------------
+  $main-works1-oval-size:450px;
+  //work's description
+  .main-works-description1{
+    left: 20%;
+    top: 320px;
+    width: 70%;
+  }
+  //work's image
+  .main-works1-img{
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  .mainworks1-line-oval{
+    width: $main-works1-oval-size;
+    height: $main-works1-oval-size;
+  }
+  //main works2-------------------------------------------
+  .main-works-description2 {
+    left: 5%;
+    top: 960px;
+}
+  //main works6-------------------------------------------
+  $main-works6-oval-size:550px;
+  .main-works-description6{
+    top: 3100px;
+  }
+  .main-works6-img{
+    left: 4%;
+    top: 2970px;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  .mainworks6-line-oval{
+    left: 4%;
+    top: 2970px;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+}
+// =====================================================
+// media screen max-width460px
+// =====================================================
+@media screen and (max-width: 460px) {
+  .works-headding{
+    font-size: 4.5rem;
+    margin: 0.5em 0;
+  }
+  //main works1-------------------------------------------
+  //work's description
+  .main-works-description1{
+    top: 330px;
+    width: 80%;
+  }
+  //main works2-------------------------------------------
+  .main-works-description2 {
+    width: 80%;
+  }
+  //main works3-------------------------------------------
+  .main-works-description3 {
+    width: 75%;
+  }
+  //main works4-------------------------------------------
+  .main-works-description4 {
+    left: 5%;
+    top: 2110px;
+    width: 90%;
+  }
+  //main works5-------------------------------------------
+  .main-works-description5 {
+    width: 80%;
+    top: 2575px;
+  }
+}
+
+// =====================================================
+// media screen max-width431px
+// =====================================================
+@media screen and (max-width: 431px) {
+  .works-content-description {
+    width: 100%;
+  }
+  .main-works1-img {
+    top: 270px;
+  }
+  .main-works-description6 {
+    width: 90%;
+  }
+}
+
+// =====================================================
+// media screen max-width415px
+// =====================================================
+@media screen and (max-width: 415px) {
+  .main-works1-img {
+    top: 310px;
+  }
+  .main-works-description1 {
+    top: 350px;
+  }
+}
+
+// =====================================================
+// media screen max-width400px
+// =====================================================
+@media screen and (max-width: 400px) {
+  .works{
+    padding: 40px 20px;
+    margin-right: 20px;
+  }
+  .main-works1-img {
+    top: 260px;
+  }
+  .main-works-description1 {
+    top: 300px;
+  }
+  .main-works2-img {
+    right: -40%;
+  }
+  .works-section-headding {
+    font-size: 4.5rem;
+  }
+  .main-works-description5 {
+    width: 90%;
+    top: 2596px;
+  }
+  .main-works5-img {
+    top: 2570px;
+  }
+}
+
+// =====================================================
+// media screen max-width382px
+// =====================================================
+@media screen and (max-width: 382px) {
+  .works-section-headding {
+    font-size: 4.0rem;
+    line-height: 1.1;
+  }
+  //main works1-------------------------------------------
+  .main-works1-img {
+    top: 340px;
+  }
+  .main-works-description1 {
+    left: 10%;
+    top: 385px;
+    width: 90%;
+  }
+  //main works2-------------------------------------------
+  $main-works2-oval-size:600px;
+  .main-works-description2{
+    top: 940px;
+    width: 90%;
+  }
+  .main-works2-img{
+    top: 820px;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  .mainworks2-line-oval{
+    top: 820px;
+    width: $main-works2-oval-size;
+    height: $main-works2-oval-size;
+  }
+  .main-works-description4 {
+    top: 2100px;
+  }
+}
+
+// =====================================================
+// media screen max-width382px
+// =====================================================
+@media screen and (max-width: 382px) {
+  //main works3-------------------------------------------
+  $main-works3-oval-size:500px;
+  .main-works-description3{
+    left: 5%;
+    width: 95%;
+    top: 1510px;
+    right: auto;
+  }
+  .main-works3-img{
+    left: -5%;
+    top: 1460px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  .mainworks3-line-oval{
+    left: -5%;
+    top: 1460px;
+    width: $main-works3-oval-size;
+    height: $main-works3-oval-size;
+  }
+  //main works5-------------------------------------------
+  .main-works5-img {
+    top: 2520px;
+  }
+  .main-works-description5 {
+    top: 2550px;
+  }
+  //main works6-------------------------------------------
+  $main-works6-oval-size:500px;
+  .main-works-description6{
+    top: 3100px;
+  }
+  .main-works6-img{
+    top: 3000px;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+  .mainworks6-line-oval{
+    top: 3000px;
+    width: $main-works6-oval-size;
+    height: $main-works6-oval-size;
+  }
+}
+
+// =====================================================
+// media screen max-width330px
+// =====================================================
+@media screen and (max-width: 330px) {
+
+  //main works1-------------------------------------------
+  .main-works-description1 {
+    left: 5%;
+    top: 355px;
+    width: 100%;
   }
 }

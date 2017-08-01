@@ -3,26 +3,28 @@
 // =====================================================
 .contact{
   color: $primary;
-  margin-bottom: 20px;
   position: relative;
   left: 8850px;
-  width: 85%;
+  width: 100%;
+  height: calc(100% - 60px);
   max-width: 1000px;
   text-align: center;
   padding: 0 30px;
+  display: table;
 }
 .contact-container{
   border: 1px solid $primary;
   border-radius: 20px;
-  height: 93vh;
-  padding:30vh 0;
+  height: 100%;
   width: 780px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .contact-section-headding{
   margin-bottom: 20px;
 }
 .email{
-  font-family: PetitFormalScript-Regular, serif;
+  font-family: 'Petit Formal Script', serif;
 }
 .contact-list{
   margin-bottom: 10px;
@@ -59,18 +61,29 @@
     height: 91vh;
   }
 }
+
 // =====================================================
-// media screen max-height600px
+// media screen max-width800px
 // =====================================================
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 800px) {
   .contact{
-    left: 8330px;
-  }
-  .contact-section-headding {
-    margin-top: -10px;
+    position: relative;
+    left: 0;
+    margin: 50px 0 30px 0;
+    width: inherit;
+    height: 92vh;
+    min-height: 400px;
   }
   .contact-container {
-    width: 480px;
-    height: 91vh;
+    width: inherit;
+  }
+}
+// =====================================================
+// media screen max-width330px
+// =====================================================
+@media screen and (max-width: 330px) {
+  .contact{
+    padding: 0 20px;
+    margin: 20px 0 20px 0;
   }
 }

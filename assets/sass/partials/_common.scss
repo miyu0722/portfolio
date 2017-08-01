@@ -1,10 +1,66 @@
 // =====================================================
+// animations
+// =====================================================
+@keyframes animation01 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.8;
+	}
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes animation02 {
+	0% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+  }
+}
+
+@keyframes horizontal {
+  0% {
+    transform:translateX( -10px);
+    }
+  100% {
+    transform:translateX(  0px);
+  }
+}
+@keyframes vertical1 {
+  0% {
+      transform:translateY(13px);
+  }
+  100% {
+    ransform:translateY(  0px);
+  }
+}
+@keyframes vertical2 {
+  0% {
+      transform:translateY(-15px);
+  }
+  100% {
+    ransform:translateY(  0px);
+  }
+}
+@keyframes vertical3 {
+  0% {
+      transform:translateY(18px);
+  }
+  100% {
+    ransform:translateY(  0px);
+  }
+}
+// =====================================================
 // html & body
 // =====================================================
 html{
   height: 100%;
 }
 body{
+  overflow-y: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: (24/12);
@@ -27,15 +83,12 @@ h1{
   padding: 30px;
   position: relative;
   height: 100vh;
-  overflow-y: hidden;
   display: flex;
 }
-
 button{
-  font-family: 'PetitFormalScript-Regular', serif;
+  font-family: 'Petit Formal Script', serif;
   font-weight: 300;
   border-radius: 10px;
-
 }
 
 // =====================================================
@@ -57,6 +110,7 @@ button{
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
+  display: none;
 }
 .common-section-headding{
   font-weight: 300;
@@ -101,14 +155,39 @@ button{
 @media screen and (max-width: 800px) {
   .container{
     position: static;
+    padding: 0;
     overflow-y: initial;
     flex-direction: column;
     height: initial;
     width: 100%;
   }
   .main-container{
-    position: static;
-    height: 100vh;
+    position: inherit;
+    height: inherit;
     width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .common-section-headding{
+    font-size: 5.0rem;
+  }
+}
+// =====================================================
+// media screen max-width382px
+// =====================================================
+@media screen and (max-width: 382px) {
+  body{
+    line-height: 1.6;
+  }
+  .common-section-headding{
+    font-size: 4.0rem;
+  }
+}
+// =====================================================
+// media screen max-width667px && max-height: 500px
+// =====================================================
+@media screen and (max-width: 667px) and (max-height: 500px) {
+  body{
+  line-height: 1.4;
   }
 }
