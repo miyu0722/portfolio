@@ -1092,8 +1092,15 @@ function seans2(){
   window.animatelo.fadeIn('#title5',optionsTitle5);
   window.animatelo.fadeIn('#title6',optionsTitle6);
 });
-
-
+// =====================================================
+// Works Modal Window
+// =====================================================
+$(function(){
+// show works
+  $('.main-works1').click(function(){
+    $('.main-work-window1').toggleClass('.works_display');
+  });
+});
 
 // =====================================================
 // huwahuwa
