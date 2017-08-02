@@ -464,10 +464,6 @@ $other-works5-oval-size:350px;
   color: $white;
   text-align: center;
   z-index: 1000;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
   .works-headding-closed{
     opacity: 1;
     font-family: 'Petit Formal Script', serif;

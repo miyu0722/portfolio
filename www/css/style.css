@@ -427,7 +427,7 @@ html {
   height: 100%; }
 
 body {
-  overflow-y: hidden;
+  overflow: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: 2;
@@ -459,7 +459,7 @@ button {
 
 .main-container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   left: 85%; }
 
 .common-oval {
@@ -890,6 +890,7 @@ h2 {
   display: none; }
 
 .about {
+  height: 100%;
   position: absolute;
   left: 230px;
   margin-top: 10vh;
@@ -1500,11 +1501,7 @@ h2 {
   width: 500px;
   color: #fff;
   text-align: center;
-  z-index: 1000;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 1000; }
   .closed-projects .works-headding-closed {
     opacity: 1;
     font-family: 'Petit Formal Script', serif;
@@ -2222,8 +2219,68 @@ h2 {
     padding: 0 20px;
     margin: 20px 0 20px 0; } }
 
+.oval-fade-in1 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical1 1s ease-in-out infinite alternate, animation02 3s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+.oval-fade-in2 {
+  opacity: 0;
+  animation: fadeIn 1s ease, vertical2 1s ease-in-out infinite alternate, animation02 4s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3.5s; }
+
+.oval-fade-in3 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical3 1s ease-in-out infinite alternate, animation02 4s ease 4s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; }
+
+.oval-fade-in4 {
+  opacity: 0;
+  animation: fadeIn 1s ease, vertical1 1s ease-in-out infinite alternate, animation02 3s ease 5s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s; }
+
+.oval-fade-in5 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical2 1s ease-in-out infinite alternate, animation02 4s ease 6s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; }
+
+.oval-fade-in1-o {
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical1 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+.oval-fade-in2-o {
+  opacity: 0;
+  animation: fadeIn-o 1s ease, vertical2 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3.5s; }
+
+.oval-fade-in3-o {
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical3 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; }
+
+.oval-fade-in4-o {
+  opacity: 0;
+  animation: fadeIn-o 1s ease, vertical1 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s; }
+
+.oval-fade-in5-o {
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical2 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; }
+
 .header-oval1 {
-  left: 8%;
+  left: 50px;
   top: -30%;
   width: 758px;
   height: 758px;
@@ -2271,7 +2328,8 @@ h2 {
   width: 1200px;
   height: 1200px;
   background: linear-gradient(-180deg, #A3D3D6 40%, #3A56CA 100%);
-  z-index: -100; }
+  z-index: -100;
+  opacity: 0; }
 
 .career-oval2 {
   left: -70px;
@@ -2310,11 +2368,7 @@ h2 {
   width: 75px;
   height: 75px;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
-  z-index: 500;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 500; }
 
 .works-oval2 {
   left: 1630px;
@@ -2322,11 +2376,7 @@ h2 {
   width: 230px;
   height: 230px;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
-  z-index: 500;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 500; }
 
 .works-oval3 {
   left: 1900px;
@@ -2334,11 +2384,7 @@ h2 {
   width: 45px;
   height: 45px;
   background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  z-index: 100; }
 
 .works-oval4 {
   left: 2000px;
@@ -2346,11 +2392,7 @@ h2 {
   width: 150px;
   height: 150px;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 100; }
 
 .works-oval5 {
   left: 3350px;
@@ -2358,11 +2400,7 @@ h2 {
   width: 90px;
   height: 90px;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  z-index: 100; }
 
 .works-oval6 {
   left: 3850px;
@@ -2370,11 +2408,7 @@ h2 {
   width: 150px;
   height: 150px;
   background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
-  z-index: 500;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 500; }
 
 .works-oval7 {
   left: 4200px;
@@ -2382,11 +2416,7 @@ h2 {
   width: 75px;
   height: 75px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  z-index: 100; }
 
 .works-oval8 {
   left: 4330px;
@@ -2394,11 +2424,7 @@ h2 {
   width: 170px;
   height: 170px;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 100; }
 
 .works-oval9 {
   left: 4700px;
@@ -2406,11 +2432,7 @@ h2 {
   width: 50px;
   height: 50px;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 100; }
 
 .works-oval10 {
   left: 4900px;
@@ -2418,22 +2440,14 @@ h2 {
   width: 280px;
   height: 280px;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 6s ease 2s 1 normal, animation02 5s ease 5s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 4s; }
+  z-index: 100; }
 
 .works-oval11 {
   left: 5100px;
   top: -30%;
   width: 1620px;
   height: 1620px;
-  background: linear-gradient(-180deg, #A4CBCD 15%, #1FAEA5 69%);
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  background: linear-gradient(-180deg, #A4CBCD 15%, #1FAEA5 69%); }
 
 .works-oval12 {
   left: 5520px;
@@ -2441,11 +2455,7 @@ h2 {
   width: 50px;
   height: 50px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
-  z-index: 300;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 300; }
 
 .works-oval13 {
   left: 5420px;
@@ -2453,11 +2463,7 @@ h2 {
   width: 90px;
   height: 90px;
   background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
-  z-index: 500;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 500; }
 
 .works-oval14 {
   left: 5450px;
@@ -2465,11 +2471,7 @@ h2 {
   width: 250px;
   height: 250px;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
-  z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 6s ease 2s 1 normal, animation02 5s ease 5s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 4s; }
+  z-index: 100; }
 
 .works-oval15 {
   left: 5750px;
@@ -2477,11 +2479,7 @@ h2 {
   width: 340px;
   height: 340px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
-  z-index: 300;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 300; }
 
 .works-oval16 {
   left: 5750px;
@@ -2489,11 +2487,7 @@ h2 {
   width: 154px;
   height: 154px;
   background: linear-gradient(-180deg, #A3D3D6 0%, #7BA5D9 95%);
-  z-index: 200;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 200; }
 
 .works-oval17 {
   left: 6400px;
@@ -2501,10 +2495,7 @@ h2 {
   width: 220px;
   height: 220px;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
-  z-index: 700;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 700; }
 
 .works-oval18 {
   left: 6550px;
@@ -2512,11 +2503,7 @@ h2 {
   width: 70px;
   height: 70px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
-  z-index: 700;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  z-index: 700; }
 
 .works-oval19 {
   left: 6600px;
@@ -2524,10 +2511,7 @@ h2 {
   width: 240px;
   height: 240px;
   background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
-  z-index: 300;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 300; }
 
 .works-oval20 {
   opacity: 1.0;
@@ -2537,11 +2521,7 @@ h2 {
   height: 690px;
   display: block;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 82%);
-  z-index: 400;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 400; }
   .works-oval20::after {
     position: absolute;
     content: "";
@@ -2563,11 +2543,7 @@ h2 {
   width: 420px;
   height: 420px;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
-  z-index: 400;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 400; }
 
 .contact-oval2 {
   left: -90px;
@@ -2575,11 +2551,7 @@ h2 {
   width: 200px;
   height: 200px;
   background: linear-gradient(-180deg, #D8CD9C 0%, #7E703C 100%);
-  z-index: 390;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
+  z-index: 390; }
 
 .contact-oval3 {
   left: 160px;
@@ -2587,10 +2559,7 @@ h2 {
   width: 115px;
   height: 115px;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
-  z-index: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  z-index: 0; }
 
 .contact-oval4 {
   left: 545px;
@@ -2599,10 +2568,7 @@ h2 {
   height: 165px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 0;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
+  opacity: 0; }
 
 .contact-oval5 {
   left: 660px;
@@ -2611,10 +2577,7 @@ h2 {
   height: 165px;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
   z-index: 0;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  opacity: 0; }
 
 .gnav-oval1 {
   left: 90px;
@@ -3428,35 +3391,5 @@ h2 {
 .hoval-move5 {
   opacity: 0;
   animation: vertical2 1s ease-in-out infinite alternate, animation01 4s ease 2s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
-
-.oval-move1 {
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s; }
-
-.oval-move2 {
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s; }
-
-.oval-move3 {
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
-
-.oval-move4 {
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation02 3s ease 5s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2.5s; }
-
-.oval-move5 {
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation02 4s ease 6s infinite alternate-reverse;
   animation-fill-mode: forwards;
   animation-duration: 3s; }

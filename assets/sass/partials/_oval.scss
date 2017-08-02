@@ -1,15 +1,82 @@
 // =====================================================
+// animations @mixin
+// =====================================================
+.oval-fade-in1{
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical1 1s ease-in-out infinite alternate, animation02 3s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+.oval-fade-in2{
+  opacity: 0;
+  animation: fadeIn 1s ease, vertical2 1s ease-in-out infinite alternate, animation02 4s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3.5s;
+}
+.oval-fade-in3{
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical3 1s ease-in-out infinite alternate, animation02 4s ease 4s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+.oval-fade-in4{
+  opacity: 0;
+  animation: fadeIn 1s ease, vertical1 1s ease-in-out infinite alternate, animation02 3s ease 5s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+}
+.oval-fade-in5{
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out, vertical2 1s ease-in-out infinite alternate, animation02 4s ease 6s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+//opacty0.8
+.oval-fade-in1-o{
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical1 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+.oval-fade-in2-o{
+  opacity: 0;
+  animation: fadeIn-o 1s ease, vertical2 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3.5s;
+}
+.oval-fade-in3-o{
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical3 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+.oval-fade-in4-o{
+  opacity: 0;
+  animation: fadeIn-o 1s ease, vertical1 1s ease-in-out infinite alternate,;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+}
+.oval-fade-in5-o{
+  opacity: 0;
+  animation: fadeIn-o 1s ease-in-out, vertical2 1s ease-in-out infinite alternate;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+// =====================================================
 // header oval
 // =====================================================
 $header-oval1-size:758px;
 .header-oval1{
-  left: 8%;
+  left: 50px;
   top: -30%;
   width: $header-oval1-size;
   height: $header-oval1-size;
   background: linear-gradient(-180deg, #3EBAD0 40%, #389B84 100%);
   z-index: 90;
 }
+
 $header-oval2-size:158px;
 .header-oval2{
   left: -40px;
@@ -66,6 +133,7 @@ $career-oval1-size:1200px;
   height: $career-oval1-size;
   background: linear-gradient(-180deg, #A3D3D6 40%, #3A56CA 100%);
   z-index: -100;
+  opacity: 0;
 }
 $career-oval2-size:310px;
 .career-oval2{
@@ -114,10 +182,6 @@ $works-oval1-size:75px;
   height: $works-oval1-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
   z-index: 500;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
 }
 $works-oval2-size:230px;
 .works-oval2{
@@ -127,10 +191,6 @@ $works-oval2-size:230px;
   height: $works-oval2-size;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
   z-index: 500;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval3-size:45px;
 .works-oval3{
@@ -140,10 +200,6 @@ $works-oval3-size:45px;
   height: $works-oval3-size;
   background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $works-oval4-size:150px;
 .works-oval4{
@@ -153,10 +209,6 @@ $works-oval4-size:150px;
   height: $works-oval4-size;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
 }
 $works-oval5-size:90px;
 .works-oval5{
@@ -166,10 +218,6 @@ $works-oval5-size:90px;
   height: $works-oval5-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $works-oval6-size:150px;
 .works-oval6{
@@ -179,10 +227,6 @@ $works-oval6-size:150px;
   height: $works-oval6-size;
   background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
   z-index: 500;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval7-size:75px;
 .works-oval7{
@@ -192,10 +236,6 @@ $works-oval7-size:75px;
   height: $works-oval7-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $works-oval8-size:170px;
 .works-oval8{
@@ -205,10 +245,6 @@ $works-oval8-size:170px;
   height: $works-oval8-size;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval9-size:50px;
 .works-oval9{
@@ -218,10 +254,6 @@ $works-oval9-size:50px;
   height: $works-oval9-size;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
 }
 $works-oval10-size:280px;
 .works-oval10{
@@ -231,10 +263,6 @@ $works-oval10-size:280px;
   height: $works-oval10-size;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 6s ease 2s 1 normal, animation02 5s ease 5s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
 }
 $works-oval11-size:1620px;
 .works-oval11{
@@ -243,10 +271,6 @@ $works-oval11-size:1620px;
   width: $works-oval11-size;
   height: $works-oval11-size;
   background: linear-gradient(-180deg, #A4CBCD 15%, #1FAEA5 69%);
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $works-oval12-size:50px;
 .works-oval12{
@@ -256,10 +280,6 @@ $works-oval12-size:50px;
   height: $works-oval12-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 300;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval13-size:90px;
 .works-oval13{
@@ -269,10 +289,6 @@ $works-oval13-size:90px;
   height: $works-oval13-size;
   background: linear-gradient(-180deg, #CDC36E 0%, #3C5230 100%);
   z-index: 500;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval14-size:250px;
 .works-oval14{
@@ -282,10 +298,6 @@ $works-oval14-size:250px;
   height: $works-oval14-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
   z-index: 100;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 6s ease 2s 1 normal, animation02 5s ease 5s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
 }
 $works-oval15-size:340px;
 .works-oval15{
@@ -295,10 +307,6 @@ $works-oval15-size:340px;
   height: $works-oval15-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 300;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval16-size:154px;
 .works-oval16{
@@ -308,10 +316,6 @@ $works-oval16-size:154px;
   height: $works-oval16-size;
   background: linear-gradient(-180deg, #A3D3D6 0%, #7BA5D9 95%);
   z-index: 200;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval17-size:220px;
 .works-oval17{
@@ -321,9 +325,6 @@ $works-oval17-size:220px;
   height: $works-oval17-size;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
   z-index: 700;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval18-size:70px;
 .works-oval18{
@@ -333,10 +334,6 @@ $works-oval18-size:70px;
   height: $works-oval18-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 700;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $works-oval19-size:240px;
 .works-oval19{
@@ -346,9 +343,6 @@ $works-oval19-size:240px;
   height: $works-oval19-size;
   background: linear-gradient(-180deg, #A3D3D6 0%, #3A56CA 99%);
   z-index: 300;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $works-oval20-size:690px;
 .works-oval20{
@@ -360,10 +354,6 @@ $works-oval20-size:690px;
   display: block;
   background: linear-gradient(-180deg, #C484F0 0%, #E04A9D 82%);
   z-index: 400;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
   &::after{
     position: absolute;
     content: "";
@@ -395,10 +385,6 @@ $contact-oval1-size:420px;
   height: $contact-oval1-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
   z-index: 400;
-  opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $contact-oval2-size:200px;
 .contact-oval2{
@@ -408,10 +394,6 @@ $contact-oval2-size:200px;
   height: $contact-oval2-size;
   background: linear-gradient(-180deg, #D8CD9C 0%, #7E703C 100%);
   z-index: 390;
-  opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 2s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
 }
 $contact-oval3-size:115px;
 .contact-oval3{
@@ -421,9 +403,6 @@ $contact-oval3-size:115px;
   height: $contact-oval3-size;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
   z-index: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 $contact-oval4-size:165px;
 .contact-oval4{
@@ -434,9 +413,6 @@ $contact-oval4-size:165px;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
   z-index: 0;
   opacity: 0;
-  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
 }
 $contact-oval5-size:165px;
 .contact-oval5{
@@ -447,9 +423,6 @@ $contact-oval5-size:165px;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
   z-index: 0;
   opacity: 0;
-  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 1s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
 }
 
 // =====================================================

@@ -53,6 +53,7 @@
     ransform:translateY(  0px);
   }
 }
+
 // =====================================================
 // html & body
 // =====================================================
@@ -60,7 +61,7 @@ html{
   height: 100%;
 }
 body{
-  overflow-y: hidden;
+  overflow: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: (24/12);
@@ -96,7 +97,7 @@ button{
 // =====================================================
 .main-container{
   position: relative;
-  height: 100vh;
+  height: 100%; //Fixed by Masa from 100vh
   left: 85%;
 }
 //common oval
