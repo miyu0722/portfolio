@@ -65,9 +65,17 @@
   .career{
     position: static;
     width: 75%;
-    margin-top: 150px;
     margin-left: 25%;
+    margin-top: 100px;
     margin-bottom: 280px;
+  }
+}
+// =====================================================
+// media screen max-width718px
+// =====================================================
+@media screen and (max-width: 718px) {
+  .career{
+    margin-top: 75px;
   }
 }
 // =====================================================
@@ -76,7 +84,24 @@
 @media screen and (max-width: 670px) {
   .career {
     margin-left: 20%;
-    margin-top: 190px;
+    margin-top: 40px;
+  }
+}
+// =====================================================
+// media screen max-width640px
+// =====================================================
+@media screen and (max-width: 640px) {
+  .career {
+    margin-top: 80px;
+  }
+}
+
+// =====================================================
+// media screen max-width612px
+// =====================================================
+@media screen and (max-width: 612px) {
+  .career {
+    margin-top: 160px;
   }
 }
 
@@ -87,7 +112,6 @@
   .career{
     position: static;
     width: 91%;
-    margin-top: 190px;
     margin-left: 5%;
     margin-bottom: 280px;
   }
@@ -99,6 +123,15 @@
 @media screen and (max-width: 590px) {
   .career {
     margin-top: 180px;
+  }
+}
+
+// =====================================================
+// media screen max-width550px
+// =====================================================
+@media screen and (max-width: 550px) {
+  .career {
+    margin-top: 150px;
   }
 }
 

@@ -969,7 +969,7 @@ $gnav-oval5-size:250px;
   $header-oval5-size:100px;
   .header-oval5{
     right: -1%;
-    bottom: 0px;
+    bottom: 20px;
     width: $header-oval5-size;
     height: $header-oval5-size;
   }
@@ -986,12 +986,13 @@ $gnav-oval5-size:250px;
   .career-oval1{
     left: auto;
     right: -5%;
-    top: 635px;
+    top: 700px;
     width: $career-oval1-size;
     height: $career-oval1-size;
+    background: linear-gradient(-180deg, #A3D3D6 10%, #3A56CA 100%);
   }
   //career-oval2-------------------------------------------
-  $career-oval2-size:200px;
+  $career-oval2-size:100px;
   .career-oval2{
     left: auto;
     right: -3%;
@@ -1144,35 +1145,15 @@ $gnav-oval5-size:250px;
 
   //contact-oval5-------------------------------------------
   $contact-oval5-size:230px;
-  .contact-line-oval5 {
-    left: auto;
-    right: 20%;
-    bottom: -20px;
+  .contact-oval5 {
+    left: 370px;
     top: auto;
+    bottom:2px;
     width: $contact-oval5-size;
     height: $contact-oval5-size;
   }
 }
 
-// =====================================================
-// media screen max-width720px
-// =====================================================
-@media screen and (max-width: 720px) {
-  //career-oval1-------------------------------------------
-  $career-oval1-size:650px;
-  .career-oval1{
-    right: -3%;
-    top: 650px;
-    width: $career-oval1-size;
-    height: $career-oval1-size;
-  }
-  //contact-oval4-------------------------------------------
-  $contact-oval4-size:130px;
-  .contact-oval4{
-    width: $contact-oval4-size;
-    height: $contact-oval4-size;
-  }
-}
 // =====================================================
 // media screen max-width720px
 // =====================================================
@@ -1197,6 +1178,24 @@ $gnav-oval5-size:250px;
   .works-oval7{
     top: 2045px;
   }
+  //career-oval1-------------------------------------------
+  $career-oval1-size:650px;
+  .career-oval1{
+    right: -3%;
+    top: 650px;
+    width: $career-oval1-size;
+    height: $career-oval1-size;
+  }
+  //contact-oval4-------------------------------------------
+  $contact-oval4-size:130px;
+  .contact-oval4{
+    width: $contact-oval4-size;
+    height: $contact-oval4-size;
+  }
+  //contact-oval5-------------------------------------------
+  .contact-oval5 {
+    left: 310px;
+  }
 }
 // =====================================================
 // media screen max-width700px
@@ -1217,17 +1216,28 @@ $gnav-oval5-size:250px;
     width: $header-oval4-size;
     height: $header-oval4-size;
   }
-}
-
-// =====================================================
-// media screen max-width700px
-// =====================================================
-@media screen and (max-width: 700px) {
   .works-oval10{
     right: -10%;
   }
 }
 
+// =====================================================
+// media screen max-width640px
+// =====================================================
+@media screen and (max-width: 640px) {
+  .career-oval1{
+    top: 690px;
+  }
+}
+
+// =====================================================
+// media screen max-width620px
+// =====================================================
+@media screen and (max-width: 620px) {
+  .career-oval1{
+    top: 730px;
+  }
+}
 // =====================================================
 // media screen max-width600px
 // =====================================================
@@ -1273,6 +1283,15 @@ $gnav-oval5-size:250px;
     height: $contact-oval5-size;
   }
 }
+// =====================================================
+// media screen max-width590px
+// =====================================================
+@media screen and (max-width: 590px) {
+  .career-oval1 {
+    top: 750px;
+  }
+}
+
 // =====================================================
 // media screen max-width550px
 // =====================================================
@@ -1322,8 +1341,13 @@ $gnav-oval5-size:250px;
   .career-oval1{
     top: 790px;
   }
-  .career-oval2 {
-    top: 710px;
+  //career-oval2-------------------------------------------
+  $career-oval2-size:50px;
+  .career-oval2{
+    top: 800px;
+    right: 7%;
+    width: $career-oval2-size;
+    height: $career-oval2-size;
   }
   .career-oval3 {
     top: 1340px;
@@ -1516,6 +1540,7 @@ $gnav-oval5-size:250px;
   }
   $contact-oval5-size:130px;
   .contact-oval5{
+    left: 210px;
     width: $contact-oval5-size;
     height: $contact-oval5-size;
   }

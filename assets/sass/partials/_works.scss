@@ -486,9 +486,16 @@ $other-works5-oval-size:350px;
 // media screen max-height960px
 // =====================================================
 @media screen and (max-height: 960px) {
+
+  //main works1-------------------------------------------
+  $main-works1-oval-size:530px;
+  //work's description
   .main-works-description1{
-    top: 8%;
+    left: 550px;
+    top: 0px;
+    width: 700px;
   }
+
   //main works2-------------------------------------------
   $main-works2-oval-size:800px;
   .main-works2-img{
@@ -517,35 +524,6 @@ $other-works5-oval-size:350px;
     height: $main-works5-oval-size;
   }
 
-  //other projects headding-------------------------------------------
-  .other-projects-headding{
-    top: 30%;
-    font-size: 10.0rem;
-  }
-  //other works1-------------------------------------------
-  .other-works1-img{
-    bottom: -10%;
-  }
-  .other-works1-line-oval{
-    bottom: -10%;
-  }
-  .other-works-description1{
-    bottom: 7%;
-  }
-}
-
-// =====================================================
-// media screen max-height960px
-// =====================================================
-@media screen and (max-height: 900px) {
-  //main works1-------------------------------------------
-  $main-works1-oval-size:530px;
-  //work's description
-  .main-works-description1{
-    left: 550px;
-    top: 0px;
-    width: 700px;
-  }
   //work's image
   .main-works1-img{
     left: 350px;
@@ -576,17 +554,25 @@ $other-works5-oval-size:350px;
     width: $main-works4-oval-size;
     height: $main-works4-oval-size;
   }
-  //main works4-------------------------------------------
-  .other-works-description4{
-    bottom: 46%;
-  }
+
   //other projects headding-------------------------------------------
   .other-projects-headding{
-    top: 32%;
+    top: 34%;
     font-size: 10.0rem;
   }
-  .closed-projects{
-    bottom: 15%;
+  //other works1-------------------------------------------
+  .other-works1-img{
+    bottom: -10%;
+  }
+  .other-works1-line-oval{
+    bottom: -10%;
+  }
+  .other-works-description1{
+    bottom: 7%;
+  }
+  //other works4-------------------------------------------
+  .other-works-description4{
+    bottom: 46%;
   }
 }
 // =====================================================

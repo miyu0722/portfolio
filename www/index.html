@@ -12,7 +12,7 @@
   <title>Miyuki Uchiyama - Portfolio</title>
 </head>
 <body>
-  <nav class="gnav gnav-display">
+  <!-- <nav class="gnav gnav-display">
     <div class="frame">
       <ul>
         <li class="go-home"><a href="#home">Home</a></li>
@@ -26,11 +26,11 @@
     <div class="gnav-oval3 common-oval"></div>
     <div class="gnav-oval4 common-oval"></div>
     <div class="gnav-oval5 common-oval"></div>
-  </nav>
-  <div class="container">
+  </nav> -->
+  <div class="container" id="top">
     <header id="home">
       <div class="logo">
-        <img src="img/logo.svg" alt="logo" width="90px">
+        <a href="#top"><img src="img/logo.svg" alt="logo" width="90px"></a>
       </div>
       <div class="intro">
         <h1><span id="title1">Miyuki </span><span id="title2">Uchiyama</span><span class="sub" id="title3">Portfolio</span></h1>
@@ -56,7 +56,7 @@
           <h1 class="common-section-headding invisible animated" id="target1">My Skills</h1>
           <p class="invisible animated" id="target2">I’ve designed advertisements, packages, websites, catalogs, flyers, and brochures etc.  I've got a skill for digital publishing by using InDesign. And I had taught about designing to internship students in my previous company.</p>
           <div class="graph clearfix">
-            <div class="application clearfix" id="trigger3 trigger4 trigger5 trigger6 trigger7 trigger8">
+            <div class="application clearfix" id="trigger3 trigger4 trigger5 trigger6 trigger7 trigger8 triggerA triggerB">
               <div class="chart application-graph animated" id="target3">
                 <div class="donut-chart fill js-chart1" data-percent="0.9" data-title="Illustrator"></div>
               </div>
@@ -78,27 +78,27 @@
             </div><!-- application -->
             <div class="skills clearfix">
               <div class="chart skills-graph animated" id="target9">
-                <div class="donut-chart fill js-chart1" data-percent="0.9" data-title="HTML"></div>
+                <div class="donut-chart fill js-chart7" data-percent="0.9" data-title="HTML"></div>
               </div>
               <div class="chart skills-graph animated" id="target10">
-                <div class="donut-chart fill js-chart2" data-percent="0.9" data-title="CSS"></div>
+                <div class="donut-chart fill js-chart8" data-percent="0.9" data-title="CSS"></div>
               </div>
               <div class="chart skills-graph animated" id="target11">
-                <div class="donut-chart fill js-chart3" data-percent="0.7" data-title="SASS/SCSS"></div>
+                <div class="donut-chart fill js-chart9" data-percent="0.7" data-title="SASS/SCSS"></div>
               </div>
               <div class="chart skills-graph animated" id="target12">
-                <div class="donut-chart fill js-chart4" data-percent="0.7" data-title="jQuery"></div>
+                <div class="donut-chart fill js-chart10" data-percent="0.7" data-title="jQuery"></div>
               </div>
               <div class="chart skills-graph animated" id="target13">
-                <div class="donut-chart fill js-chart5" data-percent="0.6" data-title="Javascript"></div>
+                <div class="donut-chart fill js-chart11" data-percent="0.6" data-title="Javascript"></div>
               </div>
               <div class="chart skills-graph animated" id="target14">
-                <div class="donut-chart fill js-chart6" data-percent="0.6" data-title="WordPress"></div>
+                <div class="donut-chart fill js-chart12" data-percent="0.6" data-title="WordPress"></div>
               </div>
             </div><!-- skills -->
           </div><!-- graph -->
-          <div id="parallaxTarget1" class="header-oval4 common-oval hoval-move5"></div>
-          <div class="skills-oval1 common-oval hoval-move2"></div>
+          <div class="header-oval4 common-oval invisible" id="targetA"></div>
+          <div class="skills-oval1 common-oval invisible" id="targetB"></div>
         </div><!-- myskills -->
         <div class="career" id="trigger15 trigger16 trigger17 trigger18 trigger19 trigger20 trigger21">
           <div class="experience invisible animated" id="target15">
@@ -282,8 +282,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-  <script type="text/javascript" src="js/animation.gsap.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
   <script src="js/js.js"></script>
 </body>
 </html>
