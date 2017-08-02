@@ -61,7 +61,7 @@ html{
   height: 100%;
 }
 body{
-  overflow: hidden;
+  overflow-y: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: (24/12);
@@ -154,6 +154,10 @@ button{
 // media screen max-width800px
 // =====================================================
 @media screen and (max-width: 800px) {
+	body{
+		overflow-y: inherit;
+		overflow-x: hidden;
+	}
   .container{
     position: static;
     padding: 0;

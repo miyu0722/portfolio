@@ -427,7 +427,7 @@ html {
   height: 100%; }
 
 body {
-  overflow: hidden;
+  overflow-y: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: 2;
@@ -500,6 +500,9 @@ button {
     font-size: 4.0rem; } }
 
 @media screen and (max-width: 800px) {
+  body {
+    overflow-y: inherit;
+    overflow-x: hidden; }
   .container {
     position: static;
     padding: 0;
@@ -580,11 +583,7 @@ h2 {
   width: 1760px;
   height: 1760px;
   background: rgba(243, 245, 255, 0.1);
-  overflow: hidden;
-  opacity: 0;
-  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 1s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
-  animation-fill-mode: forwards;
-  animation-duration: 3s; }
+  overflow: hidden; }
 
 @-webkit-keyframes ani-mouse {
   0% {
@@ -2163,7 +2162,7 @@ h2 {
   position: relative;
   left: 8850px;
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
   max-width: 1000px;
   text-align: center;
   padding: 0 30px;
