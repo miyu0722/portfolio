@@ -79,13 +79,7 @@ h1, h2, h3{
 h1{
   letter-spacing: 0em;
 }
-.container{
-  margin: 0 0 0 0;
-  padding: 30px;
-  position: relative;
-  height: 100vh;
-  display: flex;
-}
+
 button{
   font-family: 'Petit Formal Script', serif;
   font-weight: 300;
@@ -93,12 +87,13 @@ button{
 }
 
 // =====================================================
-// main & common
+// common
 // =====================================================
-.main-container{
-  position: relative;
-  height: 100%; //Fixed by Masa from 100vh
-  left: 85%;
+.logo{
+  position: fixed;
+  z-index: 2000;
+  left: 20px;
+  top: 30px;
 }
 //common oval
 .common-oval{
@@ -131,19 +126,17 @@ button{
 // media screen max-height800px
 // =====================================================
 @media screen and (max-height: 800px) {
-  .common-section-headding{
-    font-size: 5.0rem;
-  }
+	.common-section-headding{
+		font-size: 5.0rem;
+	}
 }
+
 // =====================================================
 // media screen max-height600px
 // =====================================================
 @media screen and (max-height: 600px){
   body{
     font-size: 1.2rem;
-  }
-  .container {
-    padding: 20px;
   }
   .common-section-headding{
     font-size: 4.0rem;
@@ -158,25 +151,11 @@ button{
 		overflow-y: inherit;
 		overflow-x: hidden;
 	}
-  .container{
-    position: static;
-    padding: 0;
-    overflow-y: initial;
-    flex-direction: column;
-    height: initial;
-    width: 100%;
-  }
-  .main-container{
-    position: inherit;
-    height: inherit;
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-  }
   .common-section-headding{
     font-size: 5.0rem;
   }
 }
+
 // =====================================================
 // media screen max-width382px
 // =====================================================
@@ -188,6 +167,7 @@ button{
     font-size: 4.0rem;
   }
 }
+
 // =====================================================
 // media screen max-width667px && max-height: 500px
 // =====================================================

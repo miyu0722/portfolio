@@ -1,18 +1,12 @@
 //******************************************************
-// PC & Common
+// PC & Common INDEX
 //******************************************************
 // =====================================================
-// include & variables
+// include
 // =====================================================
-$primary: #C6C6C6;
-$secondary: #AFA375;
-$bg: #000321;
-$white: #fff;
-$hover-gradient1:rgba(0,8,101,0.00);
-$hover-gradient2:rgba(0,3,33,0.70);
-
 @import "normalize";
-@import "reset.scss";
+@import "color";
+@import "reset";
 @import "partials/common";
 @import "partials/header";
 @import "partials/nav";

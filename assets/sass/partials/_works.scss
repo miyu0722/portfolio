@@ -1,6 +1,7 @@
 // =====================================================
 // works
 // =====================================================
+
 //works section container
 .works{
   position: absolute;
@@ -10,6 +11,10 @@
   border-radius: 50px 50px 0 0;
   width: 6000px;
   height: 100vh;
+  a:link { color: $primary; }
+  a:visited { color: $primary; }
+  a:hover { color: $white; }
+  a:active { color: $white; }
 }
 //works section main description
 .works-content-description{
