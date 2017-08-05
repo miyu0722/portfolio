@@ -17,25 +17,23 @@ h2{
   font-size: 3.0rem;
   margin-top: 0;
 }
-@keyframes animation03 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0.5;
-	}
-  100%{
-    opacity: 1;
-  }
-}
 #title1{
-  animation: animation03 7s ease-in 2.0s 1 normal;
+  animation-delay:0.3s;
+  animation-duration: 0.8s;
 }
 #title2{
-  animation: animation03 7s ease-in 2.5s 1 normal;
+  animation-delay:0.5s;
+  animation-duration: 1.0s;
 }
 #title3{
-  animation: animation03 7s ease-in 3.0s 1 normal;
+  animation-delay:1.0s;
+  animation-duration: 1.3s;
+}
+#title4{
+  animation-delay:2.5s;
+}
+#title5{
+  animation-delay:3.0s;
 }
 #title1, #title2, #title3, #title4, #title5{
   display: block;

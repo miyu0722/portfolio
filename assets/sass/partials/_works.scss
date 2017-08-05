@@ -96,19 +96,12 @@ $main-works1-top:-12%;
 .main-works1-img{
   left: $main-works1-left;
   top: $main-works1-top;
-  background: url(../img/works_marketas.png) center bottom / cover no-repeat;
+  background: url(/img/works_marketas.png) center bottom / cover no-repeat;
   width: $main-works1-oval-size;
   height: $main-works1-oval-size;
   &::after{
     background: linear-gradient(-208deg, $hover-gradient1 20%, $hover-gradient2 70%);
   }
-}
-.mainworks1-line-oval{
-  left: $main-works1-left;
-  top: $main-works1-top;
-  width: $main-works1-oval-size;
-  height: $main-works1-oval-size;
-  z-index: 500;
 }
 //main works2-------------------------------------------
 $main-works2-oval-size:850px;
@@ -121,7 +114,7 @@ $main-works2-bottom:-25%;
   z-index: 100;
 }
 .main-works2-img{
-  background: url(../img/works_ballet.png) center bottom / cover no-repeat;
+  background: url(/img/works_ballet.png) center bottom / cover no-repeat;
   left: $main-works2-left;
   bottom: $main-works2-bottom;
   width: $main-works2-oval-size;
@@ -129,13 +122,6 @@ $main-works2-bottom:-25%;
   &::after{
     background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
   }
-}
-.mainworks2-line-oval{
-  left: $main-works2-left;
-  bottom: $main-works2-bottom;
-  width: $main-works2-oval-size;
-  height: $main-works2-oval-size;
-  z-index: 99;
 }
 
 //main works3-------------------------------------------
@@ -152,7 +138,7 @@ $main-works3-top:-10%;
   }
 }
 .main-works3-img{
-  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
   left: $main-works3-left;
   top: $main-works3-top;
   width: $main-works3-oval-size;
@@ -160,13 +146,6 @@ $main-works3-top:-10%;
   &::after{
     background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
   }
-}
-.mainworks3-line-oval{
-  left: $main-works3-left;
-  top: $main-works3-top;
-  width: $main-works3-oval-size;
-  height: $main-works3-oval-size;
-  z-index: 1000;
 }
 //main works4-------------------------------------------
 $main-works4-oval-size:630px;
@@ -176,7 +155,7 @@ $main-works4-oval-size:630px;
   width: 700px;
 }
 .main-works4-img{
-  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
   left: 3400px;
   top: -10%;
   width: $main-works4-oval-size;
@@ -184,13 +163,6 @@ $main-works4-oval-size:630px;
   &::after{
     background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
   }
-}
-.mainworks4-line-oval{
-  left: 3400px;
-  top: -10%;
-  width: $main-works4-oval-size;
-  height: $main-works4-oval-size;
-  z-index: 50;
 }
 //main works5-------------------------------------------
 $main-works5-oval-size:500px;
@@ -201,7 +173,7 @@ $main-works5-oval-size:500px;
   z-index: 150;
 }
 .main-works5-img{
-  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
   left: 3750px;
   bottom: -10%;
   width: $main-works5-oval-size;
@@ -211,13 +183,7 @@ $main-works5-oval-size:500px;
     background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
   }
 }
-.mainworks5-line-oval{
-  left: 3750px;
-  bottom: -10%;
-  width: $main-works5-oval-size;
-  height: $main-works5-oval-size;
-  z-index: 150;
-}
+
 //main works6-------------------------------------------
 $main-works6-oval-size:850px;
 .main-works-description6{
@@ -227,7 +193,7 @@ $main-works6-oval-size:850px;
   z-index: 50;
 }
 .main-works6-img{
-  background: url(../img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
   left: 4400px;
   top: -15%;
   z-index: 50;
@@ -237,13 +203,7 @@ $main-works6-oval-size:850px;
     background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
   }
 }
-.mainworks6-line-oval{
-  left: 4400px;
-  top: -15%;
-  width: $main-works6-oval-size;
-  height: $main-works6-oval-size;
-  z-index: 80;
-}
+
 //------------------------------------------------------
 // other projects
 //------------------------------------------------------
@@ -321,13 +281,7 @@ $other-works1-oval-size:450px;
     display: block;
   }
 }
-.other-works1-line-oval{
-  width: $other-works1-oval-size;
-  height: $other-works1-oval-size;
-  left: 5100px;
-  bottom: -8%;
-  z-index: 300;
-}
+
 //other works2-------------------------------------------
 $other-works2-oval-size:800px;
 .other-works-description2{
@@ -350,13 +304,7 @@ $other-works2-oval-size:800px;
     display: block;
   }
 }
-.other-works2-line-oval{
-  width: $other-works2-oval-size;
-  height: $other-works2-oval-size;
-  left: 5380px;
-  top: -45%;
-  z-index: 250;
-}
+
 //other works3-------------------------------------------
 $other-works3-oval-size:400px;
 .other-works-description3{
@@ -379,13 +327,7 @@ $other-works3-oval-size:400px;
     display: block;
   }
 }
-.other-works3-line-oval{
-  width: $other-works3-oval-size;
-  height: $other-works3-oval-size;
-  left: 5850px;
-  bottom: 5%;
-  z-index: 250;
-}
+
 //other works4-------------------------------------------
 $other-works4-oval-size:470px;
 .other-works-description4{
@@ -408,13 +350,7 @@ $other-works4-oval-size:470px;
     display: block;
   }
 }
-.other-works4-line-oval{
-  width: $other-works4-oval-size;
-  height: $other-works4-oval-size;
-  left: 6000px;
-  bottom: 30%;
-  z-index: 600;
-}
+
 //other works5-------------------------------------------
 $other-works5-oval-size:350px;
 .other-works-description5{
@@ -437,13 +373,7 @@ $other-works5-oval-size:350px;
     display: block;
   }
 }
-.other-works5-line-oval{
-  width: $other-works5-oval-size;
-  height: $other-works5-oval-size;
-  left: 6300px;
-  top: -15%;
-  z-index: 650;
-}
+
 .words{
   .works-headding{
     position: absolute;
@@ -507,10 +437,7 @@ $other-works5-oval-size:350px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
     }
-  .mainworks2-line-oval{
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
+
   //main works3-------------------------------------------
   .main-works-description3{
     width: 620px;
@@ -524,10 +451,6 @@ $other-works5-oval-size:350px;
     width: $main-works5-oval-size;
     height: $main-works5-oval-size;
   }
-  .mainworks5-line-oval{
-    width: $main-works5-oval-size;
-    height: $main-works5-oval-size;
-  }
 
   //work's image
   .main-works1-img{
@@ -536,12 +459,7 @@ $other-works5-oval-size:350px;
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
-  .mainworks1-line-oval{
-    left: 350px;
-    top: -15%;
-    width: $main-works1-oval-size;
-    height: $main-works1-oval-size;
-  }
+
   //main works4-------------------------------------------
   $main-works4-oval-size:630px;
   .main-works-description4{
@@ -569,9 +487,7 @@ $other-works5-oval-size:350px;
   .other-works1-img{
     bottom: -10%;
   }
-  .other-works1-line-oval{
-    bottom: -10%;
-  }
+
   .other-works-description1{
     bottom: 7%;
   }
@@ -638,12 +554,7 @@ $other-works5-oval-size:350px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
   }
-  .mainworks2-line-oval{
-    left: 1000px;
-    bottom: -25%;
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
+
   //main works3-------------------------------------------
   $main-works3-oval-size:1000px;
   .main-works-description3{
@@ -656,11 +567,7 @@ $other-works5-oval-size:350px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
-  .mainworks3-line-oval{
-    left: 1950px;
-    width: $main-works3-oval-size;
-    height: $main-works3-oval-size;
-  }
+
   //main works4-------------------------------------------
   $main-works4-oval-size:630px;
   .main-works-description4{
@@ -674,21 +581,13 @@ $other-works5-oval-size:350px;
     width: $main-works4-oval-size;
     height: $main-works4-oval-size;
   }
-  .mainworks4-line-oval{
-    left: 3070px;
-    top: -10%;
-    width: $main-works4-oval-size;
-    height: $main-works4-oval-size;
-  }
+
   //main works5-------------------------------------------
   $main-works5-oval-size:500px;
   .main-works-description5{
     left: 3800px;
   }
   .main-works5-img{
-    left: 3650px;
-  }
-  .mainworks5-line-oval{
     left: 3650px;
   }
   //other works1------------------------------------------
@@ -704,9 +603,6 @@ $other-works5-oval-size:350px;
   .other-works3-img{
     bottom: -10%;
   }
-  .other-works3-line-oval{
-    bottom: -10%;
-  }
   //other works4-------------------------------------------
   $other-works4-oval-size:470px;
   .other-works-description4{
@@ -715,13 +611,6 @@ $other-works5-oval-size:350px;
   }
   .other-works4-img{
     left: 5950px;
-
-  }
-  .other-works4-line-oval{
-    width: $other-works4-oval-size;
-    height: $other-works4-oval-size;
-    left: 5950px;
-    bottom: 30%;
   }
   //closed-projects-------------------------------------------
   .works-headding-closed{
@@ -766,12 +655,6 @@ $other-works5-oval-size:350px;
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
-  .mainworks1-line-oval{
-    left: 120px;
-    top: -20%;
-    width: $main-works1-oval-size;
-    height: $main-works1-oval-size;
-  }
   //main works2-------------------------------------------
   $main-works2-oval-size:800px;
   .main-works-description2{
@@ -780,12 +663,6 @@ $other-works5-oval-size:350px;
     width: 700px;
   }
   .main-works2-img{
-    left: 800px;
-    bottom: -25%;
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
-  .mainworks2-line-oval{
     left: 800px;
     bottom: -25%;
     width: $main-works2-oval-size;
@@ -803,11 +680,6 @@ $other-works5-oval-size:350px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
-  .mainworks3-line-oval{
-    left: 1750px;
-    width: $main-works3-oval-size;
-    height: $main-works3-oval-size;
-  }
   //main works4-------------------------------------------
   $main-works4-oval-size:580px;
   .main-works-description4{
@@ -816,12 +688,6 @@ $other-works5-oval-size:350px;
     width: 480px;
   }
   .main-works4-img{
-    left: 2600px;
-    top: -20%;
-    width: $main-works4-oval-size;
-    height: $main-works4-oval-size;
-  }
-  .mainworks4-line-oval{
     left: 2600px;
     top: -20%;
     width: $main-works4-oval-size;
@@ -836,9 +702,6 @@ $other-works5-oval-size:350px;
   .main-works5-img{
     left: 3200px;
   }
-  .mainworks5-line-oval{
-    left: 3200px;
-  }
   //main works6-------------------------------------------
   $main-works6-oval-size:850px;
   .main-works-description6{
@@ -847,12 +710,6 @@ $other-works5-oval-size:350px;
     width: 600px;
   }
   .main-works6-img{
-    left: 3900px;
-    top: -15%;
-    width: $main-works6-oval-size;
-    height: $main-works6-oval-size;
-  }
-  .mainworks6-line-oval{
     left: 3900px;
     top: -15%;
     width: $main-works6-oval-size;
@@ -874,10 +731,6 @@ $other-works5-oval-size:350px;
     left: 4840px;
     bottom: -10%;
   }
-  .other-works1-line-oval{
-    left: 4840px;
-    bottom: -10%;
-  }
   //other works2-------------------------------------------
   $other-works2-oval-size:700px;
   .other-works-description2{
@@ -893,12 +746,6 @@ $other-works5-oval-size:350px;
       height: $other-works2-oval-size;
     }
   }
-  .other-works2-line-oval{
-    width: $other-works2-oval-size;
-    height: $other-works2-oval-size;
-    left: 5100px;
-    top: -45%;
-  }
   //other works3-------------------------------------------
   $other-works3-oval-size:400px;
   .other-works-description3{
@@ -909,10 +756,6 @@ $other-works5-oval-size:350px;
     left: 5720px;
     bottom: -10%;
   }
-  .other-works3-line-oval{
-    left: 5720px;
-    bottom: -10%;
-  }
   //other works4-------------------------------------------
   $other-works4-oval-size:470px;
   .other-works-description4{
@@ -920,12 +763,6 @@ $other-works5-oval-size:350px;
     bottom: 55%;
   }
   .other-works4-img{
-    left: 5850px;
-    bottom: 35%;
-  }
-  .other-works4-line-oval{
-    width: $other-works4-oval-size;
-    height: $other-works4-oval-size;
     left: 5850px;
     bottom: 35%;
   }
@@ -943,12 +780,6 @@ $other-works5-oval-size:350px;
       width: $other-works5-oval-size;
       height: $other-works5-oval-size;
     }
-  }
-  .other-works5-line-oval{
-    width: $other-works5-oval-size;
-    height: $other-works5-oval-size;
-    left: 6200px;
-    top: 28%;
   }
   //closed projects-------------------------------------------
   .closed-projects{
@@ -1008,12 +839,6 @@ $other-works5-oval-size:350px;
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
-  .mainworks1-line-oval{
-    left: -3%;
-    top: 260px;
-    width: $main-works1-oval-size;
-    height: $main-works1-oval-size;
-  }
   //main works2-------------------------------------------
   $main-works2-oval-size:700px;
   .main-works-description2{
@@ -1022,13 +847,6 @@ $other-works5-oval-size:350px;
     width: 70%;
   }
   .main-works2-img{
-    left: auto;
-    right: -10%;
-    top: 750px;
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
-  .mainworks2-line-oval{
     left: auto;
     right: -10%;
     top: 750px;
@@ -1052,12 +870,6 @@ $other-works5-oval-size:350px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
-  .mainworks3-line-oval{
-    left: -5%;
-    top: 1460px;
-    width: $main-works3-oval-size;
-    height: $main-works3-oval-size;
-  }
   .words .works-headding{
     display: none;
   }
@@ -1069,13 +881,6 @@ $other-works5-oval-size:350px;
     width: 60%;
   }
   .main-works4-img{
-    left: auto;
-    top: 2020px;
-    right: 3%;
-    width: $main-works4-oval-size;
-    height: $main-works4-oval-size;
-  }
-  .mainworks4-line-oval{
     left: auto;
     top: 2020px;
     right: 3%;
@@ -1096,12 +901,6 @@ $other-works5-oval-size:350px;
     width: $main-works5-oval-size;
     height: $main-works5-oval-size;
   }
-  .mainworks5-line-oval{
-    left: 3%;
-    top: 2430px;
-    width: $main-works5-oval-size;
-    height: $main-works5-oval-size;
-  }
   //main works6-------------------------------------------
   $main-works6-oval-size:600px;
   .main-works-description6{
@@ -1110,12 +909,6 @@ $other-works5-oval-size:350px;
     width: 60%;
   }
   .main-works6-img{
-    left: 23%;
-    top: 2840px;
-    width: $main-works6-oval-size;
-    height: $main-works6-oval-size;
-  }
-  .mainworks6-line-oval{
     left: 23%;
     top: 2840px;
     width: $main-works6-oval-size;
@@ -1154,13 +947,6 @@ $other-works5-oval-size:350px;
     top: 1070px;
   }
   .main-works2-img{
-    left: auto;
-    right: -10%;
-    top: 780px;
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
-  .mainworks2-line-oval{
     left: auto;
     right: -10%;
     top: 780px;
@@ -1237,10 +1023,6 @@ $other-works5-oval-size:350px;
   }
   //work's image
   .main-works1-img{
-    width: $main-works1-oval-size;
-    height: $main-works1-oval-size;
-  }
-  .mainworks1-line-oval{
     width: $main-works1-oval-size;
     height: $main-works1-oval-size;
   }
@@ -1386,11 +1168,6 @@ $other-works5-oval-size:350px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
   }
-  .mainworks2-line-oval{
-    top: 820px;
-    width: $main-works2-oval-size;
-    height: $main-works2-oval-size;
-  }
   .main-works-description4 {
     top: 2100px;
   }
@@ -1414,12 +1191,6 @@ $other-works5-oval-size:350px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
-  .mainworks3-line-oval{
-    left: -5%;
-    top: 1460px;
-    width: $main-works3-oval-size;
-    height: $main-works3-oval-size;
-  }
   //main works5-------------------------------------------
   .main-works5-img {
     top: 2520px;
@@ -1433,11 +1204,6 @@ $other-works5-oval-size:350px;
     top: 3100px;
   }
   .main-works6-img{
-    top: 3000px;
-    width: $main-works6-oval-size;
-    height: $main-works6-oval-size;
-  }
-  .mainworks6-line-oval{
     top: 3000px;
     width: $main-works6-oval-size;
     height: $main-works6-oval-size;

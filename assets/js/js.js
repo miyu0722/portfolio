@@ -550,36 +550,36 @@ function seans(){
       // .addIndicators({name: "70"})
       .addTo(controller);
   var contact_o2 = new ScrollMagic.Scene({triggerElement: "#trigger71", offset :8900})
-      .setClassToggle("#target71", "oval-fade-in3")
+      .setClassToggle("#target71", "oval-fade-in4")
       // .addIndicators({name: "71"})
       .addTo(controller);
   var contact_o3 = new ScrollMagic.Scene({triggerElement: "#trigger72", offset :9000})
-      .setClassToggle("#target72", "oval-fade-in3")
+      .setClassToggle("#target72", "oval-fade-in5")
       // .addIndicators({name: "72"})
       .addTo(controller);
   var contact_o4 = new ScrollMagic.Scene({triggerElement: "#trigger73", offset :9100})
-      .setClassToggle("#target73", "oval-fade-in3")
+      .setClassToggle("#target73", "oval-fade-in1")
       // .addIndicators({name: "73"})
       .addTo(controller);
   var contact_o5 = new ScrollMagic.Scene({triggerElement: "#trigger74", offset :9200})
-      .setClassToggle("#target74", "oval-fade-in3")
+      .setClassToggle("#target74", "oval-fade-in2")
       // .addIndicators({name: "74"})
       .addTo(controller);
 
   var contact_h1 = new ScrollMagic.Scene({triggerElement: "#trigger75", offset :9150})
-      .setClassToggle("#target75", "fadeInDown")
+      .setClassToggle("#target75", "fadeInUp")
       // .addIndicators({name: "75"})
       .addTo(controller);
   var contact_linkedin = new ScrollMagic.Scene({triggerElement: "#trigger76", offset :9250})
-      .setClassToggle("#target76", "fadeInDown")
+      .setClassToggle("#target76", "fadeInUp")
       // .addIndicators({name: "76"})
       .addTo(controller);
   var contact_dribbble = new ScrollMagic.Scene({triggerElement: "#trigger77", offset :9300})
-      .setClassToggle("#target77", "fadeInDown")
+      .setClassToggle("#target77", "fadeInUp")
       // .addIndicators({name: "77"})
       .addTo(controller);
   var contact_mail = new ScrollMagic.Scene({triggerElement: "#trigger78", offset :9350})
-      .setClassToggle("#target78", "fadeInDown")
+      .setClassToggle("#target78", "fadeInUp")
       // .addIndicators({name: "78"})
       .addTo(controller);
 }
@@ -939,36 +939,36 @@ function seans2(){
       // .addIndicators({name: "70"})
       .addTo(controller);
   var contact_o2 = new ScrollMagic.Scene({triggerElement: "#trigger71", offset :5525})
-      .setClassToggle("#target71", "oval-fade-in3")
+      .setClassToggle("#target71", "oval-fade-in4")
       // .addIndicators({name: "71"})
       .addTo(controller);
   var contact_o3 = new ScrollMagic.Scene({triggerElement: "#trigger72", offset :5550})
-      .setClassToggle("#target72", "oval-fade-in3")
+      .setClassToggle("#target72", "oval-fade-in5")
       // .addIndicators({name: "72"})
       .addTo(controller);
   var contact_o4 = new ScrollMagic.Scene({triggerElement: "#trigger73", offset :5575})
-      .setClassToggle("#target73", "oval-fade-in3")
+      .setClassToggle("#target73", "oval-fade-in1")
       // .addIndicators({name: "73"})
       .addTo(controller);
   var contact_o5 = new ScrollMagic.Scene({triggerElement: "#trigger74", offset :5580})
-      .setClassToggle("#target74", "oval-fade-in3")
+      .setClassToggle("#target74", "oval-fade-in2")
       // .addIndicators({name: "74"})
       .addTo(controller);
 
   var contact_h1 = new ScrollMagic.Scene({triggerElement: "#trigger75", offset :5525})
-      .setClassToggle("#target75", "fadeInDown")
+      .setClassToggle("#target75", "fadeInUp")
       // .addIndicators({name: "75"})
       .addTo(controller);
   var contact_linkedin = new ScrollMagic.Scene({triggerElement: "#trigger76", offset :5550})
-      .setClassToggle("#target76", "fadeInDown")
+      .setClassToggle("#target76", "fadeInUp")
       // .addIndicators({name: "76"})
       .addTo(controller);
   var contact_dribbble = new ScrollMagic.Scene({triggerElement: "#trigger77", offset :5575})
-      .setClassToggle("#target77", "fadeInDown")
+      .setClassToggle("#target77", "fadeInUp")
       // .addIndicators({name: "77"})
       .addTo(controller);
   var contact_mail = new ScrollMagic.Scene({triggerElement: "#trigger78", offset :5600})
-      .setClassToggle("#target78", "fadeInDown")
+      .setClassToggle("#target78", "fadeInUp")
       // .addIndicators({name: "78"})
       .addTo(controller);
 }
@@ -1033,103 +1033,4 @@ function seans2(){
 //     .addIndicators({name: "parallax6"})
 //     .addTo(controller);
 
-
-// =====================================================
-// smooth scroll
-// =====================================================
-
-
-// =====================================================
-// header animation
-// =====================================================
-  //Title
-  var optionsTitle1 = {
-  duration: 1000,
-  delay: 300,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  var optionsTitle2 = {
-  duration: 1500,
-  delay: 200,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  var optionsTitle3 = {
-  duration: 2100,
-  delay: 200,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  var optionsTitle4 = {
-  duration: 2100,
-  delay: 2000,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  var optionsTitle5 = {
-  duration: 1500,
-  delay: 2500,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  var optionsTitle6 = {
-  duration: 1500,
-  delay: 3000,
-  direction: 'alternate',
-  fill: 'both',
-  id: 'myAnimation'
-  };
-  window.animatelo.fadeInUpBig('#title1',optionsTitle1);
-  window.animatelo.fadeInDownBig('#title2',optionsTitle2);
-  window.animatelo.fadeInUpBig('#title3',optionsTitle3);
-  window.animatelo.fadeIn('#title4',optionsTitle4);
-  window.animatelo.fadeIn('#title5',optionsTitle5);
-  window.animatelo.fadeIn('#title6',optionsTitle6);
 });
-// =====================================================
-// Works Modal Window
-// =====================================================
-$(function(){
-// show works
-  $('.main-works1').click(function(){
-    $('.main-work-window1').toggleClass('.works_display');
-  });
-});
-
-// =====================================================
-// huwahuwa
-// =====================================================
-// $(function(){
-//   var initialLocationX = [];
-//   var initialLocationY = [];
-//
-//   initialLocationX.push(parseFloat($(".header-oval1").css("left").replace(/px/g,"")));
-//   initialLocationY.push(parseFloat($(".header-oval1").css("top").replace(/px/g,"")));
-//   initialLocationX.push(parseFloat($(".header-oval2").css("left").replace(/px/g,"")));
-//   initialLocationY.push(parseFloat($(".header-oval2").css("top").replace(/px/g,"")));
-//
-//   var rnd = function(){
-//     var rnd = {};
-//     var sw = Math.floor(Math.random() * 2) === 0 ? 1 : -1;
-//     rnd.x = Math.floor( Math.random() * 20 )+20 * sw;
-//     rnd.y = Math.floor( Math.random() * 20 )+20 * sw;
-//     return rnd;
-//   };
-//
-//   setInterval(function(){
-//       $(".header-oval1").animate({
-//       	"left": (rnd().x + initialLocationX[0]) + "px",
-//       	"top": (rnd().y + initialLocationY[0]) + "px"
-//       },5000);
-//       $(".header-oval2").animate({
-//         "left": (rnd().x + initialLocationX[1]) + "px",
-//       	"top": (rnd().y + initialLocationY[1]) + "px"
-//       },5000);
-//   },500);
-// });
