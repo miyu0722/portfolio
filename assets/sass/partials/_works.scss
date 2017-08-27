@@ -1,7 +1,6 @@
 // =====================================================
 // works
 // =====================================================
-
 //works section container
 .works{
   position: absolute;
@@ -33,6 +32,28 @@
   margin-bottom: 50px;
   display: block;
 }
+
+.common-other-works-img.oval-fade-in1-o:hover +.other-works-description {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.common-other-works-img.oval-fade-in2-o:hover +.other-works-description {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.common-other-works-img.oval-fade-in3-o:hover +.other-works-description {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.common-other-works-img.oval-fade-in4-o:hover +.other-works-description {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.common-other-works-img.oval-fade-in5-o:hover +.other-works-description {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+
 .works-headding{
   font-size: 5.4rem;
   font-weight: 300;
@@ -43,6 +64,20 @@
     font-size: 3.0rem;
   }
 }
+.tag{
+  li{
+    border: 1px solid $primary;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-right: 5px;
+    padding: 2px 8px;
+  }
+}
+.skills-tag{
+  font-size: 1.0rem;
+}
+
 //------------------------------------------------------
 // main-projects
 //------------------------------------------------------
@@ -56,11 +91,18 @@
 //hoverを掛けたい親要素にhoverをつけて、その中に動作させたいクラスを入れる
 .common-main-works{
   &:hover{
+    transition: all 0.4s ease 0s;
     .main-works-common-img::after{
       opacity: 0;
     }
     .common-main-works-description{
       color: $white;
+      //opacity: 0;
+    }
+    .tag{
+        li{
+          border: 1px solid $white;
+        }
     }
   }
 }
@@ -83,24 +125,24 @@
   }
 }
 //main works1-------------------------------------------
-$main-works1-oval-size:530px;
+$main-works1-oval-size:550px;
 $main-works1-left:450px;
 $main-works1-top:-12%;
 //work's description
 .main-works-description1{
   left: 820px;
   top: 120px;
-  width: 700px;
+  width: 500px;
 }
 //work's image
 .main-works1-img{
   left: $main-works1-left;
   top: $main-works1-top;
-  background: url(/img/works_marketas.png) center bottom / cover no-repeat;
+  background: url(/img/works_sweets_note.png) center bottom / cover no-repeat;
   width: $main-works1-oval-size;
   height: $main-works1-oval-size;
   &::after{
-    background: linear-gradient(-208deg, $hover-gradient1 20%, $hover-gradient2 70%);
+    background: linear-gradient(-208deg, $hover-gradient1 0%, $hover-gradient2 70%);
   }
 }
 //main works2-------------------------------------------
@@ -120,7 +162,7 @@ $main-works2-bottom:-25%;
   width: $main-works2-oval-size;
   height: $main-works2-oval-size;
   &::after{
-    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+    background: linear-gradient(-100deg, $hover-gradient1 0%, $hover-gradient2 70%);
   }
 }
 
@@ -134,7 +176,7 @@ $main-works3-top:-10%;
   width: 700px;
   z-index: 1200;
   .works-headding{
-    font-size: 8rem;
+    font-size: 7.0rem;
   }
 }
 .main-works3-img{
@@ -144,7 +186,7 @@ $main-works3-top:-10%;
   width: $main-works3-oval-size;
   height: $main-works3-oval-size;
   &::after{
-    background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+    background: linear-gradient(100deg, $hover-gradient1 0%, $hover-gradient2 70%);
   }
 }
 //main works4-------------------------------------------
@@ -155,13 +197,13 @@ $main-works4-oval-size:630px;
   width: 700px;
 }
 .main-works4-img{
-  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_marketas.png) center bottom / cover no-repeat;
   left: 3400px;
   top: -10%;
   width: $main-works4-oval-size;
   height: $main-works4-oval-size;
   &::after{
-    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+    background: linear-gradient(100deg, $hover-gradient1 0%, $hover-gradient2 70%);
   }
 }
 //main works5-------------------------------------------
@@ -173,14 +215,14 @@ $main-works5-oval-size:500px;
   z-index: 150;
 }
 .main-works5-img{
-  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_movieposter.jpg) center bottom / cover no-repeat;
   left: 3750px;
   bottom: -10%;
   width: $main-works5-oval-size;
   height: $main-works5-oval-size;
   z-index: 100;
   &::after{
-    background: linear-gradient(100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+    background: linear-gradient(100deg, $hover-gradient1 0%, $hover-gradient2 70%);
   }
 }
 
@@ -193,14 +235,14 @@ $main-works6-oval-size:850px;
   z-index: 50;
 }
 .main-works6-img{
-  background: url(/img/works_dummy.png) center bottom / cover no-repeat;
+  background: url(/img/works_portfolio.png) center bottom / cover no-repeat;
   left: 4400px;
   top: -15%;
   z-index: 50;
   width: $main-works6-oval-size;
   height: $main-works6-oval-size;
   &::after{
-    background: linear-gradient(-100deg, $hover-gradient1 10%, $hover-gradient2 70%);
+    background: linear-gradient(-100deg, $hover-gradient3 20%, $hover-gradient4 40%);
   }
 }
 
@@ -225,10 +267,7 @@ $main-works6-oval-size:850px;
   opacity: 0;
   text-align: center;
 }
-.common-other-works-img:hover + .other-works-description {
-  opacity: 1;
-  transition: all .5s ease 0s;
-}
+
 .other-works-animation{
   opacity: 0;
   transition: all .5s ease 0s;
@@ -357,7 +396,7 @@ $other-works5-oval-size:350px;
   color: $white;
   position: absolute;
   left: 6365px;
-  top: -4%;
+  top: -2%;
   width: 220px;
   z-index: 1000;
 }
@@ -377,13 +416,13 @@ $other-works5-oval-size:350px;
 .words{
   .works-headding{
     position: absolute;
-    left: 1600px;
-    top: 12%;
-    width: 950px;
+    left: 1300px;
+    top: 17%;
+    width: 1100px;
     opacity: 0.3;
     font-family: 'Petit Formal Script', serif;
     font-weight: 300;
-    font-size: 13.0rem;
+    font-size: 9.0rem;
     color: $white;
     letter-spacing: 0;
     z-index: 1000;
@@ -423,12 +462,12 @@ $other-works5-oval-size:350px;
 @media screen and (max-height: 960px) {
 
   //main works1-------------------------------------------
-  $main-works1-oval-size:530px;
+  $main-works1-oval-size:550px;
   //work's description
   .main-works-description1{
     left: 550px;
     top: 0px;
-    width: 700px;
+    width: 500px;
   }
 
   //main works2-------------------------------------------
@@ -464,6 +503,7 @@ $other-works5-oval-size:350px;
   $main-works4-oval-size:630px;
   .main-works-description4{
     left: 3400px;
+    width: 500px;
   }
   .main-works4-img{
     left: 3170px;
@@ -518,14 +558,15 @@ $other-works5-oval-size:350px;
     margin: 0.4em 0;
   }
   .words .works-headding{
-    font-size: 11.0rem;
+    font-size: 8.0rem;
+    top: -50px;
   }
   //main works1-------------------------------------------
   $main-works1-oval-size:500px;
   //work's description
   .main-works-description1{
-    left: 500px;
-    top: -14px;
+    left: 450px;
+    top: 30px;
     width: 500px;
   }
   //work's image
@@ -572,7 +613,7 @@ $other-works5-oval-size:350px;
   $main-works4-oval-size:630px;
   .main-works-description4{
     left: 3300px;
-    top: 4%;
+    top: 1%;
     width: 700px;
   }
   .main-works4-img{
@@ -697,6 +738,7 @@ $other-works5-oval-size:350px;
   $main-works5-oval-size:500px;
   .main-works-description5{
     left: 3400px;
+    top: 47%;
     width: 450px;
   }
   .main-works5-img{
@@ -790,10 +832,13 @@ $other-works5-oval-size:350px;
       line-height: 1.2;
     }
   }
-  .words .works-headding{
-    left: 1410px;
-    font-size: 10.0rem;
-    width: 750px;
+  .words{
+    .works-headding{
+      left: 1250px;
+      font-size: 6.5rem;
+      width: 900px;
+      top: 20%;
+    }
   }
 }
 

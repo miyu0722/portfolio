@@ -5,6 +5,7 @@ html{
   height: 100%;
 }
 body{
+  overflow-x: auto;
   overflow-y: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
@@ -45,13 +46,7 @@ button{
   position: absolute;
   opacity: 0.8;
 }
-.common-line-oval{
-  border: 1px solid $primary;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  display: none;
-}
+
 .common-section-headding{
   font-weight: 300;
   margin-bottom: 10px;
