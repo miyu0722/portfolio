@@ -4,19 +4,20 @@
 .contact{
   color: $primary;
   position: relative;
-  left: 8850px;
-  width: 100%;
+//  left: 8850px;
+  width: 800px;
   height: 100%;
   max-width: 1000px;
   text-align: center;
-  padding: 0 30px;
+  padding: 0;
   display: table;
+  margin-left: 450px;
 }
 .contact-container{
   border: 1px solid $primary;
   border-radius: 20px;
   height: 100%;
-  width: 780px;
+  width: 100%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -43,7 +44,7 @@
 // =====================================================
 @media screen and (max-height: 800px) {
   .contact-container{
-    width: 710px;
+    //width: 710px;
   }
 }
 // =====================================================
@@ -51,13 +52,12 @@
 // =====================================================
 @media screen and (max-height: 700px) {
   .contact{
-    left: 9000px;
+    width: 650px;
   }
   .contact-section-headding {
     margin-top: -10px;
   }
   .contact-container {
-    width: 590px;
     height: 91vh;
   }
 }

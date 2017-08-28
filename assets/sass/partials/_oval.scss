@@ -62,7 +62,7 @@ $skills-oval1-size:80px;
 $career-oval1-size:1200px;
 .career-oval1{
   left: -280px;
-  top: -240%;
+  top: -65%;
   width: $career-oval1-size;
   height: $career-oval1-size;
   background: linear-gradient(-180deg, #A3D3D6 40%, #3A56CA 100%);
@@ -72,7 +72,7 @@ $career-oval1-size:1200px;
 $career-oval2-size:310px;
 .career-oval2{
   left: -70px;
-  bottom: -230%;
+  bottom: -0%;
   width: $career-oval2-size;
   height: $career-oval2-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
@@ -81,7 +81,7 @@ $career-oval2-size:310px;
 $career-oval3-size:50px;
 .career-oval3{
   left: 370px;
-  bottom: -160%;
+  bottom: 10%;
   width: $career-oval3-size;
   height: $career-oval3-size;
   background: linear-gradient(-180deg, #389B84 19%, #3EBAD0 100%);
@@ -90,7 +90,7 @@ $career-oval3-size:50px;
 $career-oval4-size:90px;
 .career-oval4{
   left: 500px;
-  bottom: -150%;
+  bottom: 20%;
   width: $career-oval4-size;
   height: $career-oval4-size;
   background: linear-gradient(-180deg, #FFBA3E 0%, #D04600 100%);
@@ -99,7 +99,7 @@ $career-oval4-size:90px;
 $career-oval5-size:165px;
 .career-oval5{
   left: 670px;
-  top: 90%;
+  top: 40%;
   width: $career-oval5-size;
   height: $career-oval5-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
@@ -492,11 +492,11 @@ $gnav-oval5-size:250px;
   }
   //career-oval2-------------------------------------------
   .career-oval2{
-    bottom: -175%;
+    //bottom: -175%;
   }
   //career-oval3-------------------------------------------
   .career-oval3{
-    bottom: -135%;
+    //bottom: -135%;
   }
   //works-oval1-------------------------------------------
   .works-oval1{
@@ -553,31 +553,37 @@ $gnav-oval5-size:250px;
     width: $header-oval3-size;
     height: $header-oval3-size;
   }
+  //header-oval5-------------------------------------------
+  $header-oval5-size:300px;
+  .header-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
+  }
   //career-oval1-------------------------------------------
   $header-oval1-size:1100px;
   .career-oval1{
-    left: -260px;
-    top: -220%;
+    // left: -260px;
+    // top: -220%;
     width: $header-oval1-size;
     height: $header-oval1-size;
   }
   //career-oval2-------------------------------------------
   .career-oval2{
-    bottom: -150%;
+    // bottom: -150%;
   }
   //career-oval3-------------------------------------------
   .career-oval3{
-    bottom: -110%;
+    // bottom: -110%;
   }
   //career-oval4-------------------------------------------
   .career-oval4{
-    bottom: -130%;
+    // bottom: -130%;
   }
   //career-oval5-------------------------------------------
   $career-oval5-size:160px;
   .career-oval5{
     left: 690px;
-    top: 75%;
+    // top: 75%;
     width: $career-oval5-size;
     height: $career-oval5-size;
   }
@@ -658,7 +664,7 @@ $gnav-oval5-size:250px;
   }
   //contact-oval5-------------------------------------------
   .contact-oval5{
-    left: 600px;
+    left: 660px;
   }
 }
 
@@ -687,32 +693,18 @@ $gnav-oval5-size:250px;
     height: $header-oval5-size;
   }
   //career-oval1-------------------------------------------
-  $career-oval1-size:1000px;
+  $career-oval1-size:900px;
   .career-oval1{
-    left: -250px;
-    top: -200%;
+    left: -200px;
     width: $career-oval1-size;
     height: $career-oval1-size;
   }
   //career-oval2-------------------------------------------
+  $career-oval2-size:260px;
   .career-oval2{
-    bottom: -130%;
-  }
-  //career-oval3-------------------------------------------
-  .career-oval3{
-    bottom: -90%;
-  }
-  //career-oval4-------------------------------------------
-  .career-oval4{
-    bottom: -80%;
-  }
-  //career-oval5-------------------------------------------
-  $career-oval5-size:130px;
-  .career-oval5 {
-    width: $career-oval5-size;
-    height: $career-oval5-size;
-    left: 650px;
-    top: 40%;
+    left: -200px;
+    width: $career-oval2-size;
+    height: $career-oval2-size;
   }
   //works-oval1-------------------------------------------
   .works-oval1{
@@ -721,17 +713,18 @@ $gnav-oval5-size:250px;
   }
   //works-oval2-------------------------------------------
   .works-oval2{
-    left: 1370px;
-    top: -12%;
+    left: 1460px;
+    top: -5%;
+    z-index: auto;
   }
   //works-oval3-------------------------------------------
   .works-oval3{
-    left: 1630px;
+    left: 1750px;
     bottom: 25%;
   }
   //works-oval4-------------------------------------------
   .works-oval4 {
-    left: 1700px;
+    left: 1840px;
     bottom: 5%;
   }
   //works-oval5-------------------------------------------
@@ -741,92 +734,90 @@ $gnav-oval5-size:250px;
   //works-oval6-------------------------------------------
   $works-oval6-size:100px;
   .works-oval6{
-    left: 3400px;
+    left: 3700px;
     bottom: 68%;
     width: $works-oval6-size;
     height: $works-oval6-size;
   }
   //works-oval7-------------------------------------------
   .works-oval7{
-    left: 3585px;
+    left: 4045px;
     top: 3%;
   }
   //works-oval8-------------------------------------------
   .works-oval8{
-    left: 3770px;
+    left: 4200px;
     top: -10%;
   }
   //works-oval9-------------------------------------------
   $works-oval9-size:50px;
   .works-oval9{
-    left: 3900px;
+    left: 4440px;
     bottom: 15%;
     width: $works-oval9-size;
     height: $works-oval9-size;
   }
   //works-oval10-------------------------------------------
   .works-oval10{
-    left: 4850px;
+    left: 5110px;
     bottom: 75%;
   }
   //works-oval11-------------------------------------------
   .works-oval11{
-    left: 4950px;
-    top: -100%;
-    width: 1900px;
-    height: 1600px;
+    left: 5150px;
+    top: -70%;
+    width: 1500px;
+    height: 1500px;
   }
   //works-oval12-------------------------------------------
-  $works-oval12-size:50px;
   .works-oval12{
-    left: 5360px;
-    bottom: 23%;
-    width: $works-oval12-size;
-    height: $works-oval12-size;
+    left: 5200px;
+    bottom: 43%;
   }
   //works-oval13-------------------------------------------
   .works-oval13{
-    left: 5070px;
-    top: 18%;
+    left: 5400px;
+    top: 38%;
   }
   //works-oval14-------------------------------------------
   $works-oval14-size:200px;
   .works-oval14{
-    left: 5450px;
-    bottom: -5%;
+    left: 5570px;
+    bottom: 10%;
     width: $works-oval14-size;
     height: $works-oval14-size;
   }
   //works-oval15-------------------------------------------
   .works-oval15{
-    left: 5650px;
+    left: 5700px;
     top: 10%;
   }
   //works-oval16-------------------------------------------
   $works-oval16-size:80px;
   .works-oval16{
-    left: 5675px;
+    left: 5955px;
     bottom: 17%;
     width: $works-oval16-size;
     height: $works-oval16-size;
   }
   //works-oval17-------------------------------------------
   .works-oval17{
-    top: -8%;
+    top: 50%;
+    left: 6220px;
   }
   //works-oval18-------------------------------------------
   .works-oval18{
-    left: 6400px;
+    left: 6360px;
   }
   //works-oval19-------------------------------------------
   .works-oval19{
-    left: 6440px;
-    top: 3%;
+    left: 6410px;
+    top: -6%;
   }
   //works-oval20-------------------------------------------
   $works-oval20-size:550px;
   .works-oval20{
-    left: 6510px;
+    left: 6370px;
     bottom: -1%;
     width: $works-oval20-size;
     height: $works-oval20-size;
@@ -848,7 +839,7 @@ $gnav-oval5-size:250px;
   }
   //contact-oval5-------------------------------------------
   .contact-oval5{
-    left: 470px;
+    left: 500px;
   }
 }
 
@@ -856,11 +847,43 @@ $gnav-oval5-size:250px;
 // media screen max-height600px
 // =====================================================
 @media screen and (max-height: 600px) {
+  //career-oval1-------------------------------------------
   .career-oval1 {
-    left: -140px;
-    top: -150%;
+    left: -150px;
     width: 800px;
     height: 800px;
+  }
+  //career-oval2-------------------------------------------
+  $career-oval2-size:200px;
+  .career-oval2{
+    width: $career-oval2-size;
+    height: $career-oval2-size;
+  }
+}
+// =====================================================
+// media screen max-height500px
+// =====================================================
+@media screen and (max-height: 500px) {
+  //header-oval1-------------------------------------------
+  $header-oval1-size:530px;
+  .header-oval1{
+    top: -80%;
+    width: $header-oval1-size;
+    height: $header-oval1-size;
+  }
+  //header-oval3-------------------------------------------
+  $header-oval3-size:170px;
+  .header-oval3{
+    bottom: 0%;
+    left: 20px;
+    width: $header-oval3-size;
+    height: $header-oval3-size;
+  }
+  //header-oval5-------------------------------------------
+  $header-oval5-size:250px;
+  .header-oval5{
+    width: $header-oval5-size;
+    height: $header-oval5-size;
   }
 }
 

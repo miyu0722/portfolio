@@ -2,11 +2,11 @@
 // career
 // =====================================================
 .career{
-  position: absolute;
-  left: 115%;
-  top: -10vh;
+  position: relative;
+  top: -4vh;
   width: 800px;
   color: #ddd;
+  margin-left: 285px;
 }
 .career-hedding{
   font-size: 2.4rem;
@@ -19,24 +19,28 @@
     padding-right: 10px;
   }
 }
+.experience{
+  margin-top: 100px;
+}
+.experience, .education{
+  width: 800px;
+}
 
 // =====================================================
 // media screen max-height900px
 // =====================================================
 @media screen and (max-height: 900px) {
-  .career{
-    top: -4vh;
-  }
+  // .career{
+  //   top: -4vh;
+  // }
 }
 
 // =====================================================
 // media screen max-height700px
 // =====================================================
 @media screen and (max-height: 700px) {
-  .career{
-    left: 123%;
-    top: 0vh;
-    width: 700px;
+  .experience {
+      margin-top: 60px;
   }
 }
 
@@ -44,14 +48,14 @@
 // media screen max-height600px
 // =====================================================
 @media screen and (max-height: 600px){
-  .career{
-    left: 120%;
-    top: 0vh;
-    width: 700px;
-  }
-  .career-hedding {
-    font-size: 2.0rem;
-  }
+  // .career{
+  //   left: 120%;
+  //   top: 0vh;
+  //   width: 700px;
+  // }
+  // .career-hedding {
+  //   font-size: 2.0rem;
+  // }
 }
 // =====================================================
 // media screen max-width800px

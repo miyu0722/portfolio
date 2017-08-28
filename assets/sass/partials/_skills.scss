@@ -2,11 +2,10 @@
 // skills
 // =====================================================
 .about{
- height: 100%; //Added by Masa
- position: absolute;
- left: 230px;
- margin-top: 10vh;
- width: 865px;
+  display: flex;
+  height: 100%; //Added by Masa
+  position: relative;
+  width: 1835px;
 }
 //graphs
 .application-graph{
@@ -36,6 +35,7 @@
  background: #13767A;
 }
 .myskills{
+  margin-top: 70px;
  p{
    width: 750px;
    margin-bottom: 50px;
@@ -70,8 +70,15 @@
 // media screen max-height700px
 // =====================================================
 @media screen and (max-height: 700px) {
+  .about{
+    margin-left: 200px;
+  }
+  .myskills {
+    margin-top: 40px;
+  }
   .myskills p {
     margin-bottom: 30px;
+    width: 690px;
   }
   .application-graph .donut-chart.fill .pie, .application-graph .pie-chart .pie {
     box-shadow: 0 0 0 3px #4D1AC5;
@@ -88,22 +95,12 @@
   .donut-chart h2 span{
     font-size: 11px;
   }
-  .about{
-    width: 750px;
-  }
-  .myskills p{
-    width: 690px;
-  }
 }
 
 // =====================================================
 // media screen max-height600px
 // =====================================================
 @media screen and (max-height: 600px){
-  .about{
-   margin-top: 0vh;
-  width: 650px;
-  }
   .myskills p {
     margin-bottom: 30px;
   }
@@ -116,7 +113,7 @@
     -webkit-box-shadow: 0 0 0 2px #13767A;
   }
   .skills-graph {
-    margin: -6px 13px 20px 5px;
+    margin: 3px 13px 20px 5px;
   }
   .application-graph {
     margin: 5px 13px 20px 5px;
@@ -130,6 +127,15 @@
   }
   .myskills p{
     width: 630px;
+  }
+}
+
+// =====================================================
+// media screen max-height500px
+// =====================================================
+@media screen and (max-height: 500px) {
+  .myskills {
+      margin-top: -10px;
   }
 }
 
