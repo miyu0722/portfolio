@@ -1,0 +1,218 @@
+// =====================================================
+// main-container
+// =====================================================
+.main-container{
+  max-width: 900px;
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  padding-top: 130px
+}
+
+// =====================================================
+// works section common
+// =====================================================
+section{
+  max-width: 900px;
+  margin-bottom: 200px;
+  h2{
+    font-size: 4.0rem;
+    text-align: center;
+  }
+}
+
+// =====================================================
+// concept description
+// =====================================================
+.concept-description{
+  position: relative;
+}
+.description{
+  font-family: 'Petit Formal Script', serif;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 430px;
+  width: 100%;
+}
+// =====================================================
+// concept image
+// =====================================================
+.works-sub-img{
+  display: block;
+  img{
+    width: 100%;
+  }
+}
+.concept_img{
+  position: relative;
+}
+// =====================================================
+// color chips
+// =====================================================
+.concept_color{
+  position: relative;
+}
+.color-chips{
+  display: flex;
+  justify-content: center;
+}
+.color-chip-container{
+  font-family: 'Petit Formal Script', serif;
+  margin: 50px 16px 100px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.color-chip{
+  height: 90px;
+  margin-bottom: 20px;
+  position: inherit;
+  width: 90px;
+}
+
+// =====================================================
+// mobile
+// =====================================================
+.mobile{
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin-bottom: 300px;
+}
+.mobile-right{
+  margin-left: 70px;
+  position: relative;
+}
+.iphone-mock{
+  position: absolute;
+  right: 70px;
+  top: -80px;
+  width: 70%;
+  z-index: 1;
+}
+$mobile-detail-oval1-size:400px;
+.mobile-detail-oval1{
+  background: $primary;
+  height: $mobile-detail-oval1-size;
+  position: inherit;
+  width: $mobile-detail-oval1-size;
+}
+
+// =====================================================
+// mockup
+// =====================================================
+.mock-up{
+  position: relative;
+}
+#worktarget14 {
+  animation-duration: 3s;
+}
+
+// =====================================================
+// media screen max-width1110px
+// =====================================================
+@media screen and (max-width: 1110px) {
+  section{
+    margin-bottom: 130px;
+  }
+}
+
+// =====================================================
+// media screen max-width900px
+// =====================================================
+@media screen and (max-width: 900px) {
+  .main-container{
+    width: 75%;
+  }
+  .mobile{
+    margin-bottom: 250px;
+  }
+  .iphone-mock{
+    top: -25px;
+    width: 57%;
+  }
+  $mobile-detail-oval1-size:300px;
+  .mobile-detail-oval1{
+    height: $mobile-detail-oval1-size;
+    width: $mobile-detail-oval1-size;
+  }
+  .color-chip-container {
+    margin: 50px 2% 100px;
+  }
+  .color-chip{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+// =====================================================
+// media screen max-width800px
+// =====================================================
+@media screen and (max-width: 800px) {
+  .mobile{
+    margin-bottom: 200px;
+  }
+}
+
+// =====================================================
+// media screen max-width780px
+// =====================================================
+@media screen and (max-width: 780px) {
+  .main-container{
+    width: 75%;
+  }
+}
+
+// =====================================================
+// media screen max-width660px
+// =====================================================
+@media screen and (max-width: 660px) {
+  .iphone-mock {
+    top: -16px;
+    right: 40px;
+  }
+  .mobile{
+    flex-direction: column-reverse;
+  }
+  .mobile-right {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .mobile-description{
+    text-align: center;
+  }
+  .color-chip{
+    height: 70px;
+    width: 70px;
+  }
+}
+
+// =====================================================
+// media screen max-width550px
+// =====================================================
+@media screen and (max-width: 550px) {
+  .color-chip{
+    height: 70px;
+    width: 70px;
+  }
+}
+
+// =====================================================
+// media screen max-width450px
+// =====================================================
+@media screen and (max-width: 450px) {
+  .main-container{
+    width: 90%;
+  }
+  .color-chip-container {
+    margin: 50px 3% -30px;
+    font-size: 1.2rem;
+  }
+  .color-chips{
+    flex-wrap: wrap;
+  }
+  .mobile{
+    margin-top: 180px;
+  }
+}

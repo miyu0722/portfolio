@@ -1,0 +1,34 @@
+.invisible{
+  opacity: 0;
+}
+//header用
+.hoval-move1{
+  opacity: 0;
+  animation: vertical1 1s ease-in-out infinite alternate, animation01 5s ease 4s 1 normal, animation02 3s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+.hoval-move2{
+  opacity: 0;
+  animation: vertical2 1s ease-in-out infinite alternate, animation01 5s ease 3s 1 normal, animation02 4s ease 7s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+.hoval-move3{
+  opacity: 0;
+  animation: vertical3 1s ease-in-out infinite alternate, animation01 3s ease 3.5s 1 normal, animation02 4s ease 4s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+.hoval-move4{
+  opacity: 0;
+  animation: vertical1 1s ease-in-out infinite alternate, animation01 4s ease 2.5s 1 normal, animation02 3s ease 5s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+}
+.hoval-move5{
+  opacity: 0;
+  animation: vertical2 1s ease-in-out infinite alternate, animation01 4s ease 2s 1 normal, animation02 4s ease 6s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}

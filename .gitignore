@@ -6,3 +6,5 @@ node_modules
 ._.gitignore
 ._gulpfile.js
 ._package.json
+*.psd
+design
