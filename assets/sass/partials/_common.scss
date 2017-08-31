@@ -16,6 +16,8 @@ body{
   font-weight: 300;
   margin: 0;
   height: 100%;
+  width: 10000px;
+  position: fixed;
 }
 h1, h2, h3{
   font-family: 'Lato', sans-serif;
@@ -81,7 +83,6 @@ button{
     font-size: 4.0rem;
   }
 }
-
 // =====================================================
 // media screen max-width800px
 // =====================================================
@@ -89,6 +90,7 @@ button{
 	body{
 		overflow-y: inherit;
 		overflow-x: hidden;
+    font-weight: 400;
 	}
   .common-section-headding{
     font-size: 5.0rem;
@@ -100,7 +102,7 @@ button{
 // =====================================================
 @media screen and (max-width: 382px) {
   body{
-    line-height: 1.6;
+    line-height: 1.8;
   }
   .common-section-headding{
     font-size: 4.0rem;

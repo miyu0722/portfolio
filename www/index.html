@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Graphic/Web Designer producing high quality AD, Website, UI/UX etc using Illustrator, Photoshop, InDesign, AfterEffects, Sketch, HTML and CSS.">
-  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Lato:300|Roboto:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Lato:300|Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/chart.css" media="all">
   <link rel="stylesheet" href="css/jInvertScroll.css" media="all">
   <link rel="stylesheet" href="css/style.css" media="all">
   <title>Miyuki Uchiyama - Portfolio</title>
 </head>
-<body>
+<body class="bodytempclass">
   <div class="container" id="top">
     <header id="home">
       <div class="logo">
-        <a href="#top"><img src="img/logo.svg" alt="logo" width="63px"></a>
+        <a href="#top"><img src="img/logo.svg" alt="logo" width="50px"></a>
       </div>
       <div class="intro">
         <h1><span class="invisible animated fadeInUpBig" id="title1">Miyuki </span><span class="invisible animated fadeInDownBig" id="title2">Uchiyama</span><span class="sub invisible animated fadeInUpBig" id="title3">Portfolio</span></h1>
-        <h2 class="invisible animated fadeIn" id="title4">I am a graphic / web designer</h2>
+        <h2 class="invisible animated fadeIn" id="title4">I am a ui / web designer</h2>
         <p class="invisible animated fadeIn" id="title5">I’m Miyuki Uchiyama. I’m from Tokyo Japan. I worked as a graphic designer in Japan for 5 years also I worked as a DTP operator for 2 years. I've been working as a freelance graphic / ui designer in Vancouver.</p>
       </div><!-- intro -->
       <span class="scroll-btn" id="title6">
@@ -87,29 +87,32 @@
           <div class="skills-oval1 common-oval invisible" id="targetB"></div>
         </div><!-- myskills -->
         <div class="career" id="trigger15 trigger16 trigger17 trigger18 trigger19 trigger20 trigger21">
-          <div class="experience invisible animated" id="target15">
-            <h1 class="career-hedding">Experience</h1>
-            <dl class="career-description">
-              <dt>ibma</dt>
-              <dd>[2014-2016]  I worked for ibma as a graphic designer for 2 years.</dd>
-              <dt>VERY&Co.</dt>
-              <dd>[2013-2014]  I worked as a graphic designer for 7 months.</dd>
-              <dt>KUMEKAWA PRINTING Co.ltd</dt>
-              <dd>[2010-2012]  I worked as a graphic designer for 1.5 years.</dd>
-              <dt>FUJIFILM Imaging Protec Co.,Ltd</dt>
-              <dd>[2013-2014]  I worked as a DTP operator</dd>
-            </dl>
-          </div><!-- experience -->
-          <div class="education invisible animated" id="target16">
-            <h1 class="career-hedding">Education</h1>
-            <dl class="career-description">
-              <dt>ITD CANADA</dt>
-              <dd>[2016-]  Graphic and Development Current</dd>
-              <dt>KUWASAWA DESIGN SCHOOL</dt>
-              <dd>[2007-2010]  General Design Diploma</dd>
-            </dl>
-          </div><!-- education -->
-          <div class="career-oval1 common-oval invisible" id="target17"></div>
+          <div class="career-oval1 common-oval invisible" id="target17">
+            <div class="career-contents">
+              <div class="experience invisible animated" id="target15">
+                <h1 class="career-hedding">Experience</h1>
+                <dl class="career-description">
+                  <dt>ibma</dt>
+                  <dd>[2014-2016]  I worked for ibma as a graphic designer for 2 years.</dd>
+                  <dt>VERY&Co.</dt>
+                  <dd>[2013-2014]  I worked as a graphic designer for 7 months.</dd>
+                  <dt>KUMEKAWA PRINTING Co.ltd</dt>
+                  <dd>[2010-2012]  I worked as a graphic designer for 1.5 years.</dd>
+                  <dt>FUJIFILM Imaging Protec Co.,Ltd</dt>
+                  <dd>[2013-2014]  I worked as a DTP operator</dd>
+                </dl>
+              </div><!-- experience -->
+              <div class="education invisible animated" id="target16">
+                <h1 class="career-hedding">Education</h1>
+                <dl class="career-description">
+                  <dt>ITD CANADA</dt>
+                  <dd>[2016-]  Graphic and Development Current</dd>
+                  <dt>KUWASAWA DESIGN SCHOOL</dt>
+                  <dd>[2007-2010]  General Design Diploma</dd>
+                </dl>
+              </div><!-- education -->
+            </div><!-- career-contents -->
+          </div><!-- career-oval1 -->
           <div class="career-oval2 common-oval invisible" id="target18"></div>
           <div class="career-oval3 common-oval invisible" id="target19"></div>
           <div class="career-oval4 common-oval invisible" id="target20"></div>
@@ -295,7 +298,7 @@
           <h1 class="common-section-headding contact-section-headding invisible animated" id="target75">Contact Me</h1>
           <ul>
             <li class="contact-list invisible animated" id="target76"><a href="https://www.linkedin.com/in/miyuki-uchiyama/"><img src="img/linkedin.svg" alt="linkedin" width="90px"></a></li>
-            <li class="contact-list invisible animated" id="target77"><a href="https://dribbble.com/miyu0722"><img src="img/dribbble-logo.png" alt="dribbble" width="80px"></a></li>
+            <li class="contact-list invisible animated" id="target77"><a href="https://dribbble.com/miyu0722"><img src="img/dribbble.svg" alt="dribbble" width="80px"></a></li>
             <li class="email contact-list invisible animated" id="target78">mail@miyuki.uchiyama.net</li>
           </ul>
         </div><!-- contact-container -->
@@ -311,7 +314,6 @@
   <script src="js/jquery.chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="/js/jquery.jInvertScroll.min.js"></script>
   <script src="js/js.js"></script>
 </body>

@@ -11,7 +11,8 @@
   width:auto;
   display:block;
   position:relative;
-  font-family:'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size:14px;
   margin-right: 20px;
 }
@@ -164,7 +165,8 @@
   width:100%;
   font-size:14px;
   color:#C6C6C6;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   letter-spacing: 0.5;
   margin-top:12px;
 }

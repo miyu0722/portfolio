@@ -141,14 +141,14 @@ h2{
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
-    color: $primary;
+  color: $primary;
 }
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
 .scroll-btn > *.active {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .scroll-btn .mouse {
   position: relative;
@@ -163,18 +163,18 @@ h2{
   border-radius: 23px;
 }
 .scroll-btn .mouse > * {
-    position: absolute;
-    display: block;
-    top: 29%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    margin: -3px 0 0 -2px;
-    background: $primary;
-    border-radius: 50%;
-    -webkit-animation: ani-mouse 2.5s linear infinite;
-    -moz-animation: ani-mouse 2.5s linear infinite;
-    animation: ani-mouse 2.5s linear infinite;
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -3px 0 0 -2px;
+  background: $primary;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite;
 }
 
 // =====================================================
@@ -239,11 +239,10 @@ h2{
     width: 100%;
     overflow: hidden;
     padding: 0;
+    flex-direction: column;
   }
-
   header{
     height: 100vh;
-    width: 100%;
     position: relative;
     overflow: hidden;
   }
@@ -353,9 +352,9 @@ h2{
 }
 
 // =====================================================
-// media screen max-width800px && max-height: 500px
+// media screen max-width800px && max-height: 550px
 // =====================================================
-@media screen and (max-width: 800px) and (max-height: 500px) {
+@media screen and (max-width: 800px) and (max-height: 550px) {
   .intro{
     bottom: 20%;
     width: 600px;
@@ -378,6 +377,16 @@ h2{
     bottom: 35px;
   }
 }
+
+// =====================================================
+// media screen max-width750px && max-height: 550px
+// =====================================================
+@media screen and (max-width: 750px) and (max-height: 550px) {
+  .intro {
+    width: 500px;
+  }
+}
+
 // =====================================================
 // media screen max-width667px && max-height: 500px
 // =====================================================
@@ -425,5 +434,13 @@ h2{
   }
   .scroll-btn{
     display: none;
+  }
+}
+// =====================================================
+// media screen max-width350px && max-height: 570px
+// =====================================================
+@media screen and (max-width: 350px) and (max-height: 570px) {
+  .scroll-btn {
+    bottom: 70px;
   }
 }

@@ -61,6 +61,22 @@
     height: 91vh;
   }
 }
+// =====================================================
+// media screen max-height700px
+// =====================================================
+@media screen and (max-height: 700px) {
+  .contact{
+    width: 600px;
+  }
+}
+// =====================================================
+// media screen max-height600px
+// =====================================================
+@media screen and (max-height: 600px) {
+  .contact{
+    width: 520px;
+  }
+}
 
 // =====================================================
 // media screen max-width800px
@@ -69,21 +85,12 @@
   .contact{
     position: relative;
     left: 0;
-    margin: 50px 0 30px 0;
-    width: inherit;
+    margin: 50px auto 30px auto;
+    width: 90%;
     height: 92vh;
     min-height: 400px;
   }
   .contact-container {
-    width: inherit;
-  }
-}
-// =====================================================
-// media screen max-width330px
-// =====================================================
-@media screen and (max-width: 330px) {
-  .contact{
-    padding: 0 20px;
-    margin: 20px 0 20px 0;
+    width: 100%;
   }
 }
