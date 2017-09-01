@@ -1,52 +1,45 @@
-$.jInvertScroll(['.bodytempclass'], { //横スクロールさせる要素を指定。カンマ区切りで複数可。
-  height: 18000, //この値が大きいほどスクロールスピードが遅くなる。
-  onscroll: function(percent){
-    console.log(percent);
-  }
-});
 // =====================================================
-// Bodyに幅を指定するjQuery用スクリプト
+// Containerに幅を指定するjQuery用スクリプト
 // =====================================================
 function bodySizeAdjustment(){
   if($(window).width() > 800){
     var windowSize = $(window).innerWidth();
     var mainWidth = $('main').innerWidth();
-    $('body').css('width', windowSize + mainWidth);
+    $('.container').css('width', windowSize + mainWidth);
   } else {
-    $('body').css('width', '');
+    $('.container').css('width', '');
   }
 }
 
-$(window).on('load', function(){
-    //サイトのデータを全て読み込んだ後に実行
-    bodySizeAdjustment();
-});
-// =====================================================
-// horizontal scroll
-// =====================================================
 $(function(){
-  $(window).on('resize',function(){
-       //ウィンドウのサイズが変わったら実行
-       bodySizeAdjustment();
-  });
-// =====================================================
-// horizontal scroll
-// =====================================================
-
-// =====================================================
-// Horizon scroll
-// =====================================================
-var controller = null; //コントローラーをNullで初期化
+var controller = null, //コントローラーをNullで初期化
+    horizontalSlide = null; //TimeLineMax用
 
 if($(window).width() <= 800){
   //Tablet以下
   controller = new ScrollMagic.Controller({vertical: true});
+  //GSAPを初期化
+  horizontalSlide = null;
+  //Tablet以下のシーンを読み込む
   seans2();
 } else {
-  //PC
-  controller = new ScrollMagic.Controller({vertical: false});
-  seans();
+    //PC
+    //ロードされたらコンテンツのトータル幅を算出する。
+    bodySizeAdjustment();
+
+    //headerが全体の何割占めるかを計算する。 -60は左右padding分
+    var headerWidth = $('.container').width() - $('main').innerWidth() + parseInt($('.container').css('padding')) * 2;
+    var x = ((100 - headerWidth / $('.container').width() * 100) * -1).toString() + '%';
+
+    controller = new ScrollMagic.Controller();
+    //GSAPに登録
+    horizontalSlide = new TimelineMax()
+    .to("#top", 1, {x: x});
+    //Scroll用アニメーションの呼び出し
+    horizontalSean();
+    seans();
 }
+
 
 // ウインドウがリサイズされたら発火
 $(window).on('resize',function(){
@@ -56,6 +49,7 @@ $(window).on('resize',function(){
       //その後新しいコントローラーをインスタンス化
       controller = controller.destroy(true);
       controller = new ScrollMagic.Controller({vertical: true});
+      horizontalSlide = null;
       //縦用シーン
       seans2();
     }
@@ -63,10 +57,22 @@ $(window).on('resize',function(){
     if(controller){
       //強引にページの一番上に戻す。
       $("html,body").animate({scrollTop:0},0);
-      //ウインドウサイズが800px以下で且つコントローラーが存在した場合、それを削除。
+
+      //コンテンツのトータル幅を計算しなおす。（headerがウィンドウ幅なので変化する）
+      bodySizeAdjustment();
+      //headerが全体の何割占めるかを計算する。 -60は左右padding分
+      var headerWidth = $('.container').width() - $('main').innerWidth() + parseInt($('.container').css('padding')) * 2;
+      var x = ((100 - headerWidth / $('.container').width() * 100) * -1).toString() + '%';
+      //コントローラーが存在した場合、それを削除。
       //その後新しいコントローラーをインスタンス化
       controller = controller.destroy(true);
-      controller = new ScrollMagic.Controller({vertical: false});
+      controller = new ScrollMagic.Controller();
+
+      //GSAPに登録
+      horizontalSlide = new TimelineMax()
+        .to("#top", 1, {x: x});
+      //スクロール用のシーンを呼び出し。
+      horizontalSean()
       // 横用シーン
       seans();
     }
@@ -930,4 +936,18 @@ function seans2(){
       // .addIndicators({name: "78"})
       .addTo(controller);
 }
+
+function horizontalSean(){
+  console.log('Horizontal');
+  var invertScroll = new ScrollMagic.Scene({
+    triggerElement: "#js-wrapper",
+    triggerHook: "onLeave",
+    duration: "2000%"
+  })
+    .setPin("#js-wrapper")
+    .setTween(horizontalSlide)
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+  }
 });
+

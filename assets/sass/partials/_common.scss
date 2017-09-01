@@ -5,8 +5,8 @@ html{
   height: 100%;
 }
 body{
-  overflow-x: auto;
-  overflow-y: hidden;
+  //overflow-x: auto;
+  //overflow-y: hidden;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: (24/12);
@@ -16,8 +16,9 @@ body{
   font-weight: 300;
   margin: 0;
   height: 100%;
-  width: 10000px;
-  position: fixed;
+  width: 100%;
+  //position: fixed;
+  //top: 0;
 }
 h1, h2, h3{
   font-family: 'Lato', sans-serif;
@@ -63,6 +64,13 @@ button{
   background: rgba(255,90,125,.90);
   color: #eee;
 }
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 // =====================================================
 // media screen max-height800px
 // =====================================================
@@ -94,6 +102,10 @@ button{
 	}
   .common-section-headding{
     font-size: 5.0rem;
+  }
+  .wrapper{
+    height: inherit;
+    overflow: initial;
   }
 }
 
