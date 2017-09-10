@@ -418,6 +418,10 @@ dd {
   animation-fill-mode: forwards;
   animation-duration: 3s; }
 
+@media screen and (min-width: 800px) and (max-height: 600px) {
+  .invisible {
+    opacity: 1; } }
+
 @keyframes animation01 {
   0% {
     opacity: 0; }
@@ -442,27 +446,27 @@ dd {
 
 @keyframes horizontal {
   0% {
-    transform: translateX(-10px); }
+    transform: translateX(0px); }
   100% {
-    transform: translateX(0px); } }
+    transform: translateX(-10px); } }
 
 @keyframes vertical1 {
   0% {
-    transform: translateY(13px); }
+    transform: translateY(0px); }
   100% {
-    ransform: translateY(0px); } }
+    transform: translateY(13px); } }
 
 @keyframes vertical2 {
   0% {
-    transform: translateY(-15px); }
+    transform: translateY(0px); }
   100% {
-    ransform: translateY(0px); } }
+    transform: translateY(-15px); } }
 
 @keyframes vertical3 {
   0% {
-    transform: translateY(18px); }
+    transform: translateY(0px); }
   100% {
-    ransform: translateY(0px); } }
+    transform: translateY(18px); } }
 
 .oval-fade-in1 {
   opacity: 0;
@@ -524,6 +528,58 @@ dd {
   animation-fill-mode: forwards;
   animation-duration: 3s; }
 
+@media screen and (max-height: 600px) {
+  .oval-fade-in1 {
+    opacity: 1;
+    animation: vertical1 1s ease-in-out infinite alternate, animation02 3s ease 7s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 2s; }
+  .oval-fade-in2 {
+    opacity: 1;
+    animation: vertical2 1s ease-in-out infinite alternate, animation02 4s ease 7s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 3.5s; }
+  .oval-fade-in3 {
+    opacity: 1;
+    animation: vertical3 1s ease-in-out infinite alternate, animation02 4s ease 4s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 3s; }
+  .oval-fade-in4 {
+    opacity: 1;
+    animation: vertical1 1s ease-in-out infinite alternate, animation02 3s ease 5s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s; }
+  .oval-fade-in5 {
+    opacity: 1;
+    animation: vertical2 1s ease-in-out infinite alternate, animation02 4s ease 6s infinite alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 3s; }
+  .oval-fade-in1-o {
+    opacity: 0;
+    animation: vertical1 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    animation-duration: 2s; }
+  .oval-fade-in2-o {
+    opacity: 0;
+    animation: vertical2 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    animation-duration: 3.5s; }
+  .oval-fade-in3-o {
+    opacity: 0;
+    animation: vertical3 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    animation-duration: 3s; }
+  .oval-fade-in4-o {
+    opacity: 0;
+    animation: vertical1 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s; }
+  .oval-fade-in5-o {
+    opacity: 0;
+    animation: vertical2 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    animation-duration: 3s; } }
+
 html {
   height: 100%; }
 
@@ -558,7 +614,7 @@ button {
 
 .logo {
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   left: 20px;
   top: 30px; }
 
@@ -569,7 +625,7 @@ button {
   width: 30px;
   top: 50px;
   right: 30px;
-  z-index: 5000; }
+  z-index: 1000; }
 
 .close-button::before,
 .close-button::after {
@@ -580,10 +636,10 @@ button {
   border-top: 2px solid #C6C6C6; }
 
 .close-button::before {
-  transform: skewY(-45deg); }
+  transform: rotate(-45deg); }
 
 .close-button::after {
-  transform: skewY(45deg); }
+  transform: rotate(45deg); }
 
 .common-oval {
   border-radius: 50%;
@@ -613,17 +669,19 @@ button {
 
 .work-detail-oval1 {
   left: 0;
-  top: 300px;
+  top: 370px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%); }
+  background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  opacity: 0; }
 
 .work-detail-oval2 {
   left: 60px;
-  top: 440px;
+  top: 470px;
   width: 158px;
   height: 158px;
-  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%); }
+  background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  opacity: 0; }
 
 .work-detail-oval3 {
   right: 60px;
@@ -1006,11 +1064,14 @@ section {
 
 .color-chips {
   display: flex;
-  justify-content: center; }
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px; }
 
 .color-chip-container {
   font-family: 'Petit Formal Script', serif;
-  margin: 50px 16px 100px;
+  margin: 50px 16px 0;
   text-align: center;
   font-size: 1.4rem; }
 
@@ -1050,6 +1111,25 @@ section {
 #worktarget14 {
   animation-duration: 3s; }
 
+.thumbnail_img {
+  width: 150px; }
+
+.lg-toolbar, .group {
+  background-color: rgba(255, 255, 255, 0); }
+
+.lg-img-wrap .lg-outer, .lg-img-wrap .lg-image {
+  max-width: 800px;
+  max-height: initial; }
+
+.lg-on {
+  overflow: hidden; }
+
+.lg-outer, .lg-img-wrap {
+  overflow: auto; }
+
+.lg-object, .lg-image {
+  margin: 50px 0; }
+
 @media screen and (max-width: 1110px) {
   section {
     margin-bottom: 130px; } }
@@ -1066,7 +1146,7 @@ section {
     height: 300px;
     width: 300px; }
   .color-chip-container {
-    margin: 50px 2% 100px; }
+    margin: 50px 2% 0; }
   .color-chip {
     height: 80px;
     width: 80px; } }
@@ -1105,8 +1185,6 @@ section {
   .color-chip-container {
     margin: 50px 3% -30px;
     font-size: 1.2rem; }
-  .color-chips {
-    flex-wrap: wrap; }
   .mobile {
     margin-top: 180px; } }
 

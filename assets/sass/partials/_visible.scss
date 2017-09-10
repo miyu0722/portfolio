@@ -32,3 +32,12 @@
   animation-fill-mode: forwards;
   animation-duration: 3s;
 }
+
+// =====================================================
+// media screen min-width800px && max-height: 600px
+// =====================================================
+@media screen and (min-width: 800px) and (max-height: 600px) {
+  .invisible{
+    opacity: 1;
+  }
+}

@@ -55,11 +55,14 @@ section{
 }
 .color-chips{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
 }
 .color-chip-container{
   font-family: 'Petit Formal Script', serif;
-  margin: 50px 16px 100px;
+  margin: 50px 16px 0;
   text-align: center;
   font-size: 1.4rem;
 }
@@ -110,6 +113,32 @@ $mobile-detail-oval1-size:400px;
 }
 
 // =====================================================
+//gallery
+// =====================================================
+.thumbnail_img{
+  width: 150px;
+}
+.lg-toolbar, .group{
+  background-color: rgba(255, 255, 255, 0);
+}
+.lg-img-wrap{
+  .lg-outer, .lg-image{
+    max-width: 800px;
+    max-height: initial;
+  }
+}
+.lg-on {
+  overflow: hidden;
+}
+.lg-outer, .lg-img-wrap{
+  overflow: auto;
+  // padding: 20px 5px;
+}
+.lg-object, .lg-image{
+  margin: 50px 0;
+}
+
+// =====================================================
 // media screen max-width1110px
 // =====================================================
 @media screen and (max-width: 1110px) {
@@ -138,7 +167,7 @@ $mobile-detail-oval1-size:400px;
     width: $mobile-detail-oval1-size;
   }
   .color-chip-container {
-    margin: 50px 2% 100px;
+    margin: 50px 2% 0;
   }
   .color-chip{
     height: 80px;
@@ -208,9 +237,6 @@ $mobile-detail-oval1-size:400px;
   .color-chip-container {
     margin: 50px 3% -30px;
     font-size: 1.2rem;
-  }
-  .color-chips{
-    flex-wrap: wrap;
   }
   .mobile{
     margin-top: 180px;

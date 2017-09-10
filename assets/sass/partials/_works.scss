@@ -64,6 +64,11 @@
     font-size: 3.0rem;
   }
 }
+.other-projects{
+  .marketas-hedding{
+    font-size: 2.5rem;
+  }
+}
 .tag{
   li{
     border: 1px solid $primary;
@@ -126,18 +131,16 @@
 }
 //main works1-------------------------------------------
 $main-works1-oval-size:550px;
-$main-works1-left:450px;
-$main-works1-top:-12%;
 //work's description
-.main-works-description1{
-  left: 820px;
-  top: 120px;
+.main-works-description1 {
+  left: 640px;
+  top: 40px;
   width: 500px;
 }
 //work's image
 .main-works1-img{
-  left: $main-works1-left;
-  top: $main-works1-top;
+  left: 400px;
+  top: -12%;
   background: url(/img/works_sweets_note.png) center bottom / cover no-repeat;
   width: $main-works1-oval-size;
   height: $main-works1-oval-size;
@@ -156,7 +159,7 @@ $main-works2-bottom:-25%;
   z-index: 100;
 }
 .main-works2-img{
-  background: url(/img/works_ballet.png) center bottom / cover no-repeat;
+  background: url(/img/works_petitcaprice.png) center bottom / cover no-repeat;
   left: $main-works2-left;
   bottom: $main-works2-bottom;
   width: $main-works2-oval-size;
@@ -198,7 +201,7 @@ $main-works4-oval-size:630px;
   z-index: 200;
 }
 .main-works4-img{
-  background: url(/img/works_marketas.png) center bottom / cover no-repeat;
+  background: url(/img/works_ballet.png) center bottom / cover no-repeat;
   left: 3400px;
   top: -10%;
   width: $main-works4-oval-size;
@@ -216,7 +219,7 @@ $main-works5-oval-size:500px;
   z-index: 150;
 }
 .main-works5-img{
-  background: url(/img/works_movieposter.jpg) center bottom / cover no-repeat;
+  background: url(/img/works_illustration.png) center bottom / cover no-repeat;
   left: 3750px;
   bottom: -10%;
   width: $main-works5-oval-size;
@@ -274,7 +277,11 @@ $main-works6-oval-size:850px;
   transition: all .5s ease 0s;
   pointer-events: none;
 }
-
+.other-projects{
+  a{
+    border-right: 50%;
+  }
+}
 .common-other-works-img{
   &::after{
     content: "";
@@ -290,7 +297,7 @@ $main-works6-oval-size:850px;
   &:hover{
     &::after{
       transition: all .5s ease 0s;
-      opacity: 0.5;
+      opacity: 0.8;
       background: rgb(0, 0, 0);
     }
   }
@@ -304,12 +311,14 @@ $other-works1-oval-size:450px;
 .other-works-description1{
   color: $white;
   position: absolute;
-  left: 5175px;
-  bottom: 6%;
+  left: 50%;
+  top: 80px;
+  margin-left: -150px;//widthの半分の値
   width: 300px;
   z-index: 1000;
 }
 .other-works1-img{
+  border-radius: 50%;
   opacity: 0.8;
   position: absolute;
   left: 5100px;
@@ -320,6 +329,11 @@ $other-works1-oval-size:450px;
     height: $other-works1-oval-size;
     display: block;
   }
+  &:hover{
+    .other-works-description1 {
+      opacity: 1;
+    }
+  }
 }
 
 //other works2-------------------------------------------
@@ -327,12 +341,14 @@ $other-works2-oval-size:800px;
 .other-works-description2{
   color: $white;
   position: absolute;
-  left: 5565px;
-  top: 1%;
-  width: 435px;
+  left: 50%;
+  top: 470px;
+  width: 436px;
+  margin-left: -218px;
   z-index: 210;
 }
 .other-works2-img{
+  border-radius: 50%;
   opacity: 0.8;
   position: absolute;
   left: 5380px;
@@ -343,6 +359,11 @@ $other-works2-oval-size:800px;
     height: $other-works2-oval-size;
     display: block;
   }
+  &:hover{
+    .other-works-description2 {
+      opacity: 1;
+    }
+  }
 }
 
 //other works3-------------------------------------------
@@ -350,12 +371,14 @@ $other-works3-oval-size:400px;
 .other-works-description3{
   color: $white;
   position: absolute;
-  left: 5900px;
-  bottom: 13%;
+  left: 50%;
+  top: 100px;
+  margin-left: -150px;
   width: 300px;
   z-index: 500;
 }
 .other-works3-img{
+  border-radius: 50%;
   position: absolute;
   opacity: 0.8;
   left: 5850px;
@@ -366,6 +389,11 @@ $other-works3-oval-size:400px;
     height: $other-works3-oval-size;
     display: block;
   }
+  &:hover{
+    .other-works-description3 {
+      opacity: 1;
+    }
+  }
 }
 
 //other works4-------------------------------------------
@@ -373,12 +401,14 @@ $other-works4-oval-size:470px;
 .other-works-description4{
   color: $white;
   position: absolute;
-  left: 6080px;
-  bottom: 42%;
+  left: 50%;
+  top: 120px;
+  margin-left: -150px;
   width: 300px;
   z-index: 500;
 }
 .other-works4-img{
+  border-radius: 50%;
   opacity: 0.8;
   position: absolute;
   left: 6000px;
@@ -389,6 +419,11 @@ $other-works4-oval-size:470px;
     height: $other-works4-oval-size;
     display: block;
   }
+  &:hover{
+    .other-works-description4 {
+      opacity: 1;
+    }
+  }
 }
 
 //other works5-------------------------------------------
@@ -396,12 +431,14 @@ $other-works5-oval-size:350px;
 .other-works-description5{
   color: $white;
   position: absolute;
-  left: 6365px;
-  top: -2%;
-  width: 220px;
+  left: 50%;
+  top: 140px;
+  width: 280px;
+  margin-left: -140px;
   z-index: 1000;
 }
 .other-works5-img{
+  border-radius: 50%;
   opacity: 0.8;
   position: absolute;
   left: 6300px;
@@ -411,6 +448,11 @@ $other-works5-oval-size:350px;
     width: $other-works5-oval-size;
     height: $other-works5-oval-size;
     display: block;
+  }
+  &:hover{
+    .other-works-description5 {
+      opacity: 1;
+    }
   }
 }
 
@@ -434,7 +476,7 @@ $other-works5-oval-size:350px;
   pointer-events: none;
   position: absolute;
   left: 6400px;
-  bottom: 10%;
+  bottom: 8%;
   width: 500px;
   color: $white;
   text-align: center;
@@ -455,6 +497,15 @@ $other-works5-oval-size:350px;
   margin-top: 20px;
   background: transparent;
   border: 1px solid $white;
+}
+
+// =====================================================
+// media screen max-height1030px
+// =====================================================
+@media screen and (max-height: 1030px) {
+  .other-works3-img {
+    bottom: 2%;
+  }
 }
 
 // =====================================================
@@ -528,15 +579,46 @@ $other-works5-oval-size:350px;
   .other-works1-img{
     bottom: -10%;
   }
-
-  .other-works-description1{
-    bottom: 7%;
-  }
-  //other works4-------------------------------------------
-  .other-works-description4{
-    bottom: 46%;
+  //other works2-------------------------------------------
+  .other-works-description2{
+    top: 430px;
   }
 }
+// =====================================================
+// media screen max-height900px
+// =====================================================
+@media screen and (max-height: 900px) {
+  .closed-projects {
+    bottom: 11%;
+  }
+  .other-works3-img {
+    bottom: 6%;
+  }
+  .other-works4-img {
+    bottom: 40%;
+  }
+  .other-works5-img {
+    top: -17%;
+  }
+}
+// =====================================================
+// media screen max-height880px
+// =====================================================
+@media screen and (max-height: 880px) {
+  .other-works-description2 {
+      top: 400px;
+  }
+}
+
+// =====================================================
+// media screen max-height830px
+// =====================================================
+@media screen and (max-height: 830px) {
+  .other-works-description2 {
+      top: 360px;
+  }
+}
+
 // =====================================================
 // media screen max-height800px
 // =====================================================
@@ -590,7 +672,6 @@ $other-works5-oval-size:350px;
     width: $main-works2-oval-size;
     height: $main-works2-oval-size;
   }
-
   //main works3-------------------------------------------
   $main-works3-oval-size:1000px;
   .main-works-description3{
@@ -603,7 +684,6 @@ $other-works5-oval-size:350px;
     width: $main-works3-oval-size;
     height: $main-works3-oval-size;
   }
-
   //main works4-------------------------------------------
   $main-works4-oval-size:630px;
   .main-works-description4{
@@ -617,7 +697,6 @@ $other-works5-oval-size:350px;
     width: $main-works4-oval-size;
     height: $main-works4-oval-size;
   }
-
   //main works5-------------------------------------------
   $main-works5-oval-size:500px;
   .main-works-description5{
@@ -626,25 +705,11 @@ $other-works5-oval-size:350px;
   .main-works5-img{
     left: 3650px;
   }
-  //other works1------------------------------------------
-  .other-works-description1{
-    bottom: 10%;
-  }
   //other works3-------------------------------------------
-  $other-works3-oval-size:400px;
-  .other-works-description3{
-    left: 5900px;
-    bottom: 8%;
-  }
   .other-works3-img{
-    bottom: -10%;
+    bottom: -5%;
   }
   //other works4-------------------------------------------
-  $other-works4-oval-size:470px;
-  .other-works-description4{
-    left: 6030px;
-    bottom: 47%;
-  }
   .other-works4-img{
     left: 5950px;
   }
@@ -656,6 +721,7 @@ $other-works5-oval-size:350px;
     bottom: 15%;
   }
 }
+
 // =====================================================
 // media screen max-height700px
 // =====================================================
@@ -757,72 +823,28 @@ $other-works5-oval-size:350px;
     left: 5260px;
     font-size: 9.0rem;
   }
-  //other works1-------------------------------------------
-  $other-works1-oval-size:450px;
-  .other-works-description1{
-    left: 4920px;
-    bottom: 12%;
-    width: 300px;
-  }
-  .other-works1-img{
-    width: $other-works1-oval-size;
-    height: $other-works1-oval-size;
-    left: 5170px;
-    bottom: -10%;
-  }
   //other works2-------------------------------------------
-  $other-works2-oval-size:600px;
-  .other-works-description2{
-    left: 5300px;
-    top: -60%;
-    width: 435px;
-  }
   .other-works2-img{
     left: 5300px;
     top: -50%;
-    & > img{
-      width: $other-works2-oval-size;
-      height: $other-works2-oval-size;
-    }
   }
   //other works3-------------------------------------------
-  $other-works3-oval-size:370px;
-  .other-works-description3{
-    left: 5775px;
-    bottom: 8%;
-  }
   .other-works3-img{
     left: 5630px;
-    bottom: 7%;
-    & > img{
-      width: $other-works3-oval-size;
-      height: $other-works3-oval-size;
-    }
+    bottom: 5%;
   }
   //other works4-------------------------------------------
-  $other-works4-oval-size:470px;
-  .other-works-description4{
-    left: 5938px;
-    bottom: 55%;
-  }
-  .other-works4-img{
-    left: 5932px;
-    bottom: 43%;
+  .other-works4-img {
+    left: 6000px;
+    bottom: 40%;
   }
   //other works5-------------------------------------------
-  $other-works5-oval-size:350px;
-  .other-works-description5{
-    left: 6267px;
-    top: 41%;
-    width: 220px;
-  }
   .other-works5-img{
     left: 6000px;
-    top: 60%;
-    & > img{
-      width: $other-works5-oval-size;
-      height: $other-works5-oval-size;
-    }
+    top: 57%;
+  }
+  .other-works-description5 {
+    top: 105px;
   }
   //closed projects-------------------------------------------
   .closed-projects{
@@ -840,11 +862,26 @@ $other-works5-oval-size:350px;
 }
 
 // =====================================================
+// media screen max-height670px
+// =====================================================
+@media screen and (max-height: 670px) {
+  .other-works-description1 {
+    top: 100px;
+  }
+  .other-works5-img {
+    top: 50%;
+  }
+  .other-works-description2 {
+    top: 340px;
+  }
+}
+
+// =====================================================
 // media screen max-height650px
 // =====================================================
 @media screen and (max-height: 650px) {
   .other-works1-img {
-    left: 5050px;
+    left: 5040px;
   }
 }
 
@@ -873,21 +910,34 @@ $other-works5-oval-size:350px;
   .main-works-description3 {
     left: 2410px;
   }
+  //other-projects-headding-------------------------------------------
+  .other-projects-headding {
+    top: 32%;
+    left: 5260px;
+    font-size: 7rem;
+  }
+  //other works2-------------------------------------------
+  $other-works2-oval-size:640px;
+  .other-works2-img{
+    & > img{
+      width: $other-works2-oval-size;
+      height: $other-works2-oval-size;
+    }
+  }
+  .other-works2-img {
+    left: 5250px;
+  }
+  //other works3-------------------------------------------
   .other-works3-img {
     bottom: 0%;
   }
   //other works4-------------------------------------------
-  $other-works4-oval-size:400px;
-  .other-works-description4{
-    bottom: 55%;
-  }
-  .other-works4-img{
-    bottom: 52%;
+  .other-works4-img {
+    bottom: 38%;
   }
   //other works5-------------------------------------------
   .other-works5-img {
-      left: 6020px;
-      top: 50%;
+    left: 6000px;
   }
   //closed projects-------------------------------------------
   .closed-projects{
@@ -935,30 +985,20 @@ $other-works5-oval-size:350px;
   }
   //other works1-------------------------------------------
   $other-works1-oval-size:400px;
-  .other-works-description1{
-    left: 4920px;
-    bottom: 12%;
-    width: 300px;
-  }
   .other-works1-img{
     width: $other-works1-oval-size;
     height: $other-works1-oval-size;
     bottom: -4%;
+    & > img{
+      width: $other-works1-oval-size;
+      height: $other-works1-oval-size;
+      display: block;
+    }
   }
   //other works2-------------------------------------------
-  $other-works2-oval-size:550px;
-  .other-works-description2{
-    left: 5300px;
-    top: -60%;
-    width: 435px;
-  }
   .other-works2-img{
     left: 5300px;
     top: -54%;
-    & > img{
-      width: $other-works2-oval-size;
-      height: $other-works2-oval-size;
-    }
   }
   //other works3-------------------------------------------
   .other-works3-img {
@@ -1121,13 +1161,6 @@ $other-works5-oval-size:350px;
 }
 
 // =====================================================
-// media screen max-width720px
-// =====================================================
-@media screen and (max-width: 720px) {
-
-}
-
-// =====================================================
 // media screen max-width700px
 // =====================================================
 @media screen and (max-width: 700px) {
@@ -1256,12 +1289,6 @@ $other-works5-oval-size:350px;
     top: 3100px;
   }
   .main-works6-img{
-    left: 4%;
-    top: 2970px;
-    width: $main-works6-oval-size;
-    height: $main-works6-oval-size;
-  }
-  .mainworks6-line-oval{
     left: 4%;
     top: 2970px;
     width: $main-works6-oval-size;

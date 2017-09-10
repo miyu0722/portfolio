@@ -41,7 +41,7 @@ button{
 }
 .logo{
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   left: 20px;
   top: 30px;
 }
@@ -52,7 +52,7 @@ button{
   width: 30px;
 	top: 50px;
 	right: 30px;
-	z-index: 5000;
+	z-index: 1000;
 }
 .close-button::before,
 .close-button::after {
@@ -63,10 +63,10 @@ button{
   border-top: 2px solid $primary;
 }
 .close-button::before {
-  transform: skewY(-45deg);
+  transform: rotate(-45deg);
 }
 .close-button::after {
-  transform: skewY(45deg);
+  transform: rotate(45deg);
 }
 //common oval
 .common-oval{
@@ -87,13 +87,6 @@ button{
 ::-moz-selection{
   background: rgba(255,90,125,.90);
   color: #eee;
-}
-
-// =====================================================
-// media screen max-width900px
-// =====================================================
-@media screen and (max-width: 900px) {
-
 }
 
 // =====================================================

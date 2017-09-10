@@ -1,6 +1,6 @@
-.works-main-img-ballet {
+.works-main-img-marketas {
   background: url(/img/works_marketas.png) center center no-repeat;
-  background-size: cover; }
+  background-size: contain; }
 
 .color-chipA {
   background: #9f8964; }
@@ -9,7 +9,7 @@
   background: #e8e4d3; }
 
 .color-chipC {
-  border: 1px solid #C6C6C6;
+  border: 3px solid #606060;
   background: #000; }
 
 .color-chipD {

@@ -68,6 +68,8 @@ $career-oval1-size:1200px;
   background: linear-gradient(-180deg, #A3D3D6 40%, #3A56CA 100%);
   z-index: -100;
   opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 $career-oval2-size:310px;
 .career-oval2{
@@ -244,7 +246,7 @@ $works-oval15-size:340px;
 }
 $works-oval16-size:154px;
 .works-oval16{
-  left: 5750px;
+  left: 5730px;
   bottom: 17%;
   width: $works-oval16-size;
   height: $works-oval16-size;
@@ -518,9 +520,9 @@ $gnav-oval5-size:250px;
     top: 20%;
   }
   //works-oval17-------------------------------------------
-  $works-oval17-size:150px;
+  $works-oval17-size:140px;
   .works-oval17{
-    left: 6350px;
+    left: 6370px;
     top: 21%;
     width: $works-oval17-size;
     height: $works-oval17-size;
@@ -806,15 +808,18 @@ $gnav-oval5-size:250px;
   $works-oval14-size:150px;
   .works-oval14{
     left: 5570px;
-    bottom: 10%;
+    bottom: 0%;
     width: $works-oval14-size;
     height: $works-oval14-size;
     z-index: 500;
   }
   //works-oval15-------------------------------------------
+  $works-oval15-size:200px;
   .works-oval15{
-    left: 5700px;
-    top: 10%;
+    left: 5785px;
+    top: 22%;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
   }
   //works-oval16-------------------------------------------
   $works-oval16-size:80px;
@@ -830,8 +835,8 @@ $gnav-oval5-size:250px;
     left: 6220px;
   }
   //works-oval18-------------------------------------------
-  .works-oval18{
-    left: 6360px;
+  .works-oval18 {
+    left: 6440px;
   }
   //works-oval19-------------------------------------------
   .works-oval19{
@@ -871,17 +876,27 @@ $gnav-oval5-size:250px;
 }
 
 // =====================================================
+// media screen max-height670px
+// =====================================================
+@media screen and (max-height: 670px) {
+  .works-oval17 {
+    left: 6260px;
+  }
+  //works-oval15-------------------------------------------
+  $works-oval15-size:180px;
+  .works-oval15{
+    left: 5855px;
+    width: $works-oval15-size;
+    height: $works-oval15-size;
+  }
+}
+
+// =====================================================
 // media screen max-height650px
 // =====================================================
 @media screen and (max-height: 650px) {
   .works-oval12 {
     bottom: 53%;
-  }
-  //works-oval15-------------------------------------------
-  $works-oval15-size:260px;
-  .works-oval15{
-    width: $works-oval15-size;
-    height: $works-oval15-size;
   }
   //contact-oval1-------------------------------------------
   $contact-oval1-size:200px;
@@ -934,16 +949,28 @@ $gnav-oval5-size:250px;
     width: $works-oval10-size;
     height: $works-oval10-size;
   }
+  .works-oval13 {
+    top: 50%;
+  }
   //works-oval15-------------------------------------------
-  $works-oval15-size:220px;
+  $works-oval15-size:150px;
   .works-oval15{
-    left: 5770px;
+    left: 5800px;
     width: $works-oval15-size;
     height: $works-oval15-size;
   }
   //works-oval10-------------------------------------------
   .works-oval12 {
     bottom: 60%;
+  }
+  .works-oval13 {
+    left: 5440px;
+  }
+  .works-oval14 {
+    left: 5530px;
+  }
+  .works-oval16 {
+    bottom: 7%;
   }
   //contact-oval2-------------------------------------------
   .contact-oval2 {
@@ -962,15 +989,25 @@ $gnav-oval5-size:250px;
 // media screen max-height540px
 // =====================================================
 @media screen and (max-height: 540px) {
+  //works-oval6-------------------------------------------
   .works-oval6 {
     bottom: 73%;
   }
+  //works-oval14-------------------------------------------
+  .works-oval14 {
+    left: 5530px;
+  }
   //works-oval15-------------------------------------------
-  $works-oval15-size:180px;
+  $works-oval15-size:130px;
   .works-oval15{
     width: $works-oval15-size;
     height: $works-oval15-size;
   }
+  //works-oval16-------------------------------------------
+  .works-oval16 {
+    bottom: 7%;
+  }
+  //works-oval19-------------------------------------------
   $works-oval19-size:200px;
   .works-oval19{
     left: 6440px;

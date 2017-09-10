@@ -44,7 +44,10 @@
 // =====================================================
 @media screen and (max-height: 800px) {
   .contact-container{
-    //width: 710px;
+    width: 730px;
+  }
+  .contact{
+    width: 730px;
   }
 }
 // =====================================================
@@ -52,13 +55,14 @@
 // =====================================================
 @media screen and (max-height: 700px) {
   .contact{
-    width: 650px;
+    width: 670px;
   }
   .contact-section-headding {
     margin-top: -10px;
   }
   .contact-container {
     height: 91vh;
+    width: 670px;
   }
 }
 // =====================================================
@@ -66,7 +70,7 @@
 // =====================================================
 @media screen and (max-height: 700px) {
   .contact{
-    width: 600px;
+    // width: 600px;
   }
 }
 // =====================================================

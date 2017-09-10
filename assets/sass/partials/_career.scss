@@ -9,6 +9,8 @@
   margin-left: 285px;
 }
 .career-contents{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   top: 47%;
   left: 22%;

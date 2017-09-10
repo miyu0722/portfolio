@@ -1,18 +1,20 @@
 $work-detail-oval1-size:60px;
 .work-detail-oval1{
   left: 0;
-  top: 300px;
+  top: 370px;
   width: $work-detail-oval1-size;
   height: $work-detail-oval1-size;
   background: linear-gradient(-180deg, #FFBBA6 0%, #FF5174 100%);
+  opacity: 0;
 }
 $work-detail-oval2-size:158px;
 .work-detail-oval2{
   left: 60px;
-  top: 440px;
+  top: 470px;
   width: $work-detail-oval2-size;
   height: $work-detail-oval2-size;
   background: linear-gradient(-180deg, #BA18CC 3%, #002F76 100%);
+  opacity: 0;
 }
 $work-detail-oval3-size:60px;
 .work-detail-oval3{
